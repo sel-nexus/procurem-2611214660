@@ -1,10 +1,30 @@
 """Validate requisition requests and electronic signature input."""
 from decimal import Decimal
+from html import unescape
+import re
 from typing import Annotated, Literal
-from pydantic import BaseModel, ConfigDict, Field, StringConstraints
+from pydantic import AfterValidator, BaseModel, ConfigDict, Field, StringConstraints
 
-Text = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=300)]
-Reason = Annotated[str, StringConstraints(strip_whitespace=True, min_length=8, max_length=1000)]
+
+def reject_markup(value: str) -> str:
+    """Reject HTML-like tags without altering accepted text.
+
+    Decode entities for inspection only, so encoded markup cannot bypass the
+    boundary while ordinary ampersands and comparison text are preserved.
+    """
+    inspected = value
+    while True:
+        decoded = unescape(inspected)
+        if decoded == inspected:
+            break
+        inspected = decoded
+    if re.search(r'<\s*/?\s*[a-z][^>]*>', inspected, re.IGNORECASE) or re.search(r'<\s*/?\s*script\b', inspected, re.IGNORECASE):
+        raise ValueError('HTML markup is not allowed.')
+    return value
+
+
+Text = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=300), AfterValidator(reject_markup)]
+Reason = Annotated[str, StringConstraints(strip_whitespace=True, min_length=8, max_length=1000), AfterValidator(reject_markup)]
 
 class LineInput(BaseModel):
     """Describe a positive, precisely priced requisition line."""

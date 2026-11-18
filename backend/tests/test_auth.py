@@ -42,7 +42,8 @@ def test_login_me_logout_and_revocation(workspace):
         assert db.execute('SELECT token_hash FROM sessions').fetchone()[0] == token_hash(cookie)
         assert cookie not in str(db.execute('SELECT * FROM sessions').fetchone())
         assert db.execute("SELECT count(*) FROM audit_log WHERE action='sign_in'").fetchone()[0] == 1
-    assert client.get('/api/v1/auth/me').json()['role'] == 'analyst'
+    me = client.get('/api/v1/auth/me')
+    assert me.status_code == 200 and me.json()['role'] == 'analyst'
     assert client.get('/role-test').status_code == 403
     assert client.post('/api/v1/auth/logout').status_code == 204
     client.cookies.set('procurem_session', cookie)
@@ -115,7 +116,8 @@ def test_restart_preserves_seed_and_sessions(workspace):
     app = create_app(Settings(database_path=path))
     with TestClient(app) as restarted:
         restarted.cookies.set('procurem_session',cookie)
-        assert restarted.get('/api/v1/auth/me').json()['display_name'] == 'Priya Shah'
+        me = restarted.get('/api/v1/auth/me')
+        assert me.status_code == 200 and me.json()['display_name'] == 'Priya Shah'
     with connect(path) as db:
         assert db.execute('SELECT count(*) FROM users').fetchone()[0] == 7
         assert db.execute("SELECT count(*) FROM audit_log WHERE action='seed'").fetchone()[0] == 1
@@ -129,3 +131,23 @@ def test_cors_explicit(workspace):
     assert response.headers['access-control-allow-credentials'] == 'true'
     headers['Origin']='http://evil.example'
     assert client.options('/api/v1/auth/login',headers=headers).status_code == 400
+
+
+@pytest.mark.parametrize('body', [
+    {'password': 'Demo@1234'}, {'email': 'analyst@procurem.demo'},
+    {'email': [], 'password': 'Demo@1234'},
+    {'email': 'analyst@procurem.demo', 'password': 123},
+    {'email': 'x' * 255, 'password': 'Demo@1234'},
+    {'email': 'analyst@procurem.demo', 'password': 'x' * 73},
+    {'email': 'analyst@procurem.demo', 'password': 'Demo@1234', 'remember_me': []},
+])
+def test_malformed_login_creates_no_session_or_audit(workspace, body):
+    client, path = workspace
+    with connect(path) as db:
+        before = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in ('sessions', 'audit_log')}
+    response = client.post('/api/v1/auth/login', json=body)
+    assert response.status_code == 422
+    assert 'set-cookie' not in response.headers
+    with connect(path) as db:
+        after = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in ('sessions', 'audit_log')}
+    assert after == before

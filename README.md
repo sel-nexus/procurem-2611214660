@@ -1,6 +1,6 @@
-# Procurem — authentication foundation
+# Procurem
 
-This slice provides a local procurement demo database, a sign-in screen and an authenticated identity view. The Home dashboard and all record, approval and assistant features are subsequent slices and are not implemented here. All adapter statuses describe local seed tables; no external service is contacted.
+Procurem is a local procurement workspace with seeded SQLite data, a grounded assistant, supplier and sourcing proposals, sequential approvals, notifications, audit and user administration. Adapter labels represent local database reads, not external integrations. This demonstration is not a certified electronic-signature system. The dashboard's USD total includes only USD orders; an amountless supplier edit is low risk unless the proposed risk is high.
 
 ## Run locally
 
@@ -34,8 +34,8 @@ Run `docker compose up --build` and open http://localhost:3000. The named `procu
 API documentation is available at http://localhost:8000/docs. `GET /api/health` lists the five local adapter states. `POST /api/v1/auth/login`, `GET /api/v1/auth/me` and `POST /api/v1/auth/logout` use an HttpOnly, SameSite=Lax cookie; server-side sessions expire in 8 hours or 30 days and logout revokes them. Passwords and session tokens are stored only as hashes. Currency columns are exact decimal strings and should be parsed as Decimal, not float.
 
 ```sh
-cd backend && PYTHONPATH=. "$HOME/venvs/procurem/bin/python" -m pytest -q tests/test_auth.py
+cd backend && PYTHONPATH=. "$HOME/venvs/procurem/bin/python" -m pytest -q
 cd frontend && node node_modules/vitest/vitest.mjs run
 ```
 
-The Playwright spec is provided for a later end-to-end run against both running services: `cd frontend && node node_modules/@playwright/test/cli.js test`. Install Chromium with `node node_modules/@playwright/test/cli.js install chromium` first. `PLAYWRIGHT_BASE_URL` can override its default. Startup creates missing tables but does not migrate existing schema; preserve data and plan migrations before evolving it.
+The Playwright suite starts its own isolated seeded backend and frontend: `cd frontend && node node_modules/@playwright/test/cli.js test`. Install Chromium with `node node_modules/@playwright/test/cli.js install chromium` first. Set `E2E_PYTHON` to the absolute Python executable if not using the documented venv; see `frontend/e2e/README.md` for ports and isolation limitations. The assistant accepts questions and, for complete changes, explicit semicolon-delimited fields; it asks for missing information rather than guessing. Startup creates missing tables but does not migrate existing schema; preserve data and plan migrations before evolving it.

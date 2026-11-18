@@ -119,3 +119,59 @@ def test_services_recheck_admin_and_rollback(workspace):
             users.reset_password(db, analyst, uid)
         with pytest.raises(HTTPException):
             users.list_users(db,'',1,20,'id; DROP TABLE users','asc')
+
+
+@pytest.mark.parametrize('payload', ['<script>alert(1)</script>', '<img src=x onerror=alert(1)>', '&lt;script&gt;alert(1)&lt;/script&gt;'])
+@pytest.mark.parametrize('operation', ['create', 'update'])
+def test_markup_in_user_name_is_rejected_without_changes(workspace, payload, operation):
+    client, path = workspace
+    admin(client)
+    tables = ('users', 'user_preferences', 'sessions', 'audit_log')
+    with connect(path) as db:
+        before = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in tables}
+    if operation == 'create':
+        response = client.post('/api/v1/users', json={'display_name': payload, 'email': 'markup@example.com', 'role': 'analyst'})
+    else:
+        response = client.put('/api/v1/users/1', json={'display_name': payload, 'role': 'analyst', 'status': 'active'})
+    assert response.status_code == 422
+    with connect(path) as db:
+        after = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in tables}
+    assert after == before
+
+
+def test_user_name_preserves_legitimate_text(workspace):
+    client, path = workspace
+    admin(client)
+    name = "O'Brien & Sons < 5"
+    response = client.post('/api/v1/users', json={'display_name': name, 'email': 'plain@example.com', 'role': 'analyst'})
+    assert response.status_code == 201 and response.json()['user']['display_name'] == name
+    uid = response.json()['user']['id']
+    with connect(path) as db:
+        assert db.execute('SELECT display_name FROM users WHERE id=?', (uid,)).fetchone()[0] == name
+
+
+@pytest.mark.parametrize('operation,body', [
+    ('create', {'email': 'valid@example.com', 'role': 'analyst'}),
+    ('create', {'display_name': 'Valid', 'role': 'analyst'}),
+    ('create', {'display_name': 'Valid', 'email': 'valid@example.com'}),
+    ('create', {'display_name': 1, 'email': 'valid@example.com', 'role': 'analyst'}),
+    ('create', {'display_name': 'x' * 101, 'email': 'valid@example.com', 'role': 'analyst'}),
+    ('create', {'display_name': 'Valid', 'email': 'x' * 250 + '@a.com', 'role': 'analyst'}),
+    ('update', {'role': 'analyst', 'status': 'active'}),
+    ('update', {'display_name': 'Valid', 'status': 'active'}),
+    ('update', {'display_name': 'Valid', 'role': 'analyst'}),
+    ('update', {'display_name': [], 'role': 'analyst', 'status': 'active'}),
+    ('update', {'display_name': 'x' * 101, 'role': 'analyst', 'status': 'active'}),
+    ('update', {'display_name': 'Valid', 'role': 'analyst', 'status': False}),
+])
+def test_invalid_user_mutations_leave_account_and_related_state_unchanged(workspace, operation, body):
+    client, path = workspace
+    admin(client)
+    tables = ('users', 'user_preferences', 'sessions', 'audit_log')
+    with connect(path) as db:
+        before = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in tables}
+    response = client.post('/api/v1/users', json=body) if operation == 'create' else client.put('/api/v1/users/1', json=body)
+    assert response.status_code == 422
+    with connect(path) as db:
+        after = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in tables}
+    assert after == before

@@ -2,7 +2,7 @@
 import json
 import sqlite3
 from datetime import datetime, timezone
-from decimal import Decimal
+from decimal import Decimal, InvalidOperation
 from fastapi import HTTPException
 from app.core.security import verify_password
 from app.schemas.approvals import RequisitionInput, SignatureInput
@@ -64,8 +64,11 @@ def submit(db: sqlite3.Connection, user: sqlite3.Row, record_id: int) -> dict:
         if row['status'] != 'draft':
             raise HTTPException(409, 'Only drafts can be submitted.')
         lines = [dict(line) for line in db.execute('SELECT description,quantity,unit_price FROM requisition_lines WHERE requisition_id=?', (record_id,))]
-        total = sum((Decimal(line['unit_price']) * line['quantity'] for line in lines), Decimal('0'))
-        if not lines or total <= 0 or any(line['quantity'] <= 0 or Decimal(line['unit_price']) <= 0 for line in lines):
+        try:
+            total = sum((Decimal(line['unit_price']) * line['quantity'] for line in lines), Decimal('0'))
+        except (InvalidOperation, TypeError, ValueError) as exc:
+            raise HTTPException(422, 'Amount must be greater than 0.') from exc
+        if not lines or not total.is_finite() or total <= 0 or any(line['quantity'] <= 0 or not Decimal(line['unit_price']).is_finite() or Decimal(line['unit_price']) <= 0 for line in lines):
             raise HTTPException(422, 'Amount must be greater than 0.')
         supplier = db.execute('SELECT name FROM suppliers WHERE id=?', (row['supplier_id'],)).fetchone()
         proposed = {'code': row['code'], 'title': row['title'], 'supplier': supplier['name'], 'total_amount_usd': str(total), 'reason': row['reason'], 'lines': lines}
@@ -79,6 +82,15 @@ def submit(db: sqlite3.Connection, user: sqlite3.Row, record_id: int) -> dict:
     except Exception:
         db.rollback()
         raise
+
+
+def pending_count(db: sqlite3.Connection, user: sqlite3.Row) -> int:
+    """Count this reviewer's actionable approvals without exposing other queues."""
+    statuses = {'procurement_manager': 'pending', 'compliance': 'pending_second'}
+    status = statuses.get(user['role'])
+    if status is None:
+        raise HTTPException(403, 'Permission denied.')
+    return db.execute('SELECT count(*) FROM approvals a WHERE a.status=? AND a.requester_id<>? AND NOT EXISTS (SELECT 1 FROM signatures s WHERE s.approval_id=a.id AND s.signer_id=?)', (status, user['id'], user['id'])).fetchone()[0]
 
 
 def list_approvals(db: sqlite3.Connection, page: int, page_size: int, sort: str, order: str) -> dict:

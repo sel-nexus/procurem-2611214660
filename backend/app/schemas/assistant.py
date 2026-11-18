@@ -1,7 +1,7 @@
 """Define validated conversation requests and structured approval proposals."""
 from typing import Annotated, Literal
-from pydantic import BaseModel, ConfigDict, Field, StringConstraints
-from app.schemas.approvals import RequisitionInput
+from pydantic import AfterValidator, BaseModel, ConfigDict, Field, StringConstraints
+from app.schemas.approvals import RequisitionInput, reject_markup
 from app.schemas.changes import SupplierEdit, SourcingCreate, AwardInput
 
 
@@ -41,6 +41,6 @@ Action = Annotated[RequisitionAction | SupplierAction | SourcingAction | AwardAc
 class MessageInput(BaseModel):
     """Accept a bounded question and an optional complete proposal."""
     model_config = ConfigDict(extra='forbid')
-    message: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=4000)]
+    message: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=4000), AfterValidator(reject_markup)]
     conversation_id: int | None = Field(default=None, gt=0, strict=True)
     action: Action | None = None

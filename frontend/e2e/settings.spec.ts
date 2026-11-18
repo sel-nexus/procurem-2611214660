@@ -1,0 +1,70 @@
+import { test, expect, signIn } from './fixtures';
+
+test('analyst saves a fiscal year and sees restricted navigation', async ({ page }) => {
+  await page.goto('/');
+  await signIn(page, 'analyst@procurem.demo');
+  await page.getByRole('link',{name:'Settings',exact:true}).click();
+  await expect(page).toHaveURL(/\/settings$/);
+  await expect(page.getByRole('heading',{name:'Settings',exact:true})).toBeVisible();
+  await expect(page.getByText('Priya Shah').first()).toBeVisible();
+  await expect(page.getByLabel('Preferred fiscal year')).toHaveValue('2026');
+  await page.getByLabel('Preferred fiscal year').fill('2025');
+  await page.getByRole('button',{name:'Save fiscal year'}).click();
+  await expect(page.getByText('Fiscal year saved.')).toBeVisible();
+  await page.reload();
+  await expect(page.getByLabel('Preferred fiscal year')).toHaveValue('2025');
+  await page.getByLabel('Preferred fiscal year').fill('2026');
+  await page.getByRole('button',{name:'Save fiscal year'}).click();
+  await expect(page.getByText('Fiscal year saved.')).toBeVisible();
+  await expect(page.getByRole('link',{name:'Audit log'})).toHaveCount(0);
+  await expect(page.getByRole('link',{name:'Roles',exact:true})).toHaveCount(0);
+});
+
+test('remove a saved supplier and cancel or confirm clearing conversation history', async ({page, context}) => {
+  await page.goto('/');
+  await signIn(page, 'analyst@procurem.demo');
+  const question = `show suppliers ${Date.now()}`;
+  await page.getByRole('link',{name:'Assistant',exact:true}).click();
+  await page.getByLabel('Ask the assistant').fill(question);
+  const sent = page.waitForResponse(r => new URL(r.url()).pathname === '/api/v1/assistant/messages' && r.request().method() === 'POST');
+  await page.getByLabel('Ask the assistant').press('Enter');
+  const response = await sent;
+  expect(response.status()).toBe(200);
+  const conversation = await response.json();
+  await expect(page.getByRole('button',{name:question,exact:true})).toBeVisible();
+
+  const settingsResponse = page.waitForResponse(r => new URL(r.url()).pathname === '/api/v1/settings' && r.request().method() === 'GET');
+  await page.getByRole('link',{name:'Settings',exact:true}).click();
+  const settings = await settingsResponse;
+  expect(settings.status()).toBe(200);
+  const saved = (await settings.json()).frequent_suppliers;
+  expect(saved.length).toBeGreaterThan(0);
+  const supplier = saved[0];
+  const removed = page.waitForResponse(r => new URL(r.url()).pathname === `/api/v1/settings/frequent-suppliers/${supplier.id}` && r.request().method() === 'DELETE');
+  await page.getByRole('button',{name:`Remove ${supplier.name}`}).click();
+  expect((await removed).status()).toBe(204);
+  await expect(page.getByRole('status')).toHaveText('Saved supplier removed.');
+  await expect(page.getByRole('button',{name:`Remove ${supplier.name}`})).toHaveCount(0);
+  await page.reload();
+  await expect(page.getByRole('button',{name:`Remove ${supplier.name}`})).toHaveCount(0);
+  const afterRemove = await context.request.get('/api/v1/settings');
+  expect(afterRemove.status()).toBe(200);
+  expect((await afterRemove.json()).frequent_suppliers.some((s: {id:number}) => s.id === supplier.id)).toBe(false);
+
+  page.once('dialog', dialog => dialog.dismiss());
+  await page.getByRole('button',{name:'Clear conversation history'}).click();
+  const retained = await context.request.get(`/api/v1/assistant/conversations/${conversation.conversation_id}`);
+  expect(retained.status()).toBe(200);
+  expect((await retained.json()).messages[0].content).toBe(question);
+  page.once('dialog', dialog => dialog.accept());
+  const cleared = page.waitForResponse(r => new URL(r.url()).pathname === '/api/v1/settings/conversations' && r.request().method() === 'DELETE');
+  await page.getByRole('button',{name:'Clear conversation history'}).click();
+  expect((await cleared).status()).toBe(204);
+  await expect(page.getByRole('status')).toHaveText('Conversation history cleared.');
+  const conversations = await context.request.get('/api/v1/assistant/conversations?page_size=100');
+  expect(conversations.status()).toBe(200);
+  expect((await conversations.json()).items).toEqual([]);
+  await page.getByRole('link',{name:'Assistant',exact:true}).click();
+  await expect(page.getByRole('button',{name:question,exact:true})).toHaveCount(0);
+  await expect(page.getByText('Ask about your procurement records. Answers use local mock data.')).toBeVisible();
+});

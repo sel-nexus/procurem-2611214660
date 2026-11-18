@@ -12,7 +12,7 @@ Db = Annotated[sqlite3.Connection, Depends(get_db)]
 Admin = Annotated[sqlite3.Row, Depends(require_roles('admin'))]
 
 @router.get('', response_model=UserPage)
-def list_accounts(db: Db, actor: Admin, search: str = Query('', max_length=100), page: int = Query(1, ge=1), page_size: int = Query(20, ge=1, le=100), sort: Literal['display_name', 'email', 'role', 'status'] = 'display_name', order: Literal['asc', 'desc'] = 'asc') -> dict:
+def list_accounts(db: Db, actor: Admin, search: str = Query('', max_length=100), page: int = Query(1, ge=1, le=2147483647), page_size: int = Query(20, ge=1, le=100), sort: Literal['display_name', 'email', 'role', 'status'] = 'display_name', order: Literal['asc', 'desc'] = 'asc') -> dict:
     """List a searchable page of accounts."""
     return users.list_users(db, search, page, page_size, sort, order)
 

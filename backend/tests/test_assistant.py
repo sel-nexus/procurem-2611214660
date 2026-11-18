@@ -34,17 +34,23 @@ def test_overdue_csv_and_persistence(workspace):
     client,path = workspace
     assert send(client,'orders').status_code == 401
     login(client,'analyst')
-    result = send(client,'which purchase orders are overdue').json()
+    response = send(client,'which purchase orders are overdue')
+    assert response.status_code == 200
+    result = response.json()
     section = result['answer']['sections'][0]
     assert section['table'] == 'purchase_orders' and section['rows']
     assert all(row['status'] == 'overdue' for row in section['rows'])
     assert {x['code'] for x in section['citations']} == {x['code'] for x in section['rows']}
     assert section['source'] == 'Mock · Oracle' and section['freshness'] == 'Real-time'
     url = f"/api/v1/assistant/conversations/{result['conversation_id']}/messages/{result['message_id']}/csv"
-    exported = list(csv.DictReader(io.StringIO(client.get(url).text)))
+    csv_response = client.get(url)
+    assert csv_response.status_code == 200
+    assert csv_response.headers['content-type'].startswith('text/csv')
+    exported = list(csv.DictReader(io.StringIO(csv_response.text)))
     assert {x['code'] for x in exported} == {x['code'] for x in section['rows']}
     assert all(x['status'] == 'overdue' for x in exported)
-    assert client.get(f"/api/v1/assistant/conversations/{result['conversation_id']}").json()['messages'][1]['answer'] == result['answer']
+    history = client.get(f"/api/v1/assistant/conversations/{result['conversation_id']}")
+    assert history.status_code == 200 and history.json()['messages'][1]['answer'] == result['answer']
     with connect(path) as db:
         assert db.execute('SELECT count(*) FROM messages').fetchone()[0] == 2
         assert db.execute("SELECT count(*) FROM audit_log WHERE action='query'").fetchone()[0] == 1
@@ -53,7 +59,9 @@ def test_overdue_csv_and_persistence(workspace):
 def test_multi_intent_followup_clarification_and_no_match(workspace):
     client,path = workspace
     login(client,'analyst')
-    result = send(client,'Thermo Fisher open orders and spend').json()
+    response = send(client,'Thermo Fisher open orders and spend')
+    assert response.status_code == 200
+    result = response.json()
     sections = result['answer']['sections']
     assert [s['table'] for s in sections] == ['suppliers','purchase_orders','spend_monthly']
     assert sections[0]['rows'][0]['name'] == 'Thermo Fisher'
@@ -70,7 +78,10 @@ def test_multi_intent_followup_clarification_and_no_match(workspace):
     unknown = send(client,'Neverland Industries open orders and spend').json()['answer']
     assert 'No matching supplier' in unknown['text'] and not unknown['sections']
     csv_url = f"/api/v1/assistant/conversations/{cid}/messages/{result['message_id']}/csv"
-    exported = list(csv.DictReader(io.StringIO(client.get(csv_url).text)))
+    csv_response = client.get(csv_url)
+    assert csv_response.status_code == 200
+    assert csv_response.headers['content-type'].startswith('text/csv')
+    exported = list(csv.DictReader(io.StringIO(csv_response.text)))
     assert {row['section'] for row in exported} == {section['table'] for section in sections if section['rows']}
     assert len(exported) == sum(len(section['rows']) for section in sections)
     assert not send(client,'suppliers catalog orders invoices').json()['answer']['sections']
@@ -142,3 +153,21 @@ def test_malicious_input_not_executed_and_validation(workspace):
     assert client.get('/api/v1/assistant/conversations?page_size=101').status_code == 422
     with connect(path) as db:
         assert db.execute('SELECT count(*) FROM suppliers').fetchone()[0] >= 12
+
+
+@pytest.mark.parametrize('body', [
+    {}, {'message': None}, {'message': []}, {'message': 'x' * 4001},
+    {'message': 'orders', 'conversation_id': '1'},
+    {'message': 'orders', 'action': {'kind': 'requisition', 'details': {}}},
+])
+def test_invalid_assistant_requests_do_not_persist_anything(workspace, body):
+    client, path = workspace
+    login(client, 'analyst')
+    tables = ('conversations', 'messages', 'requisitions', 'requisition_lines', 'approvals', 'notifications', 'audit_log')
+    with connect(path) as db:
+        before = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in tables}
+    response = client.post('/api/v1/assistant/messages', json=body)
+    assert response.status_code == 422
+    with connect(path) as db:
+        after = {table: [tuple(row) for row in db.execute(f'SELECT * FROM {table} ORDER BY rowid')] for table in tables}
+    assert after == before

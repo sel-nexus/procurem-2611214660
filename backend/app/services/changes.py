@@ -28,10 +28,13 @@ def insert_approval(db: sqlite3.Connection, user: sqlite3.Row, kind: str, table:
     return approval_id
 
 
-def supplier_edit(db: sqlite3.Connection, user: sqlite3.Row, subject: int, body: SupplierEdit) -> dict:
-    """Record a supplier diff without changing the supplier."""
+def supplier_edit(db: sqlite3.Connection, user: sqlite3.Row, subject: int, body: SupplierEdit, *, manage_transaction: bool = True) -> dict:
+    """Record a supplier diff, optionally using the caller's transaction."""
     authorize(user)
-    db.execute('BEGIN IMMEDIATE')
+    if manage_transaction:
+        db.execute('BEGIN IMMEDIATE')
+    elif not db.in_transaction:
+        raise RuntimeError('A caller-managed transaction is required.')
     try:
         row = db.execute('SELECT * FROM suppliers WHERE id=?', (subject,)).fetchone()
         if not row:
@@ -42,34 +45,44 @@ def supplier_edit(db: sqlite3.Connection, user: sqlite3.Row, subject: int, body:
         if current == proposed:
             raise HTTPException(422, 'The proposal must change at least one field.')
         aid = insert_approval(db,user,'supplier_edit','suppliers',subject,f"Supplier edit: {row['name']}",current,proposed,None,'high' if proposed.get('risk') == 'high' else 'low','propose_supplier_edit')
-        db.commit()
+        if manage_transaction:
+            db.commit()
         return {'id':subject,'approval_id':aid,'status':'pending'}
     except Exception:
-        db.rollback()
+        if manage_transaction:
+            db.rollback()
         raise
 
 
-def sourcing_create(db: sqlite3.Connection, user: sqlite3.Row, body: SourcingCreate) -> dict:
-    """Create a pending event and its approval in one transaction."""
+def sourcing_create(db: sqlite3.Connection, user: sqlite3.Row, body: SourcingCreate, *, manage_transaction: bool = True) -> dict:
+    """Create a pending event, optionally using the caller's transaction."""
     authorize(user)
-    db.execute('BEGIN IMMEDIATE')
+    if manage_transaction:
+        db.execute('BEGIN IMMEDIATE')
+    elif not db.in_transaction:
+        raise RuntimeError('A caller-managed transaction is required.')
     try:
         code = db.execute("SELECT COALESCE(MAX(CAST(SUBSTR(code,4) AS INTEGER)),3000)+1 FROM sourcing_events WHERE code GLOB 'SE-[0-9]*'").fetchone()[0]
         cursor = db.execute('INSERT INTO sourcing_events (code,title,event_type,status,end_date,estimated_value_usd) VALUES (?,?,?,?,?,?)', (f'SE-{code}',body.title,body.event_type,'pending_approval',body.end_date.isoformat(),str(body.estimated_value_usd)))
         subject = cursor.lastrowid
         proposed = {'code':f'SE-{code}','title':body.title,'event_type':body.event_type,'end_date':body.end_date.isoformat(),'estimated_value_usd':str(body.estimated_value_usd)}
         aid = insert_approval(db,user,'sourcing_create','sourcing_events',subject,body.title,{},proposed,body.estimated_value_usd,'high' if body.estimated_value_usd >= Decimal('10000') else 'low','create_sourcing_event')
-        db.commit()
+        if manage_transaction:
+            db.commit()
         return {'id':subject,'approval_id':aid,'status':'pending_approval'}
     except Exception:
-        db.rollback()
+        if manage_transaction:
+            db.rollback()
         raise
 
 
-def award(db: sqlite3.Connection, user: sqlite3.Row, subject: int, body: AwardInput) -> dict:
-    """Request an award for a bid belonging to an active event."""
+def award(db: sqlite3.Connection, user: sqlite3.Row, subject: int, body: AwardInput, *, manage_transaction: bool = True) -> dict:
+    """Request an award, optionally using the caller's transaction."""
     authorize(user)
-    db.execute('BEGIN IMMEDIATE')
+    if manage_transaction:
+        db.execute('BEGIN IMMEDIATE')
+    elif not db.in_transaction:
+        raise RuntimeError('A caller-managed transaction is required.')
     try:
         event = db.execute('SELECT * FROM sourcing_events WHERE id=?', (subject,)).fetchone()
         if not event:
@@ -83,8 +96,10 @@ def award(db: sqlite3.Connection, user: sqlite3.Row, subject: int, body: AwardIn
         amount = Decimal(bid['amount_usd'])
         proposed = {'bid_id':bid['id'],'winning_supplier_id':bid['supplier_id'],'status':'awarded','amount_usd':str(amount)}
         aid = insert_approval(db,user,'sourcing_award','sourcing_events',subject,f"Award: {event['title']}",{'status':event['status'],'winning_supplier_id':event['winning_supplier_id']},proposed,amount,'high' if amount >= Decimal('10000') else 'low','request_award')
-        db.commit()
+        if manage_transaction:
+            db.commit()
         return {'id':subject,'approval_id':aid,'status':'pending'}
     except Exception:
-        db.rollback()
+        if manage_transaction:
+            db.rollback()
         raise

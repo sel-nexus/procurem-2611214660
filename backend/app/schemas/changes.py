@@ -1,11 +1,11 @@
 """Validate supplier and sourcing proposals at the API boundary."""
 from datetime import date
 from decimal import Decimal
-from typing import Annotated, Literal
-from pydantic import BaseModel, ConfigDict, Field, StringConstraints, field_validator, model_validator
+from typing import Literal
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 import re
 
-Text = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=300)]
+from app.schemas.approvals import Text
 
 
 class SupplierEdit(BaseModel):

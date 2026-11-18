@@ -3,6 +3,8 @@ import re
 from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
+from app.schemas.approvals import reject_markup
+
 Role = Literal['analyst', 'category_manager', 'procurement_manager', 'sourcing_specialist', 'finance_analyst', 'compliance', 'admin']
 Status = Literal['active', 'inactive']
 
@@ -12,6 +14,12 @@ class CreateUser(BaseModel):
     display_name: str = Field(min_length=1, max_length=100)
     email: str = Field(min_length=3, max_length=254)
     role: Role
+
+    @field_validator('display_name')
+    @classmethod
+    def valid_display_name(cls, value: str) -> str:
+        """Reject markup in names without changing ordinary text."""
+        return reject_markup(value)
 
     @field_validator('email')
     @classmethod
@@ -27,6 +35,12 @@ class UpdateUser(BaseModel):
     display_name: str = Field(min_length=1, max_length=100)
     role: Role
     status: Status
+
+    @field_validator('display_name')
+    @classmethod
+    def valid_display_name(cls, value: str) -> str:
+        """Reject markup in names without changing ordinary text."""
+        return reject_markup(value)
 
 class UserRecord(BaseModel):
     """Expose account data without its password hash."""

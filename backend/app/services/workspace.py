@@ -53,10 +53,14 @@ def clear_history(db: sqlite3.Connection, user_id: int) -> None:
         db.execute('DELETE FROM conversations WHERE user_id=?', (user_id,))
 
 
-def notifications(db: sqlite3.Connection, user_id: int, page: int, page_size: int) -> dict:
+def notifications(db: sqlite3.Connection, user_id: int, page: int, page_size: int, sort: str = 'created_at', order: str = 'desc') -> dict:
     """Return a bounded page of the caller's notifications."""
+    columns = {'id': 'id', 'title': 'title COLLATE NOCASE', 'created_at': 'created_at', 'is_read': 'is_read'}
+    directions = {'asc': 'ASC', 'desc': 'DESC'}
+    if sort not in columns or order not in directions:
+        raise HTTPException(422, 'Invalid sort or order.')
     total = db.execute('SELECT count(*) FROM notifications WHERE user_id=?', (user_id,)).fetchone()[0]
-    rows = db.execute('SELECT id,title,body,created_at,is_read,link FROM notifications WHERE user_id=? ORDER BY created_at DESC,id DESC LIMIT ? OFFSET ?', (user_id, page_size, (page-1)*page_size)).fetchall()
+    rows = db.execute(f'SELECT id,title,body,created_at,is_read,link FROM notifications WHERE user_id=? ORDER BY {columns[sort]} {directions[order]}, id DESC LIMIT ? OFFSET ?', (user_id, page_size, (page-1)*page_size)).fetchall()
     return {'items': [dict(row) for row in rows], 'total': total, 'page': page, 'page_size': page_size}
 
 
@@ -110,8 +114,12 @@ def audit_csv(items: list[dict]) -> str:
     return output.getvalue()
 
 
-def directory(db: sqlite3.Connection, page: int, page_size: int) -> dict:
+def directory(db: sqlite3.Connection, page: int, page_size: int, sort: str = 'display_name', order: str = 'asc') -> dict:
     """Return a bounded directory without credential fields."""
+    columns = {'id': 'id', 'display_name': 'display_name COLLATE NOCASE', 'email': 'email COLLATE NOCASE', 'role': 'role COLLATE NOCASE', 'status': 'status COLLATE NOCASE'}
+    directions = {'asc': 'ASC', 'desc': 'DESC'}
+    if sort not in columns or order not in directions:
+        raise HTTPException(422, 'Invalid sort or order.')
     total = db.execute('SELECT count(*) FROM users').fetchone()[0]
-    rows = db.execute('SELECT id,display_name,email,role,status FROM users ORDER BY display_name COLLATE NOCASE,id LIMIT ? OFFSET ?', (page_size, (page-1)*page_size)).fetchall()
+    rows = db.execute(f'SELECT id,display_name,email,role,status FROM users ORDER BY {columns[sort]} {directions[order]}, id ASC LIMIT ? OFFSET ?', (page_size, (page-1)*page_size)).fetchall()
     return {'items': [dict(row) for row in rows], 'total': total, 'page': page, 'page_size': page_size, 'matrix': matrix()}

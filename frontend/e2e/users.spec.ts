@@ -1,9 +1,6 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, watchPage } from './fixtures';
 
-test('administrator creates, signs in and deactivates an account', async ({page, browser}) => {
-  const errors:string[] = [];
-  page.on('pageerror', error => errors.push(error.message));
-  page.on('console', message => {if (message.type() === 'error') errors.push(message.text());});
+test('administrator creates, signs in and deactivates an account', async ({page, browser, browserErrors}) => {
   await page.goto('/');
   await page.getByLabel('Email').fill('admin@procurem.demo');
   await page.getByLabel('Password').fill('Admin@5678');
@@ -11,15 +8,16 @@ test('administrator creates, signs in and deactivates an account', async ({page,
   await page.getByRole('link',{name:'Users',exact:true}).click();
   const email = `user-${Date.now()}@example.com`;
   await page.getByLabel('Display name').fill('Browser Test User');
-  await page.getByLabel('Email').fill(email);
+  await page.getByLabel('Email', {exact:true}).fill(email);
   await page.getByLabel('Role').selectOption('analyst');
   await page.getByRole('button',{name:'Create user'}).click();
   const dialog = page.getByRole('dialog',{name:'Temporary password'});
   await expect(dialog.getByText('This password is shown once.')).toBeVisible();
   const password = await dialog.locator('p.break-all').innerText();
   await dialog.getByRole('button',{name:'Close'}).click();
-  const context = await browser.newContext();
+  const context = await browser.newContext({baseURL: 'http://127.0.0.1:13100'});
   const newPage = await context.newPage();
+  watchPage(newPage, browserErrors);
   await newPage.goto('/');
   await newPage.getByLabel('Email').fill(email);
   await newPage.getByLabel('Password').fill(password);
@@ -28,14 +26,13 @@ test('administrator creates, signs in and deactivates an account', async ({page,
   await expect(newPage.getByRole('link',{name:'Users',exact:true})).toHaveCount(0);
   await page.getByLabel('Search by name or email').fill(email);
   await page.getByRole('link',{name:'Browser Test User'}).click();
+  await newPage.getByRole('button',{name:'Sign out'}).click();
   await page.getByLabel('Status').selectOption('inactive');
   await page.getByRole('button',{name:'Save'}).click();
   await expect(page.getByText('User saved.')).toBeVisible();
-  await newPage.goto('/');
   await newPage.getByLabel('Email').fill(email);
   await newPage.getByLabel('Password').fill(password);
   await newPage.getByRole('button',{name:'Sign in'}).click();
   await expect(newPage.getByText('This account is inactive.')).toBeVisible();
   await context.close();
-  expect(errors).toEqual([]);
 });

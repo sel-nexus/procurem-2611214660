@@ -4135,11 +4135,20 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_tests_test_users_test_user_password_reset_without_login_returns_401",
+      "label": "test_user_password_reset_without_login_returns_401()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_users.py",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_tests_test_users_test_services_recheck_admin_and_rollback",
       "label": "test_services_recheck_admin_and_rollback()",
       "file_type": "code",
       "source_file": "backend/tests/test_users.py",
-      "source_location": "L100",
+      "source_location": "L106",
       "_callable": true,
       "_origin": "ast"
     },
@@ -4173,6 +4182,14 @@
       "file_type": "rationale",
       "source_file": "backend/tests/test_users.py",
       "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_users_rationale_101",
+      "label": "Do not allow an unauthenticated caller to reset a password.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_users.py",
+      "source_location": "L101",
       "_origin": "ast"
     },
     {
@@ -15046,11 +15063,21 @@
     },
     {
       "source": "backend_tests_test_users",
-      "target": "backend_tests_test_users_test_services_recheck_admin_and_rollback",
+      "target": "backend_tests_test_users_test_user_password_reset_without_login_returns_401",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_users.py",
       "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_users",
+      "target": "backend_tests_test_users_test_services_recheck_admin_and_rollback",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_users.py",
+      "source_location": "L106",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15168,6 +15195,16 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_users.py",
       "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_users_rationale_101",
+      "target": "backend_tests_test_users_test_user_password_reset_without_login_returns_401",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_users.py",
+      "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21563,7 +21600,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_users.py",
-      "source_location": "L102",
+      "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21574,7 +21611,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_users.py",
-      "source_location": "L105",
+      "source_location": "L111",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -21585,7 +21622,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_users.py",
-      "source_location": "L110",
+      "source_location": "L116",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -22003,7 +22040,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/tests/test_users.py",
-      "source_location": "L105",
+      "source_location": "L111",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -22014,7 +22051,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/tests/test_users.py",
-      "source_location": "L110",
+      "source_location": "L116",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -23488,6 +23525,188 @@
       "_tgt": "backend_app_routers_records_py_user"
     },
     {
+      "source": "backend_app_routers_users_py_get",
+      "target": "backend_app_routers_users_get_account",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_get_account",
+      "_tgt": "backend_app_routers_users_py_get"
+    },
+    {
+      "source": "backend_app_routers_users_py_get",
+      "target": "backend_app_routers_users_list_accounts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_list_accounts",
+      "_tgt": "backend_app_routers_users_py_get"
+    },
+    {
+      "source": "backend_app_routers_users_py_db",
+      "target": "backend_app_routers_users_create_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_create_account",
+      "_tgt": "backend_app_routers_users_py_db"
+    },
+    {
+      "source": "backend_app_routers_users_py_db",
+      "target": "backend_app_routers_users_get_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_get_account",
+      "_tgt": "backend_app_routers_users_py_db"
+    },
+    {
+      "source": "backend_app_routers_users_py_db",
+      "target": "backend_app_routers_users_reset_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_reset_account",
+      "_tgt": "backend_app_routers_users_py_db"
+    },
+    {
+      "source": "backend_app_routers_users_py_db",
+      "target": "backend_app_routers_users_update_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_update_account",
+      "_tgt": "backend_app_routers_users_py_db"
+    },
+    {
+      "source": "admin",
+      "target": "backend_app_routers_users_create_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_create_account",
+      "_tgt": "admin"
+    },
+    {
+      "source": "admin",
+      "target": "backend_app_routers_users_get_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_get_account",
+      "_tgt": "admin"
+    },
+    {
+      "source": "admin",
+      "target": "backend_app_routers_users_reset_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_reset_account",
+      "_tgt": "admin"
+    },
+    {
+      "source": "admin",
+      "target": "backend_app_routers_users_update_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_update_account",
+      "_tgt": "admin"
+    },
+    {
+      "source": "backend_app_routers_users_py_post",
+      "target": "backend_app_routers_users_create_account",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_create_account",
+      "_tgt": "backend_app_routers_users_py_post"
+    },
+    {
+      "source": "backend_app_routers_users_py_post",
+      "target": "backend_app_routers_users_reset_account",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_reset_account",
+      "_tgt": "backend_app_routers_users_py_post"
+    },
+    {
+      "source": "backend_app_routers_users_py_response",
+      "target": "backend_app_routers_users_reset_account",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_reset_account",
+      "_tgt": "backend_app_routers_users_py_response"
+    },
+    {
+      "source": "backend_app_routers_users_py_put",
+      "target": "backend_app_routers_users_update_account",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/users.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_users_update_account",
+      "_tgt": "backend_app_routers_users_py_put"
+    },
+    {
       "source": "backend_app_routers_workspace_yearinput",
       "target": "backend_app_routers_workspace_put_year",
       "relation": "references",
@@ -23575,8 +23794,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_app_routers_workspace_role_directory",
-      "_tgt": "backend_app_routers_workspace_py_get"
+      "_src": "backend_app_routers_workspace_py_get",
+      "_tgt": "backend_app_routers_workspace_role_directory"
     },
     {
       "source": "backend_app_routers_workspace_py_db",
@@ -23679,8 +23898,8 @@
       "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_workspace_read_notification",
-      "_tgt": "backend_app_routers_workspace_py_db"
+      "_src": "backend_app_routers_workspace_py_db",
+      "_tgt": "backend_app_routers_workspace_read_notification"
     },
     {
       "source": "backend_app_routers_workspace_py_db",
@@ -23692,8 +23911,8 @@
       "source_location": "L89",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_workspace_role_directory",
-      "_tgt": "backend_app_routers_workspace_py_db"
+      "_src": "backend_app_routers_workspace_py_db",
+      "_tgt": "backend_app_routers_workspace_role_directory"
     },
     {
       "source": "backend_app_routers_workspace_py_user",
@@ -23770,8 +23989,21 @@
       "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_workspace_read_notification",
-      "_tgt": "backend_app_routers_workspace_py_user"
+      "_src": "backend_app_routers_workspace_py_user",
+      "_tgt": "backend_app_routers_workspace_read_notification"
+    },
+    {
+      "source": "backend_app_routers_workspace_py_put",
+      "target": "backend_app_routers_workspace_put_year",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_workspace_put_year",
+      "_tgt": "backend_app_routers_workspace_py_put"
     },
     {
       "source": "backend_app_routers_workspace_py_response",
@@ -23848,8 +24080,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_app_routers_workspace_read_notification",
-      "_tgt": "backend_app_routers_workspace_py_post"
+      "_src": "backend_app_routers_workspace_py_post",
+      "_tgt": "backend_app_routers_workspace_read_notification"
     },
     {
       "source": "date",
@@ -23887,8 +24119,21 @@
       "source_location": "L82",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_workspace_export_audit",
-      "_tgt": "auditor"
+      "_src": "auditor",
+      "_tgt": "backend_app_routers_workspace_export_audit"
+    },
+    {
+      "source": "backend_app_schemas_changes_py_field_validator",
+      "target": "backend_app_schemas_changes_supplieredit_email_valid",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_schemas_changes_supplieredit_email_valid",
+      "_tgt": "backend_app_schemas_changes_py_field_validator"
     },
     {
       "source": "model_validator",
@@ -23902,6 +24147,19 @@
       "_origin": "ast",
       "_src": "backend_app_schemas_changes_supplieredit_nonempty",
       "_tgt": "model_validator"
+    },
+    {
+      "source": "backend_app_schemas_users_py_field_validator",
+      "target": "backend_app_schemas_users_createuser_valid_email",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/users.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_schemas_users_createuser_valid_email",
+      "_tgt": "backend_app_schemas_users_py_field_validator"
     },
     {
       "source": "backend_app_services_approvals_py_connection",
@@ -24261,7 +24519,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "_src": "backend_app_services_auth_current_user",
@@ -24274,7 +24532,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "_src": "backend_app_services_auth_logout",
@@ -24287,7 +24545,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "_src": "backend_app_services_auth_current_user",
@@ -24437,6 +24695,97 @@
       "_tgt": "backend_app_services_records_py_row"
     },
     {
+      "source": "backend_app_services_users_py_connection",
+      "target": "backend_app_services_users_audit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/users.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_users_audit",
+      "_tgt": "backend_app_services_users_py_connection"
+    },
+    {
+      "source": "backend_app_services_users_py_connection",
+      "target": "backend_app_services_users_begin_admin",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/users.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_users_begin_admin",
+      "_tgt": "backend_app_services_users_py_connection"
+    },
+    {
+      "source": "backend_app_services_users_py_connection",
+      "target": "backend_app_services_users_create_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/users.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_users_create_user",
+      "_tgt": "backend_app_services_users_py_connection"
+    },
+    {
+      "source": "backend_app_services_users_py_connection",
+      "target": "backend_app_services_users_list_users",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/users.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_users_list_users",
+      "_tgt": "backend_app_services_users_py_connection"
+    },
+    {
+      "source": "backend_app_services_users_py_connection",
+      "target": "backend_app_services_users_reset_password",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/users.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_users_reset_password",
+      "_tgt": "backend_app_services_users_py_connection"
+    },
+    {
+      "source": "backend_app_services_users_py_connection",
+      "target": "backend_app_services_users_update_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/users.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_users_update_user",
+      "_tgt": "backend_app_services_users_py_connection"
+    },
+    {
+      "source": "backend_app_services_users_py_row",
+      "target": "backend_app_services_users_audit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/users.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_users_audit",
+      "_tgt": "backend_app_services_users_py_row"
+    },
+    {
       "source": "backend_app_services_workspace_py_connection",
       "target": "backend_app_services_workspace_audit",
       "relation": "references",
@@ -24511,8 +24860,8 @@
       "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_workspace_remove_supplier",
-      "_tgt": "backend_app_services_workspace_py_connection"
+      "_src": "backend_app_services_workspace_py_connection",
+      "_tgt": "backend_app_services_workspace_remove_supplier"
     },
     {
       "source": "backend_app_services_workspace_py_connection",
@@ -24524,8 +24873,8 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_workspace_save_year",
-      "_tgt": "backend_app_services_workspace_py_connection"
+      "_src": "backend_app_services_workspace_py_connection",
+      "_tgt": "backend_app_services_workspace_save_year"
     },
     {
       "source": "backend_app_services_workspace_py_connection",
@@ -24537,8 +24886,8 @@
       "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_workspace_unread_count",
-      "_tgt": "backend_app_services_workspace_py_connection"
+      "_src": "backend_app_services_workspace_py_connection",
+      "_tgt": "backend_app_services_workspace_unread_count"
     },
     {
       "source": "backend_tests_test_approvals_py_fixture",
@@ -24619,6 +24968,19 @@
       "_tgt": "parametrize"
     },
     {
+      "source": "backend_tests_test_users_py_fixture",
+      "target": "backend_tests_test_users_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_users.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_users_workspace",
+      "_tgt": "backend_tests_test_users_py_fixture"
+    },
+    {
       "source": "backend_tests_test_workspace_py_fixture",
       "target": "backend_tests_test_workspace_workspace",
       "relation": "references",
@@ -24628,12 +24990,12 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_workspace_workspace",
-      "_tgt": "backend_tests_test_workspace_py_fixture"
+      "_src": "backend_tests_test_workspace_py_fixture",
+      "_tgt": "backend_tests_test_workspace_workspace"
     }
   ],
   "metadata": {
-    "built_at": "2026-11-18T12:43:24.071558+00:00",
+    "built_at": "2026-11-18T12:44:56.735869+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T011GSU2iRpR9000118112611214660\\developer",
     "force": true,

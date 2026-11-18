@@ -1,6 +1,6 @@
 """Expose authenticated assistant conversations and answer exports."""
 import sqlite3
-from typing import Annotated
+from typing import Annotated, Literal
 from fastapi import APIRouter, Depends, Query, Response
 from app.core.database import get_db
 from app.routers.auth import get_current_user
@@ -13,9 +13,9 @@ User = Annotated[sqlite3.Row, Depends(get_current_user)]
 
 
 @router.get('/conversations')
-def list_conversations(db: Db, user: User, page: int = Query(1, ge=1), page_size: int = Query(20, ge=1, le=100)) -> dict:
+def list_conversations(db: Db, user: User, page: int = Query(1, ge=1, le=2147483647), page_size: int = Query(20, ge=1, le=100), sort: Literal['id', 'title', 'created_at'] = 'id', order: Literal['asc', 'desc'] = 'desc') -> dict:
     """List the signed-in user's conversation titles."""
-    return assistant.conversations(db, user, page, page_size)
+    return assistant.conversations(db, user, page, page_size, sort, order)
 
 
 @router.get('/conversations/{conversation_id}')

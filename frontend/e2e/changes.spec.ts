@@ -1,20 +1,10 @@
-import { test, expect } from '@playwright/test';
-
-/** Authenticate using the visible demo form. */
-async function login(page: import('@playwright/test').Page, email: string) {
-  await page.goto('/');
-  await page.getByLabel('Email').fill(email);
-  await page.getByLabel('Password').fill('Demo@1234');
-  await page.getByRole('button',{name:'Sign in'}).click();
-  await expect(page).toHaveURL(/\/home/);
-}
+import { test, expect, signIn } from './fixtures';
 
 test('supplier edit waits for the manager and compliance signatures', async ({page}) => {
-  const errors: string[] = [];
-  page.on('pageerror', error => errors.push(error.message));
-  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-  await login(page,'category.mgr@procurem.demo');
-  await page.goto('/suppliers/1');
+  await page.goto('/');
+  await signIn(page,'category.mgr@procurem.demo');
+  await page.getByRole('link',{name:'Suppliers',exact:true}).click();
+  await page.getByRole('link',{name:'SUP-4001'}).click();
   await page.getByRole('button',{name:'Propose edit'}).click();
   await page.getByLabel('Risk').selectOption('high');
   await page.getByLabel('Contact name').fill(`Contact ${Date.now()}`);
@@ -24,8 +14,9 @@ test('supplier edit waits for the manager and compliance signatures', async ({pa
   const href = await approval.getAttribute('href');
   expect(href).toBeTruthy();
   await page.getByRole('button',{name:'Sign out'}).click();
-  await login(page,'proc.manager@procurem.demo');
-  await page.goto(href!);
+  await signIn(page,'proc.manager@procurem.demo');
+  await page.getByRole('link',{name:/^Approvals, \d+ pending$/}).click();
+  await page.locator(`a[href="${href}"]`).click();
   await expect(page.getByText('Waiting for signature')).toHaveCount(2);
   await page.getByRole('button',{name:'Approve'}).click();
   await page.getByLabel('Reason').fill('Reviewed and approved');
@@ -33,13 +24,13 @@ test('supplier edit waits for the manager and compliance signatures', async ({pa
   await page.getByRole('button',{name:'Sign',exact:true}).click();
   await expect(page.getByText('Waiting for signature')).toHaveCount(1);
   await page.getByRole('button',{name:'Sign out'}).click();
-  await login(page,'compliance@procurem.demo');
-  await page.goto(href!);
+  await signIn(page,'compliance@procurem.demo');
+  await page.getByRole('link',{name:/^Approvals, \d+ pending$/}).click();
+  await page.locator(`a[href="${href}"]`).click();
   await page.getByRole('button',{name:'Approve'}).click();
   await page.getByLabel('Reason').fill('Compliance reviewed');
   await page.getByLabel('Password').fill('Demo@1234');
   await page.getByRole('button',{name:'Sign',exact:true}).click();
   await expect(page.getByText('Compliance reviewed')).toBeVisible();
   await expect(page.getByRole('button',{name:'Approve'})).toHaveCount(0);
-  expect(errors).toEqual([]);
 });

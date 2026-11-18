@@ -48,9 +48,9 @@ def delete_history(db: Db, user: User) -> Response:
 
 
 @router.get('/notifications')
-def get_notifications(db: Db, user: User, page: int = Query(1, ge=1), page_size: int = Query(20, ge=1, le=100)) -> dict:
+def get_notifications(db: Db, user: User, page: int = Query(1, ge=1, le=2147483647), page_size: int = Query(20, ge=1, le=100), sort: Literal['id', 'title', 'created_at', 'is_read'] = 'created_at', order: Literal['asc', 'desc'] = 'desc') -> dict:
     """List the caller's notifications."""
-    return workspace.notifications(db, user['id'], page, page_size)
+    return workspace.notifications(db, user['id'], page, page_size, sort, order)
 
 
 @router.get('/notifications/unread-count')
@@ -73,7 +73,7 @@ def audit_params(user_id: int | None, action: str, from_date: date | None, to_da
 
 
 @router.get('/audit')
-def get_audit(db: Db, user: Auditor, page: int = Query(1, ge=1), page_size: int = Query(20, ge=1, le=100), user_id: int | None = Query(None, ge=1), action: str = Query('', max_length=100), from_date: date | None = None, to_date: date | None = None, sort: str = 'created_at', order: Literal['asc', 'desc'] = 'desc') -> dict:
+def get_audit(db: Db, user: Auditor, page: int = Query(1, ge=1, le=2147483647), page_size: int = Query(20, ge=1, le=100), user_id: int | None = Query(None, ge=1), action: str = Query('', max_length=100), from_date: date | None = None, to_date: date | None = None, sort: str = 'created_at', order: Literal['asc', 'desc'] = 'desc') -> dict:
     """Return a filtered page of immutable audit rows."""
     return workspace.audit(db, *audit_params(user_id, action, from_date, to_date), page, page_size, sort, order)
 
@@ -86,6 +86,6 @@ def export_audit(db: Db, user: Auditor, user_id: int | None = Query(None, ge=1),
 
 
 @router.get('/roles')
-def role_directory(db: Db, user: DirectoryUser, page: int = Query(1, ge=1), page_size: int = Query(20, ge=1, le=100)) -> dict:
+def role_directory(db: Db, user: DirectoryUser, page: int = Query(1, ge=1, le=2147483647), page_size: int = Query(20, ge=1, le=100), sort: Literal['id', 'display_name', 'email', 'role', 'status'] = 'display_name', order: Literal['asc', 'desc'] = 'asc') -> dict:
     """List users and their roles for authorized reviewers."""
-    return workspace.directory(db, page, page_size)
+    return workspace.directory(db, page, page_size, sort, order)

@@ -8,7 +8,8 @@ import re
 import sqlite3
 import time
 from fastapi import HTTPException
-from app.schemas.assistant import MessageInput
+from pydantic import ValidationError
+from app.schemas.assistant import MessageInput, RequisitionAction, SupplierAction, SourcingAction, AwardAction
 from app.services import approvals, changes, records
 
 INTENTS = {
@@ -25,6 +26,19 @@ INTENTS = {
 TABLES = {'suppliers':'suppliers','catalog':'catalog_items','purchase-orders':'purchase_orders','invoices':'invoices','contracts':'contracts','requisitions':'requisitions','sourcing':'sourcing_events','spend':'spend_monthly','knowledge':'knowledge_docs'}
 FOLLOWUPS = ['Show overdue purchase orders', 'Show spend']
 AREAS = ['Purchase orders', 'Invoices', 'Requisitions', 'Sourcing events', 'Spend']
+
+# Only an entire explicit single-line-item request in this form can write.
+NATURAL_REQUISITION = re.compile(
+    r'(?:please\s+)?(?:create|submit)\s+(?:a\s+)?requisition\s*:\s*'
+    r'supplier\s*:\s*(?P<supplier>[^;\n]+);\s*'
+    r'title\s*:\s*(?P<title>[^;\n]+);\s*'
+    r'(?:item|description)\s*:\s*(?P<description>[^;\n]+);\s*'
+    r'quantity\s*:\s*(?P<quantity>[0-9]{1,7});\s*'
+    r'unit\s+price\s*:\s*\$?(?P<price>[0-9]+(?:\.[0-9]{1,2})?);\s*'
+    r'reason\s*:\s*(?P<reason>[^;\n]+)', re.IGNORECASE)
+UNSAFE_REQUEST_WORDS = re.compile(
+    r"\b(?:create|submit|change|edit|update|propose|award|delete|insert|drop|alter|cancel|approve|reject|don't|do not|instead|unless|if)\b",
+    re.IGNORECASE)
 
 
 def owned(db: sqlite3.Connection, user: sqlite3.Row, conversation_id: int) -> sqlite3.Row:
@@ -56,10 +70,14 @@ def history(db: sqlite3.Connection, user: sqlite3.Row, conversation_id: int) -> 
     return {**conversation, 'messages': messages}
 
 
-def conversations(db: sqlite3.Connection, user: sqlite3.Row, page: int, page_size: int) -> dict:
-    """List only the caller's threads, newest first."""
+def conversations(db: sqlite3.Connection, user: sqlite3.Row, page: int, page_size: int, sort: str = 'id', order: str = 'desc') -> dict:
+    """List only the caller's threads in a stable, validated order."""
+    columns = {'id': 'id', 'title': 'title COLLATE NOCASE', 'created_at': 'created_at'}
+    directions = {'asc': 'ASC', 'desc': 'DESC'}
+    if sort not in columns or order not in directions:
+        raise HTTPException(422, 'Invalid sort or order.')
     total = db.execute('SELECT count(*) FROM conversations WHERE user_id=?', (user['id'],)).fetchone()[0]
-    rows = db.execute('SELECT id,title,created_at FROM conversations WHERE user_id=? ORDER BY id DESC LIMIT ? OFFSET ?', (user['id'], page_size, (page-1)*page_size))
+    rows = db.execute(f'SELECT id,title,created_at FROM conversations WHERE user_id=? ORDER BY {columns[sort]} {directions[order]}, id DESC LIMIT ? OFFSET ?', (user['id'], page_size, (page-1)*page_size))
     return {'items':[dict(row) for row in rows], 'total':total, 'page':page, 'page_size':page_size}
 
 
@@ -68,40 +86,103 @@ def clarification(text: str, areas: list[str] | None = None) -> dict:
     return {'text':text, 'sections':[], 'choices':areas or [], 'followups':FOLLOWUPS, 'supplier_code':None}
 
 
+def natural_requisition(db: sqlite3.Connection, message: str) -> RequisitionAction | None:
+    """Parse only a complete, unambiguous, explicitly delimited request."""
+    match = NATURAL_REQUISITION.fullmatch(message.strip())
+    if not match:
+        return None
+    values = {key: value.strip() for key, value in match.groupdict().items()}
+    if any(UNSAFE_REQUEST_WORDS.search(values[key]) for key in ('supplier', 'title', 'description', 'reason')):
+        return None
+    suppliers = db.execute('SELECT id FROM suppliers WHERE name=? COLLATE NOCASE OR code=? COLLATE NOCASE', (values['supplier'], values['supplier'])).fetchall()
+    if len(suppliers) != 1:
+        return None
+    try:
+        return RequisitionAction.model_validate({
+            'kind': 'requisition',
+            'details': {'supplier_id': suppliers[0]['id'], 'title': values['title'], 'reason': values['reason'],
+                        'lines': [{'description': values['description'], 'quantity': int(values['quantity']), 'unit_price': values['price']}]},
+        })
+    except ValidationError:
+        return None
+
+
+def natural_change(db: sqlite3.Connection, message: str) -> SupplierAction | SourcingAction | AwardAction | None:
+    """Parse only explicitly delimited changes with exact record references."""
+    parts = message.strip().split(';')
+    if len(parts) < 2 or any(not part.strip() or '\n' in part or '\r' in part for part in parts):
+        return None
+    head = parts[0].strip()
+    supplier = re.fullmatch(r'(?:please\s+)?(?:edit|update|change)\s+supplier\s+(.+)', head, re.IGNORECASE)
+    sourcing = re.fullmatch(r'(?:please\s+)?create\s+(?:a\s+)?sourcing\s+event', head, re.IGNORECASE)
+    award = re.fullmatch(r'(?:please\s+)?award\s+sourcing\s+event\s+(SE-[0-9]+)', head, re.IGNORECASE)
+    if not (supplier or sourcing or award):
+        return None
+    fields = {
+        'contact name': 'contact_name', 'contact email': 'contact_email', 'risk': 'risk', 'status': 'status',
+    } if supplier else {
+        'title': 'title', 'type': 'event_type', 'value': 'estimated_value_usd', 'end date': 'end_date',
+    } if sourcing else {'bid': 'bid_id'}
+    values = {}
+    for part in parts[1:]:
+        field = re.fullmatch(r'\s*([a-z ]+)\s*:\s*([^;\n]+?)\s*', part, re.IGNORECASE)
+        if not field:
+            return None
+        key = fields.get(field.group(1).strip().lower())
+        value = field.group(2).strip()
+        if not key or key in values or not value or UNSAFE_REQUEST_WORDS.search(value) or re.search(r'\b(?:and|or|when|maybe)\b', value, re.IGNORECASE):
+            return None
+        values[key] = value
+    try:
+        if supplier:
+            name = supplier.group(1).strip()
+            if UNSAFE_REQUEST_WORDS.search(name):
+                return None
+            rows = db.execute('SELECT id FROM suppliers WHERE name=? COLLATE NOCASE OR code=? COLLATE NOCASE', (name, name)).fetchall()
+            if len(rows) != 1:
+                return None
+            return SupplierAction.model_validate({'kind': 'supplier_edit', 'supplier_id': rows[0]['id'], 'details': values})
+        if sourcing:
+            return SourcingAction.model_validate({'kind': 'sourcing_create', 'details': values})
+        if not re.fullmatch(r'[0-9]{1,18}', values.get('bid_id', '')):
+            return None
+        rows = db.execute('SELECT id FROM sourcing_events WHERE code=? COLLATE NOCASE', (award.group(1),)).fetchall()
+        if len(rows) != 1:
+            return None
+        values['bid_id'] = int(values['bid_id'])
+        return AwardAction.model_validate({'kind': 'sourcing_award', 'event_id': rows[0]['id'], 'details': values})
+    except ValidationError:
+        return None
+
+
 def perform_action(db: sqlite3.Connection, user: sqlite3.Row, action) -> dict:
-    """Delegate complete proposals to existing role-gated approval services."""
+    """Create a proposal inside the assistant turn's transaction."""
     allowed = {'requisition': ('analyst',), 'supplier_edit': ('category_manager','sourcing_specialist'), 'sourcing_create': ('category_manager','sourcing_specialist'), 'sourcing_award': ('category_manager','sourcing_specialist')}
     if user['role'] not in allowed[action.kind]:
         return clarification('Your role is not permitted to start this request.')
     if action.kind == 'requisition':
         body = action.details
-        db.execute('BEGIN IMMEDIATE')
-        try:
-            supplier = db.execute('SELECT name FROM suppliers WHERE id=?', (body.supplier_id,)).fetchone()
-            if not supplier:
-                raise HTTPException(422, 'Supplier is required.')
-            total = sum((line.unit_price * line.quantity for line in body.lines), Decimal('0'))
-            number = db.execute("SELECT COALESCE(MAX(CAST(SUBSTR(code,5) AS INTEGER)),2000)+1 FROM requisitions WHERE code GLOB 'REQ-[0-9]*'").fetchone()[0]
-            code = f'REQ-{number}'
-            subject = db.execute('INSERT INTO requisitions (code,supplier_id,title,total_amount_usd,status,requester_id,reason,created_at) VALUES (?,?,?,?,?,?,?,?)', (code,body.supplier_id,body.title,str(total),'pending_approval',user['id'],body.reason,approvals.now())).lastrowid
-            lines = [{'description':line.description,'quantity':line.quantity,'unit_price':str(line.unit_price)} for line in body.lines]
-            db.executemany('INSERT INTO requisition_lines (requisition_id,description,quantity,unit_price) VALUES (?,?,?,?)', [(subject,line['description'],line['quantity'],line['unit_price']) for line in lines])
-            proposed = {'code':code,'title':body.title,'supplier':supplier['name'],'total_amount_usd':str(total),'reason':body.reason,'lines':lines}
-            aid = db.execute('INSERT INTO approvals (approval_type,title,subject_table,subject_id,current_json,proposed_json,amount_usd,risk,status,requester_id,reason,created_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', ('requisition',body.title,'requisitions',subject,'{}',json.dumps(proposed),str(total),'high' if total >= Decimal('10000') else 'low','pending',user['id'],body.reason,approvals.now())).lastrowid
-            approvals.audit(db,user,'create_requisition','requisition',subject,'Created requisition')
-            approvals.audit(db,user,'submit_requisition','requisition',subject,f'Submitted for approval {aid}')
-            approvals.notify_role(db,'procurement_manager','Requisition awaiting approval',aid)
-            db.commit()
-            result = {'approval_id':aid}
-        except Exception:
-            db.rollback()
-            raise
+        supplier = db.execute('SELECT name FROM suppliers WHERE id=?', (body.supplier_id,)).fetchone()
+        if not supplier:
+            raise HTTPException(422, 'Supplier is required.')
+        total = sum((line.unit_price * line.quantity for line in body.lines), Decimal('0'))
+        number = db.execute("SELECT COALESCE(MAX(CAST(SUBSTR(code,5) AS INTEGER)),2000)+1 FROM requisitions WHERE code GLOB 'REQ-[0-9]*'").fetchone()[0]
+        code = f'REQ-{number}'
+        subject = db.execute('INSERT INTO requisitions (code,supplier_id,title,total_amount_usd,status,requester_id,reason,created_at) VALUES (?,?,?,?,?,?,?,?)', (code,body.supplier_id,body.title,str(total),'pending_approval',user['id'],body.reason,approvals.now())).lastrowid
+        lines = [{'description':line.description,'quantity':line.quantity,'unit_price':str(line.unit_price)} for line in body.lines]
+        db.executemany('INSERT INTO requisition_lines (requisition_id,description,quantity,unit_price) VALUES (?,?,?,?)', [(subject,line['description'],line['quantity'],line['unit_price']) for line in lines])
+        proposed = {'code':code,'title':body.title,'supplier':supplier['name'],'total_amount_usd':str(total),'reason':body.reason,'lines':lines}
+        aid = db.execute('INSERT INTO approvals (approval_type,title,subject_table,subject_id,current_json,proposed_json,amount_usd,risk,status,requester_id,reason,created_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', ('requisition',body.title,'requisitions',subject,'{}',json.dumps(proposed),str(total),'high' if total >= Decimal('10000') else 'low','pending',user['id'],body.reason,approvals.now())).lastrowid
+        approvals.audit(db,user,'create_requisition','requisition',subject,'Created requisition')
+        approvals.audit(db,user,'submit_requisition','requisition',subject,f'Submitted for approval {aid}')
+        approvals.notify_role(db,'procurement_manager','Requisition awaiting approval',aid)
+        result = {'approval_id':aid}
     elif action.kind == 'supplier_edit':
-        result = changes.supplier_edit(db, user, action.supplier_id, action.details)
+        result = changes.supplier_edit(db, user, action.supplier_id, action.details, manage_transaction=False)
     elif action.kind == 'sourcing_create':
-        result = changes.sourcing_create(db, user, action.details)
+        result = changes.sourcing_create(db, user, action.details, manage_transaction=False)
     else:
-        result = changes.award(db, user, action.event_id, action.details)
+        result = changes.award(db, user, action.event_id, action.details, manage_transaction=False)
     answer = clarification('A pending approval was created and is waiting for the procurement manager.')
     answer['approval_id'] = result['approval_id']
     return answer
@@ -115,7 +196,13 @@ def answer_question(db: sqlite3.Connection, user: sqlite3.Row, message: str, pre
         allowed = {'requisition': ('analyst',), 'supplier_edit': ('category_manager','sourcing_specialist'), 'sourcing_create': ('category_manager','sourcing_specialist'), 'sourcing_award': ('category_manager','sourcing_specialist')}
         if kind and user['role'] not in allowed[kind]:
             return clarification('Your role is not permitted to start this request.')
-        return clarification('Please provide a complete structured proposal before I can request approval; no change has been made.')
+        examples = {
+            'supplier_edit': 'Use: edit supplier name or code; contact name: name; risk: high (or contact email, status).',
+            'sourcing_create': 'Use: create sourcing event; title: title; type: RFQ; value: USD amount; end date: YYYY-MM-DD.',
+            'sourcing_award': 'Use: award sourcing event SE-3001; bid: bid id.',
+            'requisition': 'Use: create a requisition: supplier: name or code; title: title; item: description; quantity: number; unit price: USD amount; reason: reason.',
+        }
+        return clarification('Please provide a complete structured proposal with unambiguous details before I can request approval; no change has been made. ' + examples.get(kind, ''))
     intents = [name for name, pattern in INTENTS.items() if re.search(pattern, text)]
     if 'unmatched' in text and 'purchase-orders' not in intents:
         intents.append('purchase-orders')
@@ -146,6 +233,10 @@ def answer_question(db: sqlite3.Connection, user: sqlite3.Row, message: str, pre
         return clarification('Which area do you mean?', AREAS)
     if not intents:
         return clarification('I can answer questions about suppliers, catalog, purchase orders, invoices, contracts, requisitions, sourcing, spend and knowledge.')
+    po_codes = set(re.findall(r'\bpo-[0-9]+\b', text))
+    if len(po_codes) > 1:
+        return clarification('Which purchase order do you mean?')
+    po_code = next(iter(po_codes), None)
     sections = []
     year_row = db.execute('SELECT preferred_fiscal_year FROM user_preferences WHERE user_id=?', (user['id'],)).fetchone()
     year = year_row[0] if year_row and year_row[0] else 2026
@@ -162,6 +253,18 @@ def answer_question(db: sqlite3.Connection, user: sqlite3.Row, message: str, pre
         if resource == 'invoices' and 'unmatched' in text: params['status'] = 'unmatched'
         result = records.list_records(db, user, resource, params)
         rows = result['items']
+        if resource == 'purchase-orders' and po_code:
+            rows = [dict(row) for row in db.execute(
+                'SELECT p.*, s.name AS supplier_name, u.display_name AS requester_name, '
+                'EXISTS(SELECT 1 FROM invoices i WHERE i.po_id=p.id) AS has_invoice '
+                'FROM purchase_orders p JOIN suppliers s ON s.id=p.supplier_id '
+                'JOIN users u ON u.id=p.requester_id '
+                'WHERE p.code=? COLLATE NOCASE AND (? IS NULL OR p.supplier_id=?) '
+                'AND (? IS NULL OR p.status=?) '
+                'AND (?=0 OR NOT EXISTS(SELECT 1 FROM invoices i WHERE i.po_id=p.id)) '
+                'ORDER BY p.id LIMIT 100',
+                (po_code, params.get('supplier'), params.get('supplier'), params.get('status'),
+                 params.get('status'), int(params.get('no_invoice', False))))]
         if supplier and resource == 'suppliers':
             rows = [dict(db.execute('SELECT * FROM suppliers WHERE id=?', (supplier['id'],)).fetchone())]
         if supplier and resource == 'spend':
@@ -193,17 +296,44 @@ def send(db: sqlite3.Connection, user: sqlite3.Row, body: MessageInput) -> dict:
         previous = json.loads(last[0]) if last else None
     else:
         conversation_id, previous = None, None
-    answer = perform_action(db, user, body.action) if body.action else answer_question(db, user, body.message, previous)
-    if conversation_id is None:
-        conversation_id = db.execute('INSERT INTO conversations (user_id,title,created_at) VALUES (?,?,?)', (user['id'],body.message[:80],approvals.now())).lastrowid
-    stamp = approvals.now()
-    db.execute('INSERT INTO messages (conversation_id,role,content,created_at) VALUES (?,?,?,?)', (conversation_id,'user',body.message,stamp))
-    tokens = math.ceil((len(body.message) + len(answer['text'])) / 4)
-    answer.update({'tokens':tokens, 'cost_usd':f'{tokens * 0.000002:.4f}', 'latency_ms':round((time.perf_counter()-started)*1000)})
-    cursor = db.execute('INSERT INTO messages (conversation_id,role,content,created_at) VALUES (?,?,?,?)', (conversation_id,'assistant',json.dumps(answer),stamp))
-    approvals.audit(db, user, 'query', 'conversation', conversation_id, 'Assistant query')
-    db.commit()
-    return {'conversation_id':conversation_id, 'message_id':cursor.lastrowid, 'answer':answer}
+    # Lock before resolving a natural proposal, so the entire turn commits together.
+    natural_candidate = bool(re.match(r'(?i)^(?:please\s+)?(?:(?:create|submit)\s+(?:a\s+)?requisition\b|(?:edit|update|change)\s+supplier\b|create\s+(?:a\s+)?sourcing\s+event\b|award\s+sourcing\s+event\b)', body.message))
+    if body.action or natural_candidate:
+        db.execute('BEGIN IMMEDIATE')
+    try:
+        action = body.action
+        if not action and natural_candidate:
+            if user['role'] == 'analyst':
+                action = natural_requisition(db, body.message)
+            elif user['role'] in ('category_manager', 'sourcing_specialist'):
+                action = natural_change(db, body.message)
+        if action and not body.action:
+            db.execute('SAVEPOINT natural_proposal')
+            try:
+                answer = perform_action(db, user, action)
+            except HTTPException as exc:
+                db.execute('ROLLBACK TO natural_proposal')
+                db.execute('RELEASE natural_proposal')
+                if exc.status_code not in (404, 409, 422):
+                    raise
+                answer = clarification(f'{exc.detail} Please provide valid, unambiguous details; no change has been made.')
+            else:
+                db.execute('RELEASE natural_proposal')
+        else:
+            answer = perform_action(db, user, action) if action else answer_question(db, user, body.message, previous)
+        if conversation_id is None:
+            conversation_id = db.execute('INSERT INTO conversations (user_id,title,created_at) VALUES (?,?,?)', (user['id'],body.message[:80],approvals.now())).lastrowid
+        stamp = approvals.now()
+        db.execute('INSERT INTO messages (conversation_id,role,content,created_at) VALUES (?,?,?,?)', (conversation_id,'user',body.message,stamp))
+        tokens = math.ceil((len(body.message) + len(answer['text'])) / 4)
+        answer.update({'tokens':tokens, 'cost_usd':f'{tokens * 0.000002:.4f}', 'latency_ms':round((time.perf_counter()-started)*1000)})
+        cursor = db.execute('INSERT INTO messages (conversation_id,role,content,created_at) VALUES (?,?,?,?)', (conversation_id,'assistant',json.dumps(answer),stamp))
+        approvals.audit(db, user, 'query', 'conversation', conversation_id, 'Assistant query')
+        db.commit()
+        return {'conversation_id':conversation_id, 'message_id':cursor.lastrowid, 'answer':answer}
+    except Exception:
+        db.rollback()
+        raise
 
 
 def export_csv(db: sqlite3.Connection, user: sqlite3.Row, conversation_id: int, message_id: int) -> str:
