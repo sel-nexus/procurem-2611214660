@@ -14,6 +14,7 @@ from app.routers.approvals import router as approvals_router
 from app.routers.changes import router as changes_router
 from app.routers.assistant import router as assistant_router
 from app.routers.workspace import router as workspace_router
+from app.routers.users import router as users_router
 from app.schemas.auth import HealthResponse, AdapterStatus
 
 
@@ -40,6 +41,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.include_router(changes_router)
     app.include_router(assistant_router)
     app.include_router(workspace_router)
+    app.include_router(users_router)
 
     @app.get('/api/health',response_model=HealthResponse,tags=['Health'],summary='Check local adapter data')
     def health(request: Request) -> HealthResponse:

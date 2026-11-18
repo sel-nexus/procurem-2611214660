@@ -331,7 +331,7 @@
       "label": "create_app()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -350,7 +350,7 @@
       "label": "initialize()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -360,7 +360,7 @@
       "label": "lifespan()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L29",
+      "source_location": "L30",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -370,7 +370,7 @@
       "label": "health()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L43",
+      "source_location": "L45",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -385,11 +385,11 @@
       "community": 1
     },
     {
-      "id": "backend_app_main_rationale_20",
+      "id": "backend_app_main_rationale_21",
       "label": "Create an independently configurable API instance.",
       "file_type": "rationale",
       "source_file": "backend/app/main.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast"
     },
     {
@@ -1112,6 +1112,315 @@
       "file_type": "rationale",
       "source_file": "backend/app/routers/records.py",
       "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace",
+      "label": "workspace.py",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_yearinput",
+      "label": "YearInput",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L18",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_py_basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_py_get",
+      "label": "get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_get_settings",
+      "label": "get_settings()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_py_db",
+      "label": "Db",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_py_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "put",
+      "label": "put",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_put_year",
+      "label": "put_year()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L30",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_py_response",
+      "label": "Response",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "delete",
+      "label": "delete",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_delete_supplier",
+      "label": "delete_supplier()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_delete_history",
+      "label": "delete_history()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_get_notifications",
+      "label": "get_notifications()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L51",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_count_notifications",
+      "label": "count_notifications()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_py_post",
+      "label": "post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_read_notification",
+      "label": "read_notification()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L63",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_audit_params",
+      "label": "audit_params()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "date",
+      "label": "date",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_get_audit",
+      "label": "get_audit()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L76",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "auditor",
+      "label": "Auditor",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_export_audit",
+      "label": "export_audit()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L82",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_role_directory",
+      "label": "role_directory()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L89",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "directoryuser",
+      "label": "DirectoryUser",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_1",
+      "label": "Expose private settings, notifications, audit and role directory.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_19",
+      "label": "Accept an optional preferred fiscal year.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_25",
+      "label": "Read the signed-in user's workspace settings.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_31",
+      "label": "Save the signed-in user's fiscal year.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_38",
+      "label": "Remove a saved association without removing its supplier.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_45",
+      "label": "Clear only the signed-in user's conversation history.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_52",
+      "label": "List the caller's notifications.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_58",
+      "label": "Return the caller's unread count.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_64",
+      "label": "Mark an owned notification as read.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_69",
+      "label": "Validate the inclusive audit date range.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_77",
+      "label": "Return a filtered page of immutable audit rows.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L77",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_83",
+      "label": "Export all rows matching the current filters, safely quoted.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_workspace_rationale_90",
+      "label": "List users and their roles for authorized reviewers.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L90",
       "_origin": "ast"
     },
     {
@@ -2327,6 +2636,225 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_app_services_workspace",
+      "label": "workspace.py",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_matrix",
+      "label": "matrix()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_settings",
+      "label": "settings()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_py_connection",
+      "label": "Connection",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_py_row",
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_save_year",
+      "label": "save_year()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_remove_supplier",
+      "label": "remove_supplier()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_clear_history",
+      "label": "clear_history()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_notifications",
+      "label": "notifications()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L56",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_unread_count",
+      "label": "unread_count()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L63",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_mark_read",
+      "label": "mark_read()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_audit",
+      "label": "audit()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L78",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_audit_csv",
+      "label": "audit_csv()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L101",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_directory",
+      "label": "directory()",
+      "file_type": "code",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L113",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_1",
+      "label": "Provide private workspace data and read-only administrative views.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_24",
+      "label": "Return the shared permission matrix.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_29",
+      "label": "Read the caller's profile and saved memory.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_36",
+      "label": "Persist a fiscal year for the caller.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_42",
+      "label": "Remove only the caller's saved supplier association.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_50",
+      "label": "Remove the caller's messages and conversations in one transaction.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L50",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_57",
+      "label": "Return a bounded page of the caller's notifications.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L57",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_64",
+      "label": "Count only unread notifications belonging to the caller.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_69",
+      "label": "Mark an owned notification read or hide its existence.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_79",
+      "label": "Filter audit rows with bound inputs and stable ordering.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L79",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_102",
+      "label": "Serialize audit rows safely for spreadsheet consumers.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L102",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_workspace_rationale_114",
+      "label": "Return a bounded directory without credential fields.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L114",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_tests_test_approvals",
       "label": "test_approvals.py",
       "file_type": "code",
@@ -3099,6 +3627,110 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_tests_test_workspace",
+      "label": "test_workspace.py",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_py_fixture",
+      "label": "fixture",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_workspace",
+      "label": "workspace()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L14",
+      "_py_fixture": "?",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_test_unauthenticated_and_role_boundaries",
+      "label": "test_unauthenticated_and_role_boundaries()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_test_notifications_private_paginated_and_marked",
+      "label": "test_notifications_private_paginated_and_marked()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_test_preferences_supplier_and_spend_persist",
+      "label": "test_preferences_supplier_and_spend_persist()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_test_clear_only_own_history_preserves_audit",
+      "label": "test_clear_only_own_history_preserves_audit()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_test_audit_filter_export_and_formula_safety",
+      "label": "test_audit_filter_export_and_formula_safety()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L106",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_rationale_1",
+      "label": "Exercise workspace permissions and persistence on file-backed SQLite.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_rationale_15",
+      "label": "Start a fresh seeded API with a persistent file.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_workspace_rationale_23",
+      "label": "Authenticate as a seeded user.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_app_resource_id_page",
       "label": "page.tsx",
       "file_type": "code",
@@ -3146,6 +3778,23 @@
       "file_type": "code",
       "source_file": "frontend/app/assistant/page.tsx",
       "source_location": "L5",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_audit_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_audit_page_page",
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L4",
       "_callable": true,
       "_origin": "ast"
     },
@@ -3205,6 +3854,23 @@
       "community": 2
     },
     {
+      "id": "frontend_app_notifications_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_notifications_page_page",
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_app_page",
       "label": "page.tsx",
       "file_type": "code",
@@ -3222,6 +3888,40 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7
+    },
+    {
+      "id": "frontend_app_roles_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_roles_page_page",
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_settings_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_settings_page_page",
+      "label": "Page()",
+      "file_type": "code",
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
     },
     {
       "id": "frontend_components_approvaldetail_test",
@@ -3806,7 +4506,208 @@
       "label": "logout()",
       "file_type": "code",
       "source_file": "frontend/components/Shell.tsx",
-      "source_location": "L18",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_test",
+      "label": "WorkspaceSettings.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_test_matrix",
+      "label": "matrix",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_test_settings",
+      "label": "settings",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_test_json",
+      "label": "json()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings",
+      "label": "WorkspaceSettings.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_matrix",
+      "label": "Matrix",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L5",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_profile",
+      "label": "Profile",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_settings",
+      "label": "Settings",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_notification",
+      "label": "Notification",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_audit",
+      "label": "Audit",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_directory",
+      "label": "Directory",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L10",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_page",
+      "label": "Page",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_rolematrix",
+      "label": "RoleMatrix()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_workspacesettings",
+      "label": "WorkspaceSettings()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_workspacesettings_save",
+      "label": "save()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_workspacesettings_remove",
+      "label": "remove()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_workspacesettings_clear",
+      "label": "clear()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_notifications",
+      "label": "Notifications()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_notifications_open",
+      "label": "open()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_pagination",
+      "label": "Pagination()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_auditlog",
+      "label": "AuditLog()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_workspacesettings_roles",
+      "label": "Roles()",
+      "file_type": "code",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L56",
       "_callable": true,
       "_origin": "ast"
     },
@@ -3884,6 +4785,14 @@
       "label": "records.spec.ts",
       "file_type": "code",
       "source_file": "frontend/e2e/records.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_workspace_spec",
+      "label": "workspace.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/workspace.spec.ts",
       "source_location": "L1",
       "_origin": "ast"
     },
@@ -5055,7 +5964,7 @@
     },
     {
       "source": "backend_app_main",
-      "target": "backend_app_schemas_auth",
+      "target": "backend_app_routers_workspace",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -5066,11 +5975,22 @@
     },
     {
       "source": "backend_app_main",
+      "target": "backend_app_schemas_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_main",
       "target": "backend_app_main_create_app",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5081,7 +6001,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5092,7 +6012,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5102,7 +6022,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5112,7 +6032,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5122,7 +6042,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L43",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5134,7 +6054,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5146,7 +6066,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5161,12 +6081,12 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_app_main_rationale_20",
+      "source": "backend_app_main_rationale_21",
       "target": "backend_app_main_create_app",
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6820,6 +7740,761 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/records.py",
       "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_services_init",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_yearinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_yearinput",
+      "target": "backend_app_routers_workspace_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_settings",
+      "target": "backend_app_routers_workspace_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_get_settings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_settings",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_settings",
+      "target": "backend_app_routers_workspace_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_put_year",
+      "target": "put",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_put_year",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_put_year",
+      "target": "backend_app_routers_workspace_yearinput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_put_year",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_put_year",
+      "target": "backend_app_routers_workspace_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_put_year",
+      "target": "backend_app_routers_workspace_py_response",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_supplier",
+      "target": "delete",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_delete_supplier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_supplier",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_supplier",
+      "target": "backend_app_routers_workspace_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_supplier",
+      "target": "backend_app_routers_workspace_py_response",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_history",
+      "target": "delete",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_delete_history",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_history",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_history",
+      "target": "backend_app_routers_workspace_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_history",
+      "target": "backend_app_routers_workspace_py_response",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_notifications",
+      "target": "backend_app_routers_workspace_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_get_notifications",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_notifications",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_notifications",
+      "target": "backend_app_routers_workspace_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_count_notifications",
+      "target": "backend_app_routers_workspace_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_count_notifications",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_count_notifications",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_count_notifications",
+      "target": "backend_app_routers_workspace_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_read_notification",
+      "target": "backend_app_routers_workspace_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_read_notification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_read_notification",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_read_notification",
+      "target": "backend_app_routers_workspace_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_audit_params",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_audit_params",
+      "target": "date",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_audit",
+      "target": "backend_app_routers_workspace_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_get_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_audit",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_audit",
+      "target": "auditor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_audit",
+      "target": "date",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "backend_app_routers_workspace_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_export_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "auditor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "date",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "backend_app_routers_workspace_py_response",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_role_directory",
+      "target": "backend_app_routers_workspace_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_workspace_role_directory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_role_directory",
+      "target": "backend_app_routers_workspace_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_role_directory",
+      "target": "directoryuser",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_audit",
+      "target": "backend_app_routers_workspace_audit_params",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "backend_app_routers_workspace_audit_params",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_1",
+      "target": "backend_app_routers_workspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_19",
+      "target": "backend_app_routers_workspace_yearinput",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_25",
+      "target": "backend_app_routers_workspace_get_settings",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_31",
+      "target": "backend_app_routers_workspace_put_year",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_38",
+      "target": "backend_app_routers_workspace_delete_supplier",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_45",
+      "target": "backend_app_routers_workspace_delete_history",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_52",
+      "target": "backend_app_routers_workspace_get_notifications",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_58",
+      "target": "backend_app_routers_workspace_count_notifications",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_64",
+      "target": "backend_app_routers_workspace_read_notification",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_69",
+      "target": "backend_app_routers_workspace_audit_params",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_77",
+      "target": "backend_app_routers_workspace_get_audit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_83",
+      "target": "backend_app_routers_workspace_export_audit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_rationale_90",
+      "target": "backend_app_routers_workspace_role_directory",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9415,6 +11090,379 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_services_workspace",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_matrix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_settings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_settings",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_settings",
+      "target": "backend_app_services_workspace_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_save_year",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_save_year",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_remove_supplier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_remove_supplier",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_clear_history",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_clear_history",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_notifications",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_notifications",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_unread_count",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_unread_count",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_mark_read",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_mark_read",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_audit",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_audit_csv",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace",
+      "target": "backend_app_services_workspace_directory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_directory",
+      "target": "backend_app_services_workspace_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_settings",
+      "target": "backend_app_services_workspace_matrix",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_directory",
+      "target": "backend_app_services_workspace_matrix",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_1",
+      "target": "backend_app_services_workspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_24",
+      "target": "backend_app_services_workspace_matrix",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_29",
+      "target": "backend_app_services_workspace_settings",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_36",
+      "target": "backend_app_services_workspace_save_year",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_42",
+      "target": "backend_app_services_workspace_remove_supplier",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_50",
+      "target": "backend_app_services_workspace_clear_history",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_57",
+      "target": "backend_app_services_workspace_notifications",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_64",
+      "target": "backend_app_services_workspace_unread_count",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_69",
+      "target": "backend_app_services_workspace_mark_read",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_79",
+      "target": "backend_app_services_workspace_audit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_102",
+      "target": "backend_app_services_workspace_audit_csv",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_workspace_rationale_114",
+      "target": "backend_app_services_workspace_directory",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/workspace.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_approvals",
       "target": "backend_app_core_config",
       "relation": "imports_from",
@@ -11067,6 +13115,205 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_app_core_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_app_main",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_workspace",
+      "target": "backend_tests_test_workspace_py_fixture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_tests_test_workspace_workspace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_tests_test_workspace_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_tests_test_workspace_test_unauthenticated_and_role_boundaries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_tests_test_workspace_test_notifications_private_paginated_and_marked",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_tests_test_workspace_test_preferences_supplier_and_spend_persist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_tests_test_workspace_test_clear_only_own_history_preserves_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_tests_test_workspace_test_audit_filter_export_and_formula_safety",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_test_unauthenticated_and_role_boundaries",
+      "target": "backend_tests_test_workspace_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_test_notifications_private_paginated_and_marked",
+      "target": "backend_tests_test_workspace_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_test_preferences_supplier_and_spend_persist",
+      "target": "backend_tests_test_workspace_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_test_clear_only_own_history_preserves_audit",
+      "target": "backend_tests_test_workspace_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_test_audit_filter_export_and_formula_safety",
+      "target": "backend_tests_test_workspace_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_rationale_1",
+      "target": "backend_tests_test_workspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_rationale_15",
+      "target": "backend_tests_test_workspace_workspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_rationale_23",
+      "target": "backend_tests_test_workspace_login",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_resource_id_page",
       "target": "frontend_components_recorddetail",
       "relation": "imports_from",
@@ -11159,6 +13406,49 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/app/assistant/page.tsx",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_audit_page",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_audit_page",
+      "target": "frontend_components_workspacesettings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_audit_page",
+      "target": "frontend_components_workspacesettings_auditlog",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_audit_page",
+      "target": "frontend_app_audit_page_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11336,6 +13626,49 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_notifications_page",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_notifications_page",
+      "target": "frontend_components_workspacesettings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_notifications_page",
+      "target": "frontend_components_workspacesettings_notifications",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_notifications_page",
+      "target": "frontend_app_notifications_page_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_page",
       "target": "frontend_components_login",
       "relation": "imports_from",
@@ -11353,6 +13686,81 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/app/page.tsx",
       "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_roles_page",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_roles_page",
+      "target": "frontend_components_workspacesettings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_roles_page",
+      "target": "frontend_components_workspacesettings_roles",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_roles_page",
+      "target": "frontend_app_roles_page_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_settings_page",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_settings_page",
+      "target": "frontend_components_workspacesettings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_settings_page",
+      "target": "frontend_app_settings_page_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13150,7 +15558,438 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/Shell.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "ref_vitest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "ref_testing_library_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "ref_testing_library_user_event",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "ref_testing_library_jest_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_notifications",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_auditlog",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_roles",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_test_matrix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_test_settings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_test_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_test_json",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
       "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_matrix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_profile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_settings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_notification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_directory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_rolematrix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_workspacesettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_workspacesettings",
+      "target": "frontend_components_workspacesettings_workspacesettings_save",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_workspacesettings",
+      "target": "frontend_components_workspacesettings_workspacesettings_remove",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_workspacesettings",
+      "target": "frontend_components_workspacesettings_workspacesettings_clear",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_notifications",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_notifications",
+      "target": "frontend_components_workspacesettings_notifications_open",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_pagination",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_auditlog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings",
+      "target": "frontend_components_workspacesettings_roles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_workspacesettings",
+      "target": "frontend_components_workspacesettings_workspacesettings_save",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_workspacesettings",
+      "target": "frontend_components_workspacesettings_workspacesettings_remove",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_workspacesettings",
+      "target": "frontend_components_workspacesettings_workspacesettings_clear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_workspacesettings",
+      "target": "frontend_components_workspacesettings_rolematrix",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_notifications",
+      "target": "frontend_components_workspacesettings_pagination",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_auditlog",
+      "target": "frontend_components_workspacesettings_pagination",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_roles",
+      "target": "frontend_components_workspacesettings_rolematrix",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_roles",
+      "target": "frontend_components_workspacesettings_pagination",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13263,6 +16102,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/e2e/records.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_workspace_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/workspace.spec.ts",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
@@ -14105,6 +16955,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_audit_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_home_page",
       "target": "frontend_components_shell_shell",
       "relation": "imports",
@@ -14116,6 +16977,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_notifications_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_page",
       "target": "frontend_components_login_login",
       "relation": "imports",
@@ -14123,6 +16995,39 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/app/page.tsx",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_roles_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_settings_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_settings_page",
+      "target": "frontend_components_workspacesettings_workspacesettings",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14259,6 +17164,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_workspacesettings_test",
+      "target": "frontend_components_workspacesettings_workspacesettings",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_core_seed",
       "target": "backend_app_core_security_hash_password",
       "relation": "imports",
@@ -14320,7 +17236,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14331,7 +17247,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14519,6 +17435,39 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/records.py",
       "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_core_database_get_db",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_auth_get_current_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_routers_auth_require_roles",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -14930,6 +17879,39 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_app_core_config_settings",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_app_core_database_connect",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace",
+      "target": "backend_app_main_create_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_approvals",
       "target": "backend_app_services_approvals",
       "relation": "imports_from",
@@ -14981,6 +17963,17 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/records.py",
       "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace",
+      "target": "backend_app_services_workspace",
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15101,7 +18094,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/Shell.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_workspacesettings_notifications",
+      "target": "frontend_lib_api_api",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15123,7 +18127,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15134,7 +18138,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15145,7 +18149,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15156,7 +18160,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15167,7 +18171,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L47",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15178,7 +18182,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L48",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15634,13 +18638,46 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_workspace_test_preferences_supplier_and_spend_persist",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_test_clear_only_own_history_preserves_audit",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_test_audit_filter_export_and_formula_safety",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_main_create_app",
       "target": "backend_app_core_config_settings",
       "relation": "uses",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -15651,7 +18688,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L42",
+      "source_location": "L44",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -15662,7 +18699,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L47",
+      "source_location": "L49",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -15953,20 +18990,19 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_app_main_create_app_initialize",
-      "target": "backend_app_core_database_connect",
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "backend/app/main.py",
-      "source_location": "L24",
-      "weight": 1.0,
+      "source": "backend_tests_test_workspace_workspace",
+      "target": "backend_app_core_config_settings",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L18",
+      "weight": 0.8,
       "_origin": "ast"
     },
     {
       "source": "backend_app_main_create_app_initialize",
-      "target": "backend_app_models_schema_create_tables",
+      "target": "backend_app_core_database_connect",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -15978,13 +19014,25 @@
     },
     {
       "source": "backend_app_main_create_app_initialize",
+      "target": "backend_app_models_schema_create_tables",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/main.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_main_create_app_initialize",
       "target": "backend_app_core_seed_seed_database",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -15996,7 +19044,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L46",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16008,7 +19056,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L47",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16020,7 +19068,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L48",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16081,6 +19129,18 @@
       "confidence_score": 1.0,
       "source_file": "backend/tests/test_records.py",
       "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_workspace_workspace",
+      "target": "backend_app_main_create_app",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/tests/test_workspace.py",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16157,6 +19217,30 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_audit_page_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_audit_page_page",
+      "target": "frontend_components_workspacesettings_auditlog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/audit/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_home_page_home",
       "target": "frontend_components_shell_shell",
       "relation": "calls",
@@ -16169,6 +19253,30 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_notifications_page_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_notifications_page_page",
+      "target": "frontend_components_workspacesettings_notifications",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/notifications/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_page_page",
       "target": "frontend_components_login_login",
       "relation": "calls",
@@ -16177,6 +19285,54 @@
       "confidence_score": 1.0,
       "source_file": "frontend/app/page.tsx",
       "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_roles_page_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_roles_page_page",
+      "target": "frontend_components_workspacesettings_roles",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/roles/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_settings_page_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_settings_page_page",
+      "target": "frontend_components_workspacesettings_workspacesettings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/settings/page.tsx",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16277,6 +19433,18 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_workspacesettings_notifications_open",
+      "target": "frontend_lib_api_api",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/WorkspaceSettings.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_records_dashboard",
       "target": "backend_app_services_records_dashboard",
       "relation": "calls",
@@ -16309,6 +19477,138 @@
       "confidence_score": 1.0,
       "source_file": "backend/app/routers/records.py",
       "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_settings",
+      "target": "backend_app_services_workspace_settings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_put_year",
+      "target": "backend_app_services_workspace_save_year",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_supplier",
+      "target": "backend_app_services_workspace_remove_supplier",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_delete_history",
+      "target": "backend_app_services_workspace_clear_history",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_notifications",
+      "target": "backend_app_services_workspace_notifications",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_count_notifications",
+      "target": "backend_app_services_workspace_unread_count",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_read_notification",
+      "target": "backend_app_services_workspace_mark_read",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_get_audit",
+      "target": "backend_app_services_workspace_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "backend_app_services_workspace_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_export_audit",
+      "target": "backend_app_services_workspace_audit_csv",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_workspace_role_directory",
+      "target": "backend_app_services_workspace_directory",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/workspace.py",
+      "source_location": "L91",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -16603,6 +19903,136 @@
       "_tgt": "backend_app_routers_approvals_py_get"
     },
     {
+      "source": "backend_app_routers_assistant_py_get",
+      "target": "backend_app_routers_assistant_download_answer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_download_answer",
+      "_tgt": "backend_app_routers_assistant_py_get"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_get",
+      "target": "backend_app_routers_assistant_get_conversation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_get_conversation",
+      "_tgt": "backend_app_routers_assistant_py_get"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_get",
+      "target": "backend_app_routers_assistant_list_conversations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_list_conversations",
+      "_tgt": "backend_app_routers_assistant_py_get"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_db",
+      "target": "backend_app_routers_assistant_download_answer",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_download_answer",
+      "_tgt": "backend_app_routers_assistant_py_db"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_db",
+      "target": "backend_app_routers_assistant_get_conversation",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_get_conversation",
+      "_tgt": "backend_app_routers_assistant_py_db"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_db",
+      "target": "backend_app_routers_assistant_send_message",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_send_message",
+      "_tgt": "backend_app_routers_assistant_py_db"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_user",
+      "target": "backend_app_routers_assistant_download_answer",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_download_answer",
+      "_tgt": "backend_app_routers_assistant_py_user"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_user",
+      "target": "backend_app_routers_assistant_get_conversation",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_get_conversation",
+      "_tgt": "backend_app_routers_assistant_py_user"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_user",
+      "target": "backend_app_routers_assistant_send_message",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_send_message",
+      "_tgt": "backend_app_routers_assistant_py_user"
+    },
+    {
+      "source": "backend_app_routers_assistant_py_post",
+      "target": "backend_app_routers_assistant_send_message",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_assistant_send_message",
+      "_tgt": "backend_app_routers_assistant_py_post"
+    },
+    {
       "source": "backend_app_routers_auth_get_current_user",
       "target": "backend_app_routers_auth_logout",
       "relation": "references",
@@ -16748,6 +20178,19 @@
       "_tgt": "backend_app_routers_auth_py_post"
     },
     {
+      "source": "backend_app_routers_auth_py_response",
+      "target": "backend_app_routers_auth_logout",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_logout",
+      "_tgt": "backend_app_routers_auth_py_response"
+    },
+    {
       "source": "backend_app_routers_auth_py_get",
       "target": "backend_app_routers_auth_me",
       "relation": "references",
@@ -16809,8 +20252,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_app_routers_changes_request_award",
-      "_tgt": "backend_app_routers_changes_py_post"
+      "_src": "backend_app_routers_changes_py_post",
+      "_tgt": "backend_app_routers_changes_request_award"
     },
     {
       "source": "backend_app_routers_changes_py_db",
@@ -16835,8 +20278,8 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_changes_request_award",
-      "_tgt": "backend_app_routers_changes_py_db"
+      "_src": "backend_app_routers_changes_py_db",
+      "_tgt": "backend_app_routers_changes_request_award"
     },
     {
       "source": "backend_app_routers_changes_py_user",
@@ -16861,8 +20304,8 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_changes_request_award",
-      "_tgt": "backend_app_routers_changes_py_user"
+      "_src": "backend_app_routers_changes_py_user",
+      "_tgt": "backend_app_routers_changes_request_award"
     },
     {
       "source": "backend_app_routers_records_py_get",
@@ -17151,6 +20594,188 @@
       "_tgt": "backend_app_services_approvals_submit"
     },
     {
+      "source": "backend_app_services_assistant_py_connection",
+      "target": "backend_app_services_assistant_answer_question",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_answer_question",
+      "_tgt": "backend_app_services_assistant_py_connection"
+    },
+    {
+      "source": "backend_app_services_assistant_py_connection",
+      "target": "backend_app_services_assistant_conversations",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_conversations",
+      "_tgt": "backend_app_services_assistant_py_connection"
+    },
+    {
+      "source": "backend_app_services_assistant_py_connection",
+      "target": "backend_app_services_assistant_export_csv",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_export_csv",
+      "_tgt": "backend_app_services_assistant_py_connection"
+    },
+    {
+      "source": "backend_app_services_assistant_py_connection",
+      "target": "backend_app_services_assistant_history",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_history",
+      "_tgt": "backend_app_services_assistant_py_connection"
+    },
+    {
+      "source": "backend_app_services_assistant_py_connection",
+      "target": "backend_app_services_assistant_perform_action",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_perform_action",
+      "_tgt": "backend_app_services_assistant_py_connection"
+    },
+    {
+      "source": "backend_app_services_assistant_py_connection",
+      "target": "backend_app_services_assistant_safe_answer",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_safe_answer",
+      "_tgt": "backend_app_services_assistant_py_connection"
+    },
+    {
+      "source": "backend_app_services_assistant_py_connection",
+      "target": "backend_app_services_assistant_send",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_send",
+      "_tgt": "backend_app_services_assistant_py_connection"
+    },
+    {
+      "source": "backend_app_services_assistant_py_row",
+      "target": "backend_app_services_assistant_answer_question",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_answer_question",
+      "_tgt": "backend_app_services_assistant_py_row"
+    },
+    {
+      "source": "backend_app_services_assistant_py_row",
+      "target": "backend_app_services_assistant_conversations",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_conversations",
+      "_tgt": "backend_app_services_assistant_py_row"
+    },
+    {
+      "source": "backend_app_services_assistant_py_row",
+      "target": "backend_app_services_assistant_export_csv",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_export_csv",
+      "_tgt": "backend_app_services_assistant_py_row"
+    },
+    {
+      "source": "backend_app_services_assistant_py_row",
+      "target": "backend_app_services_assistant_history",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_history",
+      "_tgt": "backend_app_services_assistant_py_row"
+    },
+    {
+      "source": "backend_app_services_assistant_py_row",
+      "target": "backend_app_services_assistant_perform_action",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_perform_action",
+      "_tgt": "backend_app_services_assistant_py_row"
+    },
+    {
+      "source": "backend_app_services_assistant_py_row",
+      "target": "backend_app_services_assistant_safe_answer",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_safe_answer",
+      "_tgt": "backend_app_services_assistant_py_row"
+    },
+    {
+      "source": "backend_app_services_assistant_py_row",
+      "target": "backend_app_services_assistant_send",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_assistant_send",
+      "_tgt": "backend_app_services_assistant_py_row"
+    },
+    {
       "source": "backend_app_services_auth_py_connection",
       "target": "backend_app_services_auth_current_user",
       "relation": "references",
@@ -17225,8 +20850,8 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_changes_sourcing_create",
-      "_tgt": "backend_app_services_changes_py_row"
+      "_src": "backend_app_services_changes_py_row",
+      "_tgt": "backend_app_services_changes_sourcing_create"
     },
     {
       "source": "backend_app_services_changes_py_row",
@@ -17238,8 +20863,8 @@
       "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_changes_supplier_edit",
-      "_tgt": "backend_app_services_changes_py_row"
+      "_src": "backend_app_services_changes_py_row",
+      "_tgt": "backend_app_services_changes_supplier_edit"
     },
     {
       "source": "backend_app_services_changes_py_connection",
@@ -17277,8 +20902,8 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_changes_sourcing_create",
-      "_tgt": "backend_app_services_changes_py_connection"
+      "_src": "backend_app_services_changes_py_connection",
+      "_tgt": "backend_app_services_changes_sourcing_create"
     },
     {
       "source": "backend_app_services_changes_py_connection",
@@ -17290,8 +20915,8 @@
       "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_changes_supplier_edit",
-      "_tgt": "backend_app_services_changes_py_connection"
+      "_src": "backend_app_services_changes_py_connection",
+      "_tgt": "backend_app_services_changes_supplier_edit"
     },
     {
       "source": "backend_app_services_records_py_connection",
@@ -17346,6 +20971,19 @@
       "_tgt": "backend_tests_test_approvals_workspace"
     },
     {
+      "source": "backend_tests_test_assistant_py_fixture",
+      "target": "backend_tests_test_assistant_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_assistant_workspace",
+      "_tgt": "backend_tests_test_assistant_py_fixture"
+    },
+    {
       "source": "backend_tests_test_auth_py_fixture",
       "target": "backend_tests_test_auth_workspace",
       "relation": "references",
@@ -17368,8 +21006,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_changes_workspace",
-      "_tgt": "backend_tests_test_changes_py_fixture"
+      "_src": "backend_tests_test_changes_py_fixture",
+      "_tgt": "backend_tests_test_changes_workspace"
     },
     {
       "source": "backend_tests_test_records_py_fixture",
@@ -17399,10 +21037,10 @@
     }
   ],
   "metadata": {
-    "built_at": "2026-11-18T12:30:08.823878+00:00",
+    "built_at": "2026-11-18T12:35:40.038071+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T011GSU2iRpR9000118112611214660\\developer",
     "force": true,
-    "files_scanned": 65
+    "files_scanned": 75
   }
 }

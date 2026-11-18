@@ -13,6 +13,8 @@ def now() -> datetime:
 
 def login(db: sqlite3.Connection, email: str, password: str, remember: bool) -> tuple[sqlite3.Row, str, int]:
     """Validate credentials and persist a new session or reject them."""
+    # Serialize password checks and session issuance with account resets.
+    db.execute('BEGIN IMMEDIATE')
     user = db.execute('SELECT * FROM users WHERE email = ?', (email.strip(),)).fetchone()
     valid = verify_password(password, user['password_hash'] if user else DUMMY_HASH)
     if not user or not valid:
