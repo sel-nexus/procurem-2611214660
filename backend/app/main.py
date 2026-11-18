@@ -13,6 +13,7 @@ from app.routers.records import router as records_router
 from app.routers.approvals import router as approvals_router
 from app.routers.changes import router as changes_router
 from app.routers.assistant import router as assistant_router
+from app.routers.workspace import router as workspace_router
 from app.schemas.auth import HealthResponse, AdapterStatus
 
 
@@ -32,12 +33,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         yield
     app = FastAPI(title='Procurem API',version='1.0.0',description='Local procurement demo API',lifespan=lifespan)
     app.state.settings = config
-    app.add_middleware(CORSMiddleware,allow_origins=config.origins,allow_credentials=True,allow_methods=['GET','POST','OPTIONS'],allow_headers=['Content-Type'])
+    app.add_middleware(CORSMiddleware,allow_origins=config.origins,allow_credentials=True,allow_methods=['GET','POST','PUT','DELETE','OPTIONS'],allow_headers=['Content-Type'])
     app.include_router(router)
     app.include_router(records_router)
     app.include_router(approvals_router)
     app.include_router(changes_router)
     app.include_router(assistant_router)
+    app.include_router(workspace_router)
 
     @app.get('/api/health',response_model=HealthResponse,tags=['Health'],summary='Check local adapter data')
     def health(request: Request) -> HealthResponse:

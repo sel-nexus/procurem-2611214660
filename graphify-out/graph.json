@@ -331,7 +331,7 @@
       "label": "create_app()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -350,7 +350,7 @@
       "label": "initialize()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -360,7 +360,7 @@
       "label": "lifespan()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L28",
+      "source_location": "L29",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -370,7 +370,7 @@
       "label": "health()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L41",
+      "source_location": "L43",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -385,11 +385,11 @@
       "community": 1
     },
     {
-      "id": "backend_app_main_rationale_19",
+      "id": "backend_app_main_rationale_20",
       "label": "Create an independently configurable API instance.",
       "file_type": "rationale",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast"
     },
     {
@@ -608,6 +608,130 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_app_routers_assistant",
+      "label": "assistant.py",
+      "file_type": "code",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_py_get",
+      "label": "get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_list_conversations",
+      "label": "list_conversations()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_py_db",
+      "label": "Db",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_py_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_get_conversation",
+      "label": "get_conversation()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_py_post",
+      "label": "post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_send_message",
+      "label": "send_message()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_download_answer",
+      "label": "download_answer()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_py_response",
+      "label": "Response",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_rationale_1",
+      "label": "Expose authenticated assistant conversations and answer exports.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_rationale_17",
+      "label": "List the signed-in user's conversation titles.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_rationale_23",
+      "label": "Reopen an owned conversation.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_rationale_29",
+      "label": "Persist and answer a user message.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_assistant_rationale_35",
+      "label": "Download an owned answer's displayed rows.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_app_routers_auth",
       "label": "auth.py",
       "file_type": "code",
@@ -701,13 +825,12 @@
       "community": 4
     },
     {
-      "id": "response",
+      "id": "backend_app_routers_auth_py_response",
       "label": "Response",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "_origin": "ast",
-      "community": 4
+      "_origin": "ast"
     },
     {
       "id": "backend_app_routers_auth_py_get",
@@ -1085,6 +1208,120 @@
       "file_type": "rationale",
       "source_file": "backend/app/schemas/approvals.py",
       "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant",
+      "label": "assistant.py",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_requisitionaction",
+      "label": "RequisitionAction",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_py_basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_supplieraction",
+      "label": "SupplierAction",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L15",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_sourcingaction",
+      "label": "SourcingAction",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L23",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_awardaction",
+      "label": "AwardAction",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L30",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_messageinput",
+      "label": "MessageInput",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_rationale_1",
+      "label": "Define validated conversation requests and structured approval proposals.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_rationale_9",
+      "label": "Describe a complete requisition submission.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_rationale_16",
+      "label": "Describe an editable supplier and proposed fields.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_rationale_24",
+      "label": "Describe a proposed sourcing event.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_rationale_31",
+      "label": "Describe a bid selected for a pending award.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_assistant_rationale_42",
+      "label": "Accept a bounded question and an optional complete proposal.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L42",
       "_origin": "ast"
     },
     {
@@ -1539,6 +1776,191 @@
       "file_type": "rationale",
       "source_file": "backend/app/services/approvals.py",
       "source_location": "L148",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant",
+      "label": "assistant.py",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_owned",
+      "label": "owned()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L30",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_py_connection",
+      "label": "Connection",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_py_row",
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_safe_answer",
+      "label": "safe_answer()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_history",
+      "label": "history()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L47",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_conversations",
+      "label": "conversations()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L59",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_clarification",
+      "label": "clarification()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_perform_action",
+      "label": "perform_action()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L71",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_answer_question",
+      "label": "answer_question()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L110",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_send",
+      "label": "send()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_export_csv",
+      "label": "export_csv()",
+      "file_type": "code",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L209",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_1",
+      "label": "Answer bounded procurement questions from authorized SQLite rows.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_31",
+      "label": "Hide conversations belonging to another user.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_39",
+      "label": "Remove knowledge snapshots no longer accessible to the current role.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_48",
+      "label": "Return a user's saved thread, rechecking knowledge access.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L48",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_60",
+      "label": "List only the caller's threads, newest first.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L60",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_67",
+      "label": "Build a question without claiming any records.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L67",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_72",
+      "label": "Delegate complete proposals to existing role-gated approval services.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L72",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_111",
+      "label": "Route recognized intent words to fixed, bounded record lookups.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L111",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_187",
+      "label": "Save a user turn and its answer in the caller's conversation.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L187",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_assistant_rationale_210",
+      "label": "Export only the saved, authorized displayed rows as CSV.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L210",
       "_origin": "ast"
     },
     {
@@ -2070,6 +2492,127 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_tests_test_assistant",
+      "label": "test_assistant.py",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_py_fixture",
+      "label": "fixture",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_workspace",
+      "label": "workspace()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L14",
+      "_py_fixture": "?",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_send",
+      "label": "send()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_test_overdue_csv_and_persistence",
+      "label": "test_overdue_csv_and_persistence()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_test_multi_intent_followup_clarification_and_no_match",
+      "label": "test_multi_intent_followup_clarification_and_no_match()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_test_knowledge_role_and_conversation_isolation",
+      "label": "test_knowledge_role_and_conversation_isolation()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L86",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_test_write_is_authorized_and_pending_only",
+      "label": "test_write_is_authorized_and_pending_only()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L108",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_test_malicious_input_not_executed_and_validation",
+      "label": "test_malicious_input_not_executed_and_validation()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L134",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_rationale_1",
+      "label": "Exercise grounded answers and ownership against persistent SQLite.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_rationale_15",
+      "label": "Start a fresh seeded application on a file database.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_rationale_23",
+      "label": "Sign in as a seeded user.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_assistant_rationale_29",
+      "label": "Send one message through the public API.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_tests_test_auth",
       "label": "test_auth.py",
       "file_type": "code",
@@ -2590,6 +3133,23 @@
       "_origin": "ast"
     },
     {
+      "id": "frontend_app_assistant_page",
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_app_assistant_page_assistantpage",
+      "label": "AssistantPage()",
+      "file_type": "code",
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L5",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_app_home_page",
       "label": "page.tsx",
       "file_type": "code",
@@ -2774,6 +3334,135 @@
       "file_type": "code",
       "source_file": "frontend/components/ApprovalDetail.tsx",
       "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_test",
+      "label": "Assistant.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_test_answer",
+      "label": "answer",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant",
+      "label": "Assistant.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_citation",
+      "label": "Citation",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_section",
+      "label": "Section",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_answer",
+      "label": "Answer",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_message",
+      "label": "Message",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_thread",
+      "label": "Thread",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L10",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_summary",
+      "label": "Summary",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_assistant",
+      "label": "Assistant()",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_assistant_cancelreveal",
+      "label": "cancelReveal()",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_assistant_loadlist",
+      "label": "loadList()",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_assistant_open",
+      "label": "open()",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_assistant_assistant_send",
+      "label": "send()",
+      "file_type": "code",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L35",
       "_callable": true,
       "_origin": "ast"
     },
@@ -3145,6 +3834,14 @@
       "source_file": "@playwright/test",
       "confidence": "EXTRACTED",
       "type": "module",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_assistant_spec",
+      "label": "assistant.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/assistant.spec.ts",
+      "source_location": "L1",
       "_origin": "ast"
     },
     {
@@ -4347,7 +5044,7 @@
     },
     {
       "source": "backend_app_main",
-      "target": "backend_app_schemas_auth",
+      "target": "backend_app_routers_assistant",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -4358,11 +5055,22 @@
     },
     {
       "source": "backend_app_main",
+      "target": "backend_app_schemas_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_main",
       "target": "backend_app_main_create_app",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4373,7 +5081,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4384,7 +5092,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4394,7 +5102,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4404,7 +5112,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4414,7 +5122,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4426,7 +5134,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4438,7 +5146,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4453,12 +5161,12 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_app_main_rationale_19",
+      "source": "backend_app_main_rationale_20",
       "target": "backend_app_main_create_app",
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4876,6 +5584,305 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_assistant",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_routers_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_schemas_assistant",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_services_init",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_list_conversations",
+      "target": "backend_app_routers_assistant_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_routers_assistant_list_conversations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_list_conversations",
+      "target": "backend_app_routers_assistant_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_list_conversations",
+      "target": "backend_app_routers_assistant_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_get_conversation",
+      "target": "backend_app_routers_assistant_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_routers_assistant_get_conversation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_get_conversation",
+      "target": "backend_app_routers_assistant_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_get_conversation",
+      "target": "backend_app_routers_assistant_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_send_message",
+      "target": "backend_app_routers_assistant_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_routers_assistant_send_message",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_send_message",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_send_message",
+      "target": "backend_app_routers_assistant_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_send_message",
+      "target": "backend_app_routers_assistant_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_download_answer",
+      "target": "backend_app_routers_assistant_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_routers_assistant_download_answer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_download_answer",
+      "target": "backend_app_routers_assistant_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_download_answer",
+      "target": "backend_app_routers_assistant_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_download_answer",
+      "target": "backend_app_routers_assistant_py_response",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_rationale_1",
+      "target": "backend_app_routers_assistant",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_rationale_17",
+      "target": "backend_app_routers_assistant_list_conversations",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_rationale_23",
+      "target": "backend_app_routers_assistant_get_conversation",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_rationale_29",
+      "target": "backend_app_routers_assistant_send_message",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_rationale_35",
+      "target": "backend_app_routers_assistant_download_answer",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_auth",
       "target": "fastapi",
       "relation": "imports_from",
@@ -5059,7 +6066,7 @@
     },
     {
       "source": "backend_app_routers_auth_login",
-      "target": "response",
+      "target": "backend_app_routers_auth_py_response",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
@@ -5233,7 +6240,7 @@
     },
     {
       "source": "backend_app_routers_auth_logout",
-      "target": "response",
+      "target": "backend_app_routers_auth_py_response",
       "relation": "references",
       "context": "return_type",
       "confidence": "EXTRACTED",
@@ -5934,6 +6941,188 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/schemas/approvals.py",
       "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_approvals",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_changes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_assistant_requisitionaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_requisitionaction",
+      "target": "backend_app_schemas_assistant_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_assistant_supplieraction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_supplieraction",
+      "target": "backend_app_schemas_assistant_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_assistant_sourcingaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_sourcingaction",
+      "target": "backend_app_schemas_assistant_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_assistant_awardaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_awardaction",
+      "target": "backend_app_schemas_assistant_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_messageinput",
+      "target": "backend_app_schemas_assistant_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_rationale_1",
+      "target": "backend_app_schemas_assistant",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_rationale_9",
+      "target": "backend_app_schemas_assistant_requisitionaction",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_rationale_16",
+      "target": "backend_app_schemas_assistant_supplieraction",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_rationale_24",
+      "target": "backend_app_schemas_assistant_sourcingaction",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_rationale_31",
+      "target": "backend_app_schemas_assistant_awardaction",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_rationale_42",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6864,6 +8053,537 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
       "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "decimal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_schemas_assistant",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_init",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_owned",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_owned",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_owned",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_owned",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_safe_answer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_safe_answer",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_safe_answer",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_history",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_history",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_history",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_conversations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_conversations",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_conversations",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_clarification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_perform_action",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_answer_question",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_answer_question",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_answer_question",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_send",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_assistant_export_csv",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_export_csv",
+      "target": "backend_app_services_assistant_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_export_csv",
+      "target": "backend_app_services_assistant_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_history",
+      "target": "backend_app_services_assistant_owned",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_history",
+      "target": "backend_app_services_assistant_safe_answer",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_assistant_clarification",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_answer_question",
+      "target": "backend_app_services_assistant_clarification",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_services_assistant_owned",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_services_assistant_perform_action",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_services_assistant_answer_question",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_export_csv",
+      "target": "backend_app_services_assistant_owned",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_export_csv",
+      "target": "backend_app_services_assistant_safe_answer",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L214",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_1",
+      "target": "backend_app_services_assistant",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_31",
+      "target": "backend_app_services_assistant_owned",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_39",
+      "target": "backend_app_services_assistant_safe_answer",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_48",
+      "target": "backend_app_services_assistant_history",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_60",
+      "target": "backend_app_services_assistant_conversations",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_67",
+      "target": "backend_app_services_assistant_clarification",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_72",
+      "target": "backend_app_services_assistant_perform_action",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_111",
+      "target": "backend_app_services_assistant_answer_question",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_187",
+      "target": "backend_app_services_assistant_send",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_rationale_210",
+      "target": "backend_app_services_assistant_export_csv",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L210",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8118,6 +9838,280 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_app_core_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_app_main",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_workspace",
+      "target": "backend_tests_test_assistant_py_fixture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_workspace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_send",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_test_overdue_csv_and_persistence",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_test_multi_intent_followup_clarification_and_no_match",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_test_knowledge_role_and_conversation_isolation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_test_write_is_authorized_and_pending_only",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_tests_test_assistant_test_malicious_input_not_executed_and_validation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_overdue_csv_and_persistence",
+      "target": "backend_tests_test_assistant_send",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_overdue_csv_and_persistence",
+      "target": "backend_tests_test_assistant_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_multi_intent_followup_clarification_and_no_match",
+      "target": "backend_tests_test_assistant_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_multi_intent_followup_clarification_and_no_match",
+      "target": "backend_tests_test_assistant_send",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_knowledge_role_and_conversation_isolation",
+      "target": "backend_tests_test_assistant_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_knowledge_role_and_conversation_isolation",
+      "target": "backend_tests_test_assistant_send",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_write_is_authorized_and_pending_only",
+      "target": "backend_tests_test_assistant_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_write_is_authorized_and_pending_only",
+      "target": "backend_tests_test_assistant_send",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_malicious_input_not_executed_and_validation",
+      "target": "backend_tests_test_assistant_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_malicious_input_not_executed_and_validation",
+      "target": "backend_tests_test_assistant_send",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_rationale_1",
+      "target": "backend_tests_test_assistant",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_rationale_15",
+      "target": "backend_tests_test_assistant_workspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_rationale_23",
+      "target": "backend_tests_test_assistant_login",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_rationale_29",
+      "target": "backend_tests_test_assistant_send",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_auth",
       "target": "datetime",
       "relation": "imports_from",
@@ -9137,6 +11131,38 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_assistant_page",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_assistant_page",
+      "target": "frontend_components_assistant",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_assistant_page",
+      "target": "frontend_app_assistant_page_assistantpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_home_page",
       "target": "ref_react",
       "relation": "imports_from",
@@ -9605,6 +11631,302 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/ApprovalDetail.tsx",
       "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "ref_vitest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "ref_testing_library_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "ref_testing_library_user_event",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "ref_testing_library_jest_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "frontend_components_assistant",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "frontend_components_assistant_test_answer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_components_assistant_citation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_components_assistant_section",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_components_assistant_answer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_components_assistant_message",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_components_assistant_thread",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_components_assistant_summary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant",
+      "target": "frontend_components_assistant_assistant",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant",
+      "target": "frontend_components_assistant_assistant_cancelreveal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant",
+      "target": "frontend_components_assistant_assistant_loadlist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant",
+      "target": "frontend_components_assistant_assistant_open",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant",
+      "target": "frontend_components_assistant_assistant_send",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant",
+      "target": "frontend_components_assistant_assistant_loadlist",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant",
+      "target": "frontend_components_assistant_assistant_cancelreveal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant",
+      "target": "frontend_components_assistant_assistant_send",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant_open",
+      "target": "frontend_components_assistant_assistant_cancelreveal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant_send",
+      "target": "frontend_components_assistant_assistant_cancelreveal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_assistant_send",
+      "target": "frontend_components_assistant_assistant_loadlist",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.tsx",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10873,6 +13195,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_e2e_assistant_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/assistant.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_e2e_auth_spec",
       "target": "ref_playwright_test",
       "relation": "imports_from",
@@ -11750,6 +14083,28 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_assistant_page",
+      "target": "frontend_components_shell_shell",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_assistant_page",
+      "target": "frontend_components_assistant_assistant",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_home_page",
       "target": "frontend_components_shell_shell",
       "relation": "imports",
@@ -11800,6 +14155,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_assistant_test",
+      "target": "frontend_components_assistant_assistant",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/Assistant.test.tsx",
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
@@ -11954,7 +14320,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11965,7 +14331,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12009,6 +14375,39 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_core_database_get_db",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_routers_auth_get_current_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
@@ -12124,6 +14523,50 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_services_approvals",
       "target": "backend_app_core_security_verify_password",
       "relation": "imports",
@@ -12153,6 +14596,17 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
       "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12296,6 +14750,39 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_approvals.py",
       "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_app_core_config_settings",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_app_core_database_connect",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant",
+      "target": "backend_app_main_create_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12454,6 +14941,17 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_assistant",
+      "target": "backend_app_services_assistant",
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_auth",
       "target": "backend_app_services_auth",
       "relation": "imports_from",
@@ -12483,6 +14981,39 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/records.py",
       "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_approvals",
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_changes",
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant",
+      "target": "backend_app_services_records",
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12592,7 +15123,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12603,7 +15134,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12614,7 +15145,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12625,7 +15156,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12636,7 +15167,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L45",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12647,7 +15178,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L46",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -12824,6 +15355,61 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_approvals.py",
       "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_overdue_csv_and_persistence",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_multi_intent_followup_clarification_and_no_match",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_knowledge_role_and_conversation_isolation",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_write_is_authorized_and_pending_only",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_test_malicious_input_not_executed_and_validation",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L143",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13054,7 +15640,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -13065,7 +15651,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -13076,7 +15662,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L45",
+      "source_location": "L47",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -13099,6 +15685,17 @@
       "confidence_score": 0.95,
       "source_file": "backend/app/routers/approvals.py",
       "source_location": "L35",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_assistant_send_message",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/routers/assistant.py",
+      "source_location": "L28",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -13180,6 +15777,50 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_schemas_assistant_requisitionaction",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L12",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_supplieraction",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L20",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_sourcingaction",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L27",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_assistant_awardaction",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/schemas/assistant.py",
+      "source_location": "L35",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_services_approvals_create_draft",
       "target": "backend_app_schemas_approvals_requisitioninput",
       "relation": "uses",
@@ -13198,6 +15839,17 @@
       "confidence_score": 0.95,
       "source_file": "backend/app/services/approvals.py",
       "source_location": "L147",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_schemas_assistant_messageinput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L186",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -13242,6 +15894,17 @@
       "confidence_score": 0.95,
       "source_file": "backend/tests/test_approvals.py",
       "source_location": "L15",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_workspace",
+      "target": "backend_app_core_config_settings",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L18",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -13297,7 +15960,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13309,7 +15972,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13321,7 +15984,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13333,7 +15996,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L44",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13345,7 +16008,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L45",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13357,7 +16020,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L46",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13370,6 +16033,18 @@
       "confidence_score": 1.0,
       "source_file": "backend/tests/test_approvals.py",
       "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_assistant_workspace",
+      "target": "backend_app_main_create_app",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/tests/test_assistant.py",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13454,6 +16129,30 @@
       "confidence_score": 1.0,
       "source_file": "frontend/app/[resource]/page.tsx",
       "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_assistant_page_assistantpage",
+      "target": "frontend_components_shell_shell",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_assistant_page_assistantpage",
+      "target": "frontend_components_assistant_assistant",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/assistant/page.tsx",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -13614,6 +16313,114 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_changes_supplier_edit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_changes_sourcing_create",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_perform_action",
+      "target": "backend_app_services_changes_award",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_answer_question",
+      "target": "backend_app_services_records_list_records",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L198",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_assistant_send",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/services/assistant.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_core_database_py_connection",
       "target": "backend_app_core_database_get_db",
       "relation": "references",
@@ -13649,8 +16456,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_app_routers_approvals_signature",
-      "_tgt": "backend_app_routers_approvals_py_post"
+      "_src": "backend_app_routers_approvals_py_post",
+      "_tgt": "backend_app_routers_approvals_signature"
     },
     {
       "source": "backend_app_routers_approvals_py_post",
@@ -13662,8 +16469,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_app_routers_approvals_submit_requisition",
-      "_tgt": "backend_app_routers_approvals_py_post"
+      "_src": "backend_app_routers_approvals_py_post",
+      "_tgt": "backend_app_routers_approvals_submit_requisition"
     },
     {
       "source": "backend_app_routers_approvals_py_db",
@@ -13701,8 +16508,8 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_approvals_signature",
-      "_tgt": "backend_app_routers_approvals_py_db"
+      "_src": "backend_app_routers_approvals_py_db",
+      "_tgt": "backend_app_routers_approvals_signature"
     },
     {
       "source": "backend_app_routers_approvals_py_db",
@@ -13714,8 +16521,8 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_approvals_submit_requisition",
-      "_tgt": "backend_app_routers_approvals_py_db"
+      "_src": "backend_app_routers_approvals_py_db",
+      "_tgt": "backend_app_routers_approvals_submit_requisition"
     },
     {
       "source": "backend_app_routers_approvals_py_user",
@@ -13753,8 +16560,8 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_approvals_signature",
-      "_tgt": "backend_app_routers_approvals_py_user"
+      "_src": "backend_app_routers_approvals_py_user",
+      "_tgt": "backend_app_routers_approvals_signature"
     },
     {
       "source": "backend_app_routers_approvals_py_user",
@@ -13766,8 +16573,8 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_approvals_submit_requisition",
-      "_tgt": "backend_app_routers_approvals_py_user"
+      "_src": "backend_app_routers_approvals_py_user",
+      "_tgt": "backend_app_routers_approvals_submit_requisition"
     },
     {
       "source": "backend_app_routers_approvals_py_get",
@@ -13941,19 +16748,6 @@
       "_tgt": "backend_app_routers_auth_py_post"
     },
     {
-      "source": "response",
-      "target": "backend_app_routers_auth_logout",
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/auth.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "_src": "backend_app_routers_auth_logout",
-      "_tgt": "response"
-    },
-    {
       "source": "backend_app_routers_auth_py_get",
       "target": "backend_app_routers_auth_me",
       "relation": "references",
@@ -13978,6 +16772,97 @@
       "_origin": "ast",
       "_src": "backend_app_routers_auth_logout",
       "_tgt": "depends"
+    },
+    {
+      "source": "backend_app_routers_changes_py_post",
+      "target": "backend_app_routers_changes_create_sourcing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_changes_create_sourcing",
+      "_tgt": "backend_app_routers_changes_py_post"
+    },
+    {
+      "source": "backend_app_routers_changes_py_post",
+      "target": "backend_app_routers_changes_propose_supplier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_changes_propose_supplier",
+      "_tgt": "backend_app_routers_changes_py_post"
+    },
+    {
+      "source": "backend_app_routers_changes_py_post",
+      "target": "backend_app_routers_changes_request_award",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_changes_request_award",
+      "_tgt": "backend_app_routers_changes_py_post"
+    },
+    {
+      "source": "backend_app_routers_changes_py_db",
+      "target": "backend_app_routers_changes_create_sourcing",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_changes_create_sourcing",
+      "_tgt": "backend_app_routers_changes_py_db"
+    },
+    {
+      "source": "backend_app_routers_changes_py_db",
+      "target": "backend_app_routers_changes_request_award",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_changes_request_award",
+      "_tgt": "backend_app_routers_changes_py_db"
+    },
+    {
+      "source": "backend_app_routers_changes_py_user",
+      "target": "backend_app_routers_changes_create_sourcing",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_changes_create_sourcing",
+      "_tgt": "backend_app_routers_changes_py_user"
+    },
+    {
+      "source": "backend_app_routers_changes_py_user",
+      "target": "backend_app_routers_changes_request_award",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_changes_request_award",
+      "_tgt": "backend_app_routers_changes_py_user"
     },
     {
       "source": "backend_app_routers_records_py_get",
@@ -14071,6 +16956,32 @@
       "_tgt": "backend_app_routers_records_py_user"
     },
     {
+      "source": "field_validator",
+      "target": "backend_app_schemas_changes_supplieredit_email_valid",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_schemas_changes_supplieredit_email_valid",
+      "_tgt": "field_validator"
+    },
+    {
+      "source": "model_validator",
+      "target": "backend_app_schemas_changes_supplieredit_nonempty",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_schemas_changes_supplieredit_nonempty",
+      "_tgt": "model_validator"
+    },
+    {
       "source": "backend_app_services_approvals_py_connection",
       "target": "backend_app_services_approvals_apply_decision",
       "relation": "references",
@@ -14158,8 +17069,8 @@
       "source_location": "L143",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_approvals_sign",
-      "_tgt": "backend_app_services_approvals_py_connection"
+      "_src": "backend_app_services_approvals_py_connection",
+      "_tgt": "backend_app_services_approvals_sign"
     },
     {
       "source": "backend_app_services_approvals_py_connection",
@@ -14171,8 +17082,8 @@
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_approvals_submit",
-      "_tgt": "backend_app_services_approvals_py_connection"
+      "_src": "backend_app_services_approvals_py_connection",
+      "_tgt": "backend_app_services_approvals_submit"
     },
     {
       "source": "backend_app_services_approvals_py_row",
@@ -14223,8 +17134,8 @@
       "source_location": "L143",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_approvals_sign",
-      "_tgt": "backend_app_services_approvals_py_row"
+      "_src": "backend_app_services_approvals_py_row",
+      "_tgt": "backend_app_services_approvals_sign"
     },
     {
       "source": "backend_app_services_approvals_py_row",
@@ -14236,8 +17147,8 @@
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_approvals_submit",
-      "_tgt": "backend_app_services_approvals_py_row"
+      "_src": "backend_app_services_approvals_py_row",
+      "_tgt": "backend_app_services_approvals_submit"
     },
     {
       "source": "backend_app_services_auth_py_connection",
@@ -14277,6 +17188,110 @@
       "_origin": "ast",
       "_src": "backend_app_services_auth_current_user",
       "_tgt": "backend_app_services_auth_py_row"
+    },
+    {
+      "source": "backend_app_services_changes_py_row",
+      "target": "backend_app_services_changes_award",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_award",
+      "_tgt": "backend_app_services_changes_py_row"
+    },
+    {
+      "source": "backend_app_services_changes_py_row",
+      "target": "backend_app_services_changes_insert_approval",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_insert_approval",
+      "_tgt": "backend_app_services_changes_py_row"
+    },
+    {
+      "source": "backend_app_services_changes_py_row",
+      "target": "backend_app_services_changes_sourcing_create",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_sourcing_create",
+      "_tgt": "backend_app_services_changes_py_row"
+    },
+    {
+      "source": "backend_app_services_changes_py_row",
+      "target": "backend_app_services_changes_supplier_edit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_supplier_edit",
+      "_tgt": "backend_app_services_changes_py_row"
+    },
+    {
+      "source": "backend_app_services_changes_py_connection",
+      "target": "backend_app_services_changes_award",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_award",
+      "_tgt": "backend_app_services_changes_py_connection"
+    },
+    {
+      "source": "backend_app_services_changes_py_connection",
+      "target": "backend_app_services_changes_insert_approval",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_insert_approval",
+      "_tgt": "backend_app_services_changes_py_connection"
+    },
+    {
+      "source": "backend_app_services_changes_py_connection",
+      "target": "backend_app_services_changes_sourcing_create",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_sourcing_create",
+      "_tgt": "backend_app_services_changes_py_connection"
+    },
+    {
+      "source": "backend_app_services_changes_py_connection",
+      "target": "backend_app_services_changes_supplier_edit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_changes_supplier_edit",
+      "_tgt": "backend_app_services_changes_py_connection"
     },
     {
       "source": "backend_app_services_records_py_connection",
@@ -14327,8 +17342,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_approvals_workspace",
-      "_tgt": "backend_tests_test_approvals_py_fixture"
+      "_src": "backend_tests_test_approvals_py_fixture",
+      "_tgt": "backend_tests_test_approvals_workspace"
     },
     {
       "source": "backend_tests_test_auth_py_fixture",
@@ -14342,6 +17357,19 @@
       "_origin": "ast",
       "_src": "backend_tests_test_auth_py_fixture",
       "_tgt": "backend_tests_test_auth_workspace"
+    },
+    {
+      "source": "backend_tests_test_changes_py_fixture",
+      "target": "backend_tests_test_changes_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_changes_workspace",
+      "_tgt": "backend_tests_test_changes_py_fixture"
     },
     {
       "source": "backend_tests_test_records_py_fixture",
@@ -14371,10 +17399,10 @@
     }
   ],
   "metadata": {
-    "built_at": "2026-11-18T12:21:49.045174+00:00",
+    "built_at": "2026-11-18T12:30:08.823878+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T011GSU2iRpR9000118112611214660\\developer",
     "force": true,
-    "files_scanned": 57
+    "files_scanned": 65
   }
 }
