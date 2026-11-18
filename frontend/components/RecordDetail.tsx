@@ -1,0 +1,20 @@
+'use client';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { api, ApiError } from '../lib/api';
+import Shell from './Shell';
+import { display, resources } from './RecordList';
+import type { Row } from './RecordList';
+
+type Detail = { item: Row; relations: Record<string, Row[]>; source_label: string; freshness: string };
+/** Display a record, its provenance and available related records. */
+export default function RecordDetail({ resource, id }: { resource: string; id: string }) {
+  const [data, setData] = useState<Detail | null>(null);
+  const [error, setError] = useState('');
+  const [retry, setRetry] = useState(0);
+  const router = useRouter();
+  const spec = resources[resource];
+  useEffect(() => { if (!spec) return; let live = true; setData(null); setError(''); api<Detail>(`/api/v1/records/${encodeURIComponent(resource)}/${encodeURIComponent(id)}`).then(value => { if (live) setData(value); }).catch((e: unknown) => { if (e instanceof ApiError && e.status === 401) router.replace('/'); else if (live) setError(e instanceof ApiError && e.status === 404 ? 'Record not found.' : 'Something went wrong loading this page.'); }); return () => { live = false; }; }, [resource,id,retry,router,spec]);
+  return <Shell title={spec?.title || 'Not found'}>{!spec ? <p>Page not found.</p> : error ? <div role="alert" className="rounded-2xl border border-edge bg-card p-5">{error} {error !== 'Record not found.' && <button className="text-accent" onClick={() => setRetry(retry+1)}>Retry</button>}</div> : !data ? <div aria-live="polite" className="rounded-2xl border border-edge bg-card p-5">Loading records…</div> : <><Link href={`/${resource}`} className="text-accent">← Back to {spec.title}</Link><section className="mt-4 rounded-2xl border border-edge bg-card p-5"><h1 className="font-display text-[28px] text-ink">{String(data.item.code || spec.title)} {data.item.name || data.item.title ? `· ${data.item.name || data.item.title}` : ''}</h1><div className="mt-3 flex gap-2 text-xs"><span className="rounded-full bg-accent/10 px-3 py-1 text-accent">{data.source_label}</span><span className="rounded-full bg-raised px-3 py-1 text-muted">{data.freshness}</span></div><dl className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{Object.entries(data.item).filter(([key]) => key !== 'id' && key !== 'body' && !key.endsWith('_id')).map(([key,value]) => <div key={key}><dt className="text-xs text-muted">{key.replaceAll('_',' ')}</dt><dd className="mt-1 break-words text-ink">{display(key,value)}</dd></div>)}{data.item.supplier_id && <div><dt className="text-xs text-muted">Supplier</dt><dd><Link className="text-accent" href={`/suppliers/${data.item.supplier_id}`}>{String(data.item.supplier_name || 'View supplier')}</Link></dd></div>}{resource === 'invoices' && data.item.po_id && <div><dt className="text-xs text-muted">Purchase order</dt><dd><Link className="text-accent" href={`/purchase-orders/${data.item.po_id}`}>{String(data.item.po_code)}</Link></dd></div>}</dl>{data.item.body && <p className="mt-6 whitespace-pre-wrap">{data.item.body}</p>}</section>{Object.entries(data.relations).map(([name,rows]) => <section key={name} className="mt-4 rounded-2xl border border-edge bg-card p-5"><h2 className="font-display text-lg text-ink">{name.replaceAll('-',' ')}</h2>{rows.length === 0 ? <p className="mt-3 text-muted">No related records.</p> : <ul className="mt-3 divide-y divide-edge">{rows.map((row,index) => <li key={String(row.id || index)} className="flex flex-wrap gap-x-5 gap-y-1 py-3">{Object.entries(row).filter(([key]) => key !== 'id' && key !== 'supplier_id').map(([key,value]) => <span key={key}><span className="text-muted">{key.replaceAll('_',' ')}: </span>{key === 'code' && resources[name] ? <Link href={`/${name}/${row.id}`} className="text-accent">{display(key,value)}</Link> : key === 'supplier_name' && row.supplier_id ? <Link href={`/suppliers/${row.supplier_id}`} className="text-accent">{display(key,value)}</Link> : display(key,value)}</span>)}</li>)}</ul>}</section>)}</>}</Shell>;
+}
