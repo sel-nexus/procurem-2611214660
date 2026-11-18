@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { api, ApiError } from '../lib/api';
 import type { User } from '../lib/api';
 
-const links = [['Home','/home'],['Suppliers','/suppliers'],['Catalog','/catalog'],['Purchase orders','/purchase-orders'],['Invoices','/invoices'],['Contracts','/contracts'],['Requisitions','/requisitions'],['Sourcing','/sourcing'],['Spend','/spend'],['Knowledge','/knowledge'],['Approvals','/approvals']];
+const links = [['Home','/home'],['Assistant','/assistant'],['Suppliers','/suppliers'],['Catalog','/catalog'],['Purchase orders','/purchase-orders'],['Invoices','/invoices'],['Contracts','/contracts'],['Requisitions','/requisitions'],['Sourcing','/sourcing'],['Spend','/spend'],['Knowledge','/knowledge'],['Approvals','/approvals']];
 /** Protect workspace pages and provide consistent identity and navigation. */
 export default function Shell({ title, children }: { title: string; children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);

@@ -331,7 +331,7 @@
       "label": "create_app()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -350,7 +350,7 @@
       "label": "initialize()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -360,7 +360,7 @@
       "label": "lifespan()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -370,7 +370,7 @@
       "label": "health()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L39",
+      "source_location": "L41",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -385,11 +385,11 @@
       "community": 1
     },
     {
-      "id": "backend_app_main_rationale_18",
+      "id": "backend_app_main_rationale_19",
       "label": "Create an independently configurable API instance.",
       "file_type": "rationale",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast"
     },
     {
@@ -810,6 +810,97 @@
       "community": 4
     },
     {
+      "id": "backend_app_routers_changes",
+      "label": "changes.py",
+      "file_type": "code",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_py_post",
+      "label": "post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_propose_supplier",
+      "label": "propose_supplier()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_py_db",
+      "label": "Db",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_py_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_create_sourcing",
+      "label": "create_sourcing()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_request_award",
+      "label": "request_award()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_rationale_1",
+      "label": "Expose role-gated supplier and sourcing proposals.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_rationale_16",
+      "label": "Submit editable supplier fields for approval.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_rationale_21",
+      "label": "Submit a new event for approval.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_changes_rationale_26",
+      "label": "Submit a bid selection for approval.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_app_routers_records",
       "label": "records.py",
       "file_type": "code",
@@ -1103,6 +1194,134 @@
       "community": 1
     },
     {
+      "id": "backend_app_schemas_changes",
+      "label": "changes.py",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_supplieredit",
+      "label": "SupplierEdit",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_py_basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "field_validator",
+      "label": "field_validator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_supplieredit_email_valid",
+      "label": ".email_valid()",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "model_validator",
+      "label": "model_validator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_supplieredit_nonempty",
+      "label": ".nonempty()",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_sourcingcreate",
+      "label": "SourcingCreate",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L35",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_awardinput",
+      "label": "AwardInput",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L44",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_rationale_1",
+      "label": "Validate supplier and sourcing proposals at the API boundary.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_rationale_12",
+      "label": "Capture one or more editable supplier fields.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_rationale_22",
+      "label": "Reject malformed contact addresses.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_rationale_29",
+      "label": "Require at least one non-null field.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_rationale_36",
+      "label": "Capture the details of a proposed sourcing event.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_changes_rationale_45",
+      "label": "Select the bid to be proposed as the winner.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_app_services_init",
       "label": "__init__.py",
       "file_type": "code",
@@ -1230,7 +1449,7 @@
       "label": "sign()",
       "file_type": "code",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L143",
+      "source_location": "L147",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1315,11 +1534,11 @@
       "_origin": "ast"
     },
     {
-      "id": "backend_app_services_approvals_rationale_144",
+      "id": "backend_app_services_approvals_rationale_148",
       "label": "Serialize signatures and commit the decision and all effects together.",
       "file_type": "rationale",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L144",
+      "source_location": "L148",
       "_origin": "ast"
     },
     {
@@ -1442,6 +1661,148 @@
       "source_location": "L38",
       "_origin": "ast",
       "community": 3
+    },
+    {
+      "id": "backend_app_services_changes",
+      "label": "changes.py",
+      "file_type": "code",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_authorize",
+      "label": "authorize()",
+      "file_type": "code",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_py_row",
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_ensure_no_pending",
+      "label": "ensure_no_pending()",
+      "file_type": "code",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_py_connection",
+      "label": "Connection",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_insert_approval",
+      "label": "insert_approval()",
+      "file_type": "code",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "decimal",
+      "label": "Decimal",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_supplier_edit",
+      "label": "supplier_edit()",
+      "file_type": "code",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_sourcing_create",
+      "label": "sourcing_create()",
+      "file_type": "code",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_award",
+      "label": "award()",
+      "file_type": "code",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_rationale_1",
+      "label": "Create transactional supplier and sourcing approval requests.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_rationale_11",
+      "label": "Restrict proposals to the two designated roles.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_rationale_17",
+      "label": "Reject overlapping pending changes to the same subject.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_rationale_23",
+      "label": "Persist the approval and its audit and manager notification.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_rationale_32",
+      "label": "Record a supplier diff without changing the supplier.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_rationale_53",
+      "label": "Create a pending event and its approval in one transaction.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L53",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_changes_rationale_70",
+      "label": "Request an award for a bid belonging to an active event.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L70",
+      "_origin": "ast"
     },
     {
       "id": "backend_app_services_records",
@@ -1917,6 +2278,154 @@
       "community": 0
     },
     {
+      "id": "backend_tests_test_changes",
+      "label": "test_changes.py",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_py_fixture",
+      "label": "fixture",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_workspace",
+      "label": "workspace()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L13",
+      "_py_fixture": "?",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_sign",
+      "label": "sign()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_role_validation_and_atomicity",
+      "label": "test_role_validation_and_atomicity()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_event_creation_rolls_back_when_notification_fails",
+      "label": "test_event_creation_rolls_back_when_notification_fails()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_supplier_low_high_and_conflicts",
+      "label": "test_supplier_low_high_and_conflicts()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L66",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_event_create_and_rejection",
+      "label": "test_event_create_and_rejection()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L96",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_award_validation_rejection_and_final_approval",
+      "label": "test_award_validation_rejection_and_final_approval()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L119",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback",
+      "label": "test_concurrent_proposals_and_stale_supplier_rollback()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L146",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback_submit",
+      "label": "submit()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L149",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_test_high_award_waits_for_two_signers_and_checks_bid",
+      "label": "test_high_award_waits_for_two_signers_and_checks_bid()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L166",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_rationale_1",
+      "label": "Exercise change requests and approval transitions on file-backed SQLite.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_rationale_14",
+      "label": "Provide a seeded, isolated workspace.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_rationale_22",
+      "label": "Switch to a seeded account.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_changes_rationale_27",
+      "label": "Submit a password-confirmed decision.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_tests_test_records",
       "label": "test_records.py",
       "file_type": "code",
@@ -2269,6 +2778,58 @@
       "_origin": "ast"
     },
     {
+      "id": "frontend_components_changeforms_test",
+      "label": "ChangeForms.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_changeforms_test_supplier",
+      "label": "supplier",
+      "file_type": "code",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_changeforms",
+      "label": "ChangeForms.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_changeforms_props",
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L10",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_changeforms_changeforms",
+      "label": "ChangeForms()",
+      "file_type": "code",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_changeforms_changeforms_submit",
+      "label": "submit()",
+      "file_type": "code",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_components_login_test",
       "label": "Login.test.tsx",
       "file_type": "code",
@@ -2336,7 +2897,7 @@
       "label": "Detail",
       "file_type": "code",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -2346,7 +2907,7 @@
       "label": "RecordDetail()",
       "file_type": "code",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2355,7 +2916,7 @@
       "label": "submitDraft()",
       "file_type": "code",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2404,7 +2965,7 @@
       "label": "Row",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -2414,7 +2975,7 @@
       "label": "Resource",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -2424,7 +2985,7 @@
       "label": "resources",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast"
     },
     {
@@ -2432,7 +2993,7 @@
       "label": "money",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast"
     },
     {
@@ -2440,7 +3001,7 @@
       "label": "display()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L25",
+      "source_location": "L26",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2449,7 +3010,7 @@
       "label": "ListResponse",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L31",
+      "source_location": "L32",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -2459,7 +3020,7 @@
       "label": "RecordList()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L34",
+      "source_location": "L35",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2468,7 +3029,7 @@
       "label": "update()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L48",
+      "source_location": "L49",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2477,7 +3038,7 @@
       "label": "reset()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L49",
+      "source_location": "L50",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2594,6 +3155,32 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 2
+    },
+    {
+      "id": "frontend_e2e_changes_spec",
+      "label": "changes.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/changes.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_changes_spec_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/changes.spec.ts",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "playwright_test",
+      "label": "@playwright/test",
+      "file_type": "code",
+      "source_file": "@playwright/test",
+      "confidence": "EXTRACTED",
+      "type": "module",
+      "_origin": "ast"
     },
     {
       "id": "frontend_e2e_records_spec",
@@ -3749,7 +4336,7 @@
     },
     {
       "source": "backend_app_main",
-      "target": "backend_app_schemas_auth",
+      "target": "backend_app_routers_changes",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3760,11 +4347,22 @@
     },
     {
       "source": "backend_app_main",
+      "target": "backend_app_schemas_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_main",
       "target": "backend_app_main_create_app",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3775,7 +4373,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3786,7 +4384,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3796,7 +4394,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3806,7 +4404,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3816,7 +4414,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3828,7 +4426,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3840,7 +4438,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3855,12 +4453,12 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_app_main_rationale_18",
+      "source": "backend_app_main_rationale_19",
       "target": "backend_app_main_create_app",
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4749,6 +5347,263 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_changes",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_routers_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_schemas_changes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_services_init",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_propose_supplier",
+      "target": "backend_app_routers_changes_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_routers_changes_propose_supplier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_propose_supplier",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_propose_supplier",
+      "target": "backend_app_routers_changes_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_propose_supplier",
+      "target": "backend_app_routers_changes_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_create_sourcing",
+      "target": "backend_app_routers_changes_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_routers_changes_create_sourcing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_create_sourcing",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_create_sourcing",
+      "target": "backend_app_routers_changes_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_create_sourcing",
+      "target": "backend_app_routers_changes_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_request_award",
+      "target": "backend_app_routers_changes_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_routers_changes_request_award",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_request_award",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_request_award",
+      "target": "backend_app_routers_changes_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_request_award",
+      "target": "backend_app_routers_changes_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_rationale_1",
+      "target": "backend_app_routers_changes",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_rationale_16",
+      "target": "backend_app_routers_changes_propose_supplier",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_rationale_21",
+      "target": "backend_app_routers_changes_create_sourcing",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_rationale_26",
+      "target": "backend_app_routers_changes_request_award",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_records",
       "target": "fastapi",
       "relation": "imports_from",
@@ -4968,6 +5823,17 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/schemas/__init__.py",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals",
+      "target": "decimal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5202,6 +6068,190 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_schemas_changes",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes",
+      "target": "decimal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_supplieredit",
+      "target": "backend_app_schemas_changes_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_supplieredit_email_valid",
+      "target": "field_validator",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_supplieredit",
+      "target": "backend_app_schemas_changes_supplieredit_email_valid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_supplieredit_nonempty",
+      "target": "model_validator",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_supplieredit",
+      "target": "backend_app_schemas_changes_supplieredit_nonempty",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_sourcingcreate",
+      "target": "backend_app_schemas_changes_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_awardinput",
+      "target": "backend_app_schemas_changes_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_rationale_1",
+      "target": "backend_app_schemas_changes",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_rationale_12",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_rationale_22",
+      "target": "backend_app_schemas_changes_supplieredit_email_valid",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_rationale_29",
+      "target": "backend_app_schemas_changes_supplieredit_nonempty",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_rationale_36",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_changes_rationale_45",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/changes.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_services_init_rationale_1",
       "target": "backend_app_services_init",
       "relation": "rationale_for",
@@ -5219,6 +6269,17 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
       "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "decimal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5505,7 +6566,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L143",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5516,7 +6577,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L143",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5527,7 +6588,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L143",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5538,7 +6599,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L143",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5637,7 +6698,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L155",
+      "source_location": "L159",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5648,7 +6709,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L158",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5659,7 +6720,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L162",
+      "source_location": "L166",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5670,7 +6731,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L164",
+      "source_location": "L168",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5681,7 +6742,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L166",
+      "source_location": "L170",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5692,7 +6753,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L168",
+      "source_location": "L172",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5797,12 +6858,12 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_app_services_approvals_rationale_144",
+      "source": "backend_app_services_approvals_rationale_148",
       "target": "backend_app_services_approvals_sign",
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L144",
+      "source_location": "L148",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6025,6 +7086,433 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
       "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "decimal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_schemas_changes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_approvals",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_changes_authorize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_authorize",
+      "target": "backend_app_services_changes_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_changes_ensure_no_pending",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_ensure_no_pending",
+      "target": "backend_app_services_changes_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_changes_insert_approval",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_insert_approval",
+      "target": "backend_app_services_changes_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_insert_approval",
+      "target": "backend_app_services_changes_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_insert_approval",
+      "target": "decimal",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_changes_supplier_edit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_supplier_edit",
+      "target": "backend_app_services_changes_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_supplier_edit",
+      "target": "backend_app_services_changes_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_supplier_edit",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_changes_sourcing_create",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_sourcing_create",
+      "target": "backend_app_services_changes_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_sourcing_create",
+      "target": "backend_app_services_changes_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_sourcing_create",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_changes_award",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_award",
+      "target": "backend_app_services_changes_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_award",
+      "target": "backend_app_services_changes_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_award",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_supplier_edit",
+      "target": "backend_app_services_changes_authorize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_supplier_edit",
+      "target": "backend_app_services_changes_ensure_no_pending",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_supplier_edit",
+      "target": "backend_app_services_changes_insert_approval",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_sourcing_create",
+      "target": "backend_app_services_changes_authorize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_sourcing_create",
+      "target": "backend_app_services_changes_insert_approval",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_award",
+      "target": "backend_app_services_changes_authorize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_award",
+      "target": "backend_app_services_changes_ensure_no_pending",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_award",
+      "target": "backend_app_services_changes_insert_approval",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_rationale_1",
+      "target": "backend_app_services_changes",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_rationale_11",
+      "target": "backend_app_services_changes_authorize",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_rationale_17",
+      "target": "backend_app_services_changes_ensure_no_pending",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_rationale_23",
+      "target": "backend_app_services_changes_insert_approval",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_rationale_32",
+      "target": "backend_app_services_changes_supplier_edit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_rationale_53",
+      "target": "backend_app_services_changes_sourcing_create",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_rationale_70",
+      "target": "backend_app_services_changes_award",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_records",
+      "target": "decimal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/records.py",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6984,6 +8472,355 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_changes",
+      "target": "backend_app_core_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_app_main",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_workspace",
+      "target": "backend_tests_test_changes_py_fixture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_workspace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_sign",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_test_role_validation_and_atomicity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_test_event_creation_rolls_back_when_notification_fails",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_test_supplier_low_high_and_conflicts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_test_event_create_and_rejection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_test_award_validation_rejection_and_final_approval",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback",
+      "target": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback_submit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_tests_test_changes_test_high_award_waits_for_two_signers_and_checks_bid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_role_validation_and_atomicity",
+      "target": "backend_tests_test_changes_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_event_creation_rolls_back_when_notification_fails",
+      "target": "backend_tests_test_changes_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_supplier_low_high_and_conflicts",
+      "target": "backend_tests_test_changes_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_supplier_low_high_and_conflicts",
+      "target": "backend_tests_test_changes_sign",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_event_create_and_rejection",
+      "target": "backend_tests_test_changes_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_event_create_and_rejection",
+      "target": "backend_tests_test_changes_sign",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_award_validation_rejection_and_final_approval",
+      "target": "backend_tests_test_changes_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_award_validation_rejection_and_final_approval",
+      "target": "backend_tests_test_changes_sign",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback",
+      "target": "backend_tests_test_changes_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback",
+      "target": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback_submit",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback",
+      "target": "backend_tests_test_changes_sign",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_high_award_waits_for_two_signers_and_checks_bid",
+      "target": "backend_tests_test_changes_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L172",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_high_award_waits_for_two_signers_and_checks_bid",
+      "target": "backend_tests_test_changes_sign",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_rationale_1",
+      "target": "backend_tests_test_changes",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_rationale_14",
+      "target": "backend_tests_test_changes_workspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_rationale_22",
+      "target": "backend_tests_test_changes_login",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_rationale_27",
+      "target": "backend_tests_test_changes_sign",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_records",
+      "target": "decimal",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_records.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_records",
       "target": "backend_app_core_config",
       "relation": "imports_from",
@@ -7772,6 +9609,202 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_changeforms_test",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms_test",
+      "target": "ref_vitest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms_test",
+      "target": "ref_testing_library_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms_test",
+      "target": "ref_testing_library_user_event",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms_test",
+      "target": "ref_testing_library_jest_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms_test",
+      "target": "frontend_components_changeforms",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms_test",
+      "target": "frontend_components_changeforms_test_supplier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "frontend_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "frontend_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "frontend_lib_api_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "frontend_components_recordlist",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "frontend_components_recordlist_row",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "frontend_components_changeforms_props",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms",
+      "target": "frontend_components_changeforms_changeforms",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_changeforms_changeforms",
+      "target": "frontend_components_changeforms_changeforms_submit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_components_login_test",
       "target": "ref_react",
       "relation": "imports_from",
@@ -8125,11 +10158,22 @@
     },
     {
       "source": "frontend_components_recorddetail",
+      "target": "frontend_components_changeforms",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail",
       "target": "frontend_components_recorddetail_detail",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8139,7 +10183,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8149,7 +10193,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8351,17 +10395,18 @@
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_row",
-      "relation": "contains",
+      "target": "frontend_components_changeforms",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_resource",
+      "target": "frontend_components_recordlist_row",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
@@ -8371,7 +10416,7 @@
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_resources",
+      "target": "frontend_components_recordlist_resource",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
@@ -8381,11 +10426,21 @@
     },
     {
       "source": "frontend_components_recordlist",
+      "target": "frontend_components_recordlist_resources",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordList.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recordlist",
       "target": "frontend_components_recordlist_money",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8395,7 +10450,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8405,7 +10460,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8415,7 +10470,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8425,7 +10480,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8435,7 +10490,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8446,7 +10501,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L53",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8457,7 +10512,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L54",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8826,6 +10881,46 @@
       "source_file": "frontend/e2e/auth.spec.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_changes_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/changes.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_changes_spec",
+      "target": "frontend_e2e_changes_spec_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/changes.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_changes_spec",
+      "target": "frontend_e2e_changes_spec_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/changes.spec.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_changes_spec",
+      "target": "playwright_test",
+      "relation": "dynamic_import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/changes.spec.ts",
       "_origin": "ast"
     },
     {
@@ -9710,6 +11805,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_changeforms_test",
+      "target": "frontend_components_changeforms_changeforms",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ChangeForms.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_components_login_test",
       "target": "frontend_components_login_login",
       "relation": "imports",
@@ -9732,6 +11838,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_recorddetail",
+      "target": "frontend_components_changeforms_changeforms",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_components_recordlist_test",
       "target": "frontend_components_recordlist_recordlist",
       "relation": "imports",
@@ -9750,6 +11867,17 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
       "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recordlist",
+      "target": "frontend_components_changeforms_changeforms",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordList.tsx",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9826,7 +11954,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9837,7 +11965,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9915,6 +12043,61 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/auth.py",
       "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_core_database_get_db",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_routers_auth_require_roles",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10014,6 +12197,72 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes",
+      "target": "backend_app_services_approvals_now",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10128,6 +12377,39 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_changes",
+      "target": "backend_app_core_config_settings",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_app_core_database_connect",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes",
+      "target": "backend_app_main_create_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_records",
       "target": "backend_app_core_config_settings",
       "relation": "imports",
@@ -10183,6 +12465,17 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_changes",
+      "target": "backend_app_services_changes",
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_records",
       "target": "backend_app_services_records",
       "relation": "imports_from",
@@ -10233,7 +12526,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10244,7 +12537,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10255,7 +12548,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10299,7 +12592,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10310,7 +12603,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10321,7 +12614,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10332,7 +12625,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10343,7 +12636,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L43",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10354,7 +12647,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L44",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10376,7 +12669,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L153",
+      "source_location": "L157",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10432,6 +12725,39 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
       "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_insert_approval",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_insert_approval",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_insert_approval",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10623,6 +12949,83 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_changes_test_role_validation_and_atomicity",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_event_creation_rolls_back_when_notification_fails",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_supplier_low_high_and_conflicts",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_event_create_and_rejection",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_award_validation_rejection_and_final_approval",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_concurrent_proposals_and_stale_supplier_rollback",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_test_high_award_waits_for_two_signers_and_checks_bid",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_records_test_dashboard_aggregates_only_usd",
       "target": "backend_app_core_database_connect",
       "relation": "calls",
@@ -10651,7 +13054,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -10662,7 +13065,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L38",
+      "source_location": "L40",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -10673,7 +13076,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L43",
+      "source_location": "L45",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -10744,6 +13147,39 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_changes_propose_supplier",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L15",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_create_sourcing",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L20",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_changes_request_award",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/routers/changes.py",
+      "source_location": "L25",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_services_approvals_create_draft",
       "target": "backend_app_schemas_approvals_requisitioninput",
       "relation": "uses",
@@ -10761,7 +13197,40 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/services/approvals.py",
-      "source_location": "L143",
+      "source_location": "L147",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_supplier_edit",
+      "target": "backend_app_schemas_changes_supplieredit",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L31",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_sourcing_create",
+      "target": "backend_app_schemas_changes_sourcingcreate",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L52",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_changes_award",
+      "target": "backend_app_schemas_changes_awardinput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/services/changes.py",
+      "source_location": "L69",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -10799,6 +13268,17 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_changes_workspace",
+      "target": "backend_app_core_config_settings",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L17",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_records_workspace",
       "target": "backend_app_core_config_settings",
       "relation": "uses",
@@ -10817,7 +13297,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10829,7 +13309,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10841,7 +13321,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10853,7 +13333,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L42",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10865,7 +13345,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L43",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10877,7 +13357,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L44",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -10902,6 +13382,18 @@
       "confidence_score": 1.0,
       "source_file": "backend/tests/test_auth.py",
       "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_changes_workspace",
+      "target": "backend_app_main_create_app",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/tests/test_changes.py",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11009,7 +13501,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail_recorddetail",
+      "target": "frontend_components_changeforms_changeforms",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11021,7 +13525,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11033,7 +13537,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L50",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recordlist_recordlist",
+      "target": "frontend_components_changeforms_changeforms",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/RecordList.tsx",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -11109,6 +13625,175 @@
       "_origin": "ast",
       "_src": "backend_app_core_database_get_db",
       "_tgt": "backend_app_core_database_py_connection"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_post",
+      "target": "backend_app_routers_approvals_create_requisition",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_create_requisition",
+      "_tgt": "backend_app_routers_approvals_py_post"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_post",
+      "target": "backend_app_routers_approvals_signature",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_signature",
+      "_tgt": "backend_app_routers_approvals_py_post"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_post",
+      "target": "backend_app_routers_approvals_submit_requisition",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_submit_requisition",
+      "_tgt": "backend_app_routers_approvals_py_post"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_db",
+      "target": "backend_app_routers_approvals_approval_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_approval_detail",
+      "_tgt": "backend_app_routers_approvals_py_db"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_db",
+      "target": "backend_app_routers_approvals_inbox",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_inbox",
+      "_tgt": "backend_app_routers_approvals_py_db"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_db",
+      "target": "backend_app_routers_approvals_signature",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_signature",
+      "_tgt": "backend_app_routers_approvals_py_db"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_db",
+      "target": "backend_app_routers_approvals_submit_requisition",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_submit_requisition",
+      "_tgt": "backend_app_routers_approvals_py_db"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_user",
+      "target": "backend_app_routers_approvals_approval_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_approval_detail",
+      "_tgt": "backend_app_routers_approvals_py_user"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_user",
+      "target": "backend_app_routers_approvals_inbox",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_inbox",
+      "_tgt": "backend_app_routers_approvals_py_user"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_user",
+      "target": "backend_app_routers_approvals_signature",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_signature",
+      "_tgt": "backend_app_routers_approvals_py_user"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_user",
+      "target": "backend_app_routers_approvals_submit_requisition",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_submit_requisition",
+      "_tgt": "backend_app_routers_approvals_py_user"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_get",
+      "target": "backend_app_routers_approvals_approval_detail",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_approval_detail",
+      "_tgt": "backend_app_routers_approvals_py_get"
+    },
+    {
+      "source": "backend_app_routers_approvals_py_get",
+      "target": "backend_app_routers_approvals_inbox",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_approvals_inbox",
+      "_tgt": "backend_app_routers_approvals_py_get"
     },
     {
       "source": "backend_app_routers_auth_get_current_user",
@@ -11230,6 +13915,32 @@
       "_tgt": "backend_app_routers_auth_py_row"
     },
     {
+      "source": "backend_app_routers_auth_py_post",
+      "target": "backend_app_routers_auth_login",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_login",
+      "_tgt": "backend_app_routers_auth_py_post"
+    },
+    {
+      "source": "backend_app_routers_auth_py_post",
+      "target": "backend_app_routers_auth_logout",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_logout",
+      "_tgt": "backend_app_routers_auth_py_post"
+    },
+    {
       "source": "response",
       "target": "backend_app_routers_auth_logout",
       "relation": "references",
@@ -11334,6 +14045,201 @@
       "_tgt": "backend_app_routers_records_py_db"
     },
     {
+      "source": "backend_app_routers_records_py_user",
+      "target": "backend_app_routers_records_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/records.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_records_detail",
+      "_tgt": "backend_app_routers_records_py_user"
+    },
+    {
+      "source": "backend_app_routers_records_py_user",
+      "target": "backend_app_routers_records_list_records",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/records.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_records_list_records",
+      "_tgt": "backend_app_routers_records_py_user"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_apply_decision",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_apply_decision",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_create_draft",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_create_draft",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_detail",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_list_approvals",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_list_approvals",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_notify",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_notify",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_notify_role",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_sign",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_sign",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_connection",
+      "target": "backend_app_services_approvals_submit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_submit",
+      "_tgt": "backend_app_services_approvals_py_connection"
+    },
+    {
+      "source": "backend_app_services_approvals_py_row",
+      "target": "backend_app_services_approvals_apply_decision",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_apply_decision",
+      "_tgt": "backend_app_services_approvals_py_row"
+    },
+    {
+      "source": "backend_app_services_approvals_py_row",
+      "target": "backend_app_services_approvals_create_draft",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_create_draft",
+      "_tgt": "backend_app_services_approvals_py_row"
+    },
+    {
+      "source": "backend_app_services_approvals_py_row",
+      "target": "backend_app_services_approvals_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_detail",
+      "_tgt": "backend_app_services_approvals_py_row"
+    },
+    {
+      "source": "backend_app_services_approvals_py_row",
+      "target": "backend_app_services_approvals_sign",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_sign",
+      "_tgt": "backend_app_services_approvals_py_row"
+    },
+    {
+      "source": "backend_app_services_approvals_py_row",
+      "target": "backend_app_services_approvals_submit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_approvals_submit",
+      "_tgt": "backend_app_services_approvals_py_row"
+    },
+    {
       "source": "backend_app_services_auth_py_connection",
       "target": "backend_app_services_auth_current_user",
       "relation": "references",
@@ -11412,6 +14318,19 @@
       "_tgt": "backend_app_services_records_py_row"
     },
     {
+      "source": "backend_tests_test_approvals_py_fixture",
+      "target": "backend_tests_test_approvals_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_approvals_workspace",
+      "_tgt": "backend_tests_test_approvals_py_fixture"
+    },
+    {
       "source": "backend_tests_test_auth_py_fixture",
       "target": "backend_tests_test_auth_workspace",
       "relation": "references",
@@ -11421,8 +14340,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_auth_workspace",
-      "_tgt": "backend_tests_test_auth_py_fixture"
+      "_src": "backend_tests_test_auth_py_fixture",
+      "_tgt": "backend_tests_test_auth_workspace"
     },
     {
       "source": "backend_tests_test_records_py_fixture",
@@ -11434,8 +14353,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_records_workspace",
-      "_tgt": "backend_tests_test_records_py_fixture"
+      "_src": "backend_tests_test_records_py_fixture",
+      "_tgt": "backend_tests_test_records_workspace"
     },
     {
       "source": "parametrize",
@@ -11452,10 +14371,10 @@
     }
   ],
   "metadata": {
-    "built_at": "2026-11-18T12:15:49.344095+00:00",
+    "built_at": "2026-11-18T12:21:49.045174+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T011GSU2iRpR9000118112611214660\\developer",
     "force": true,
-    "files_scanned": 50
+    "files_scanned": 57
   }
 }
