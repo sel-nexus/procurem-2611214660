@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: dark; }
+body { margin: 0; background: #070b14; color: #cbd5e1; font-family: Inter, sans-serif; font-size: 14px; line-height: 1.5; }
+*:focus-visible { outline: 2px solid #5eead4; outline-offset: 2px; }
+button, input { transition: border-color 150ms, background-color 150ms, color 150ms; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
