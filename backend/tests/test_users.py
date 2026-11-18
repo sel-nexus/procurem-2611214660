@@ -97,6 +97,12 @@ def test_permissions_self_protection_and_validation(workspace):
         assert client.post('/api/v1/users',json=payload).status_code == 422
     assert client.put('/api/v1/users/1',json={'display_name':'x','role':'admin','status':'active','email':'changed@example.com'}).status_code == 422
 
+def test_user_password_reset_without_login_returns_401(workspace):
+    """Do not allow an unauthenticated caller to reset a password."""
+    client, _ = workspace
+    assert client.post('/api/v1/users/1/reset-password').status_code == 401
+
+
 def test_services_recheck_admin_and_rollback(workspace):
     _, path = workspace
     with connect(path) as db:
