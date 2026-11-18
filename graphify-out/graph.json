@@ -331,7 +331,7 @@
       "label": "create_app()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -350,7 +350,7 @@
       "label": "initialize()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -360,7 +360,7 @@
       "label": "lifespan()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L26",
+      "source_location": "L27",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -370,7 +370,7 @@
       "label": "health()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L37",
+      "source_location": "L39",
       "_callable": true,
       "_origin": "ast",
       "community": 1
@@ -385,11 +385,11 @@
       "community": 1
     },
     {
-      "id": "backend_app_main_rationale_17",
+      "id": "backend_app_main_rationale_18",
       "label": "Create an independently configurable API instance.",
       "file_type": "rationale",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast"
     },
     {
@@ -475,6 +475,139 @@
       "community": 16
     },
     {
+      "id": "backend_app_routers_approvals",
+      "label": "approvals.py",
+      "file_type": "code",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_py_post",
+      "label": "post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_create_requisition",
+      "label": "create_requisition()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_py_db",
+      "label": "Db",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_py_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_submit_requisition",
+      "label": "submit_requisition()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_py_get",
+      "label": "get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_inbox",
+      "label": "inbox()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_approval_detail",
+      "label": "approval_detail()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L30",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_signature",
+      "label": "signature()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_rationale_1",
+      "label": "Expose requisition and approval operations to authenticated users.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_rationale_16",
+      "label": "Create an analyst's requisition draft.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_rationale_21",
+      "label": "Submit an existing owned draft.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_rationale_26",
+      "label": "Return the shared approval inbox.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_rationale_31",
+      "label": "Return an approval and its signature history.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_approvals_rationale_36",
+      "label": "Record a password-confirmed decision if it is the user's turn.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_app_routers_auth",
       "label": "auth.py",
       "file_type": "code",
@@ -550,13 +683,12 @@
       "community": 4
     },
     {
-      "id": "post",
+      "id": "backend_app_routers_auth_py_post",
       "label": "post",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "_origin": "ast",
-      "community": 4
+      "_origin": "ast"
     },
     {
       "id": "backend_app_routers_auth_login",
@@ -711,7 +843,7 @@
       "_origin": "ast"
     },
     {
-      "id": "user",
+      "id": "backend_app_routers_records_py_user",
       "label": "User",
       "file_type": "code",
       "source_file": "",
@@ -787,6 +919,84 @@
       "community": 17
     },
     {
+      "id": "backend_app_schemas_approvals",
+      "label": "approvals.py",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_lineinput",
+      "label": "LineInput",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_py_basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_requisitioninput",
+      "label": "RequisitionInput",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_signatureinput",
+      "label": "SignatureInput",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L24",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_rationale_1",
+      "label": "Validate requisition requests and electronic signature input.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_rationale_10",
+      "label": "Describe a positive, precisely priced requisition line.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_rationale_17",
+      "label": "Capture a complete requisition draft.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_approvals_rationale_25",
+      "label": "Capture a decision without persisting the supplied password.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_app_schemas_auth",
       "label": "auth.py",
       "file_type": "code",
@@ -807,13 +1017,12 @@
       "community": 1
     },
     {
-      "id": "basemodel",
+      "id": "backend_app_schemas_auth_py_basemodel",
       "label": "BaseModel",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "_origin": "ast",
-      "community": 1
+      "_origin": "ast"
     },
     {
       "id": "backend_app_schemas_auth_userresponse",
@@ -910,6 +1119,208 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 1
+    },
+    {
+      "id": "backend_app_services_approvals",
+      "label": "approvals.py",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_now",
+      "label": "now()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_audit",
+      "label": "audit()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_py_connection",
+      "label": "Connection",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_py_row",
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_notify",
+      "label": "notify()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_notify_role",
+      "label": "notify_role()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_create_draft",
+      "label": "create_draft()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_submit",
+      "label": "submit()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_list_approvals",
+      "label": "list_approvals()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L84",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_detail",
+      "label": "detail()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L94",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_apply_decision",
+      "label": "apply_decision()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L112",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_sign",
+      "label": "sign()",
+      "file_type": "code",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_1",
+      "label": "Implement atomic requisition submission and approval decisions.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_12",
+      "label": "Return an unambiguous UTC timestamp.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_17",
+      "label": "Append an audit entry inside the caller's transaction.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_22",
+      "label": "Queue an in-app notification inside the caller's transaction.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_27",
+      "label": "Notify active users holding the required signing role.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_33",
+      "label": "Create a validated analyst-owned draft and its lines atomically.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_54",
+      "label": "Submit an owned draft once and notify the first signers.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L54",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_85",
+      "label": "Return a bounded inbox with the number of required signatures.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L85",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_95",
+      "label": "Return the proposal, recorded signatures and current user's permission.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L95",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_113",
+      "label": "Apply a supported subject transition or fail the entire decision.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L113",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_approvals_rationale_144",
+      "label": "Serialize signatures and commit the decision and all effects together.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L144",
+      "_origin": "ast"
     },
     {
       "id": "backend_app_services_auth",
@@ -1130,6 +1541,171 @@
       "file_type": "rationale",
       "source_file": "backend/app/services/records.py",
       "source_location": "L100",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals",
+      "label": "test_approvals.py",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_py_fixture",
+      "label": "fixture",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_workspace",
+      "label": "workspace()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L11",
+      "_py_fixture": "?",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_signature",
+      "label": "signature()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L23",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_draft",
+      "label": "draft()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_low_value_draft_submit_sign_and_persistence",
+      "label": "test_low_value_draft_submit_sign_and_persistence()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_threshold_and_rejection",
+      "label": "test_threshold_and_rejection()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L59",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_seeded_award_requires_two_and_applies_once",
+      "label": "test_seeded_award_requires_two_and_applies_once()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L79",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_validation_and_authorization",
+      "label": "test_validation_and_authorization()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L93",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "label": "test_requester_and_duplicate_concurrent_signatures()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L104",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures_attempt",
+      "label": "attempt()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L114",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_high_requisition_approval_and_low_rejection",
+      "label": "test_high_requisition_approval_and_low_rejection()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L124",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_test_failed_application_rolls_back_signature",
+      "label": "test_failed_application_rolls_back_signature()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L146",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_rationale_1",
+      "label": "Exercise approvals against isolated seeded file-backed SQLite databases.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_rationale_12",
+      "label": "Start an isolated workspace with the real seed.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_rationale_19",
+      "label": "Sign in as a seeded role.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_rationale_24",
+      "label": "Build a valid signature request.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_approvals_rationale_28",
+      "label": "Create a requisition and return its identifier.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L28",
       "_origin": "ast"
     },
     {
@@ -1483,7 +2059,7 @@
       "label": "Page()",
       "file_type": "code",
       "source_file": "frontend/app/[resource]/[id]/page.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1579,6 +2155,120 @@
       "community": 7
     },
     {
+      "id": "frontend_components_approvaldetail_test",
+      "label": "ApprovalDetail.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_test_router",
+      "label": "router",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_test_manager",
+      "label": "manager",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_test_approval",
+      "label": "approval",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_test_htmldialogelement_showmodal",
+      "label": ".showModal()",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_test_htmldialogelement_close",
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail",
+      "label": "ApprovalDetail.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_signature",
+      "label": "Signature",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_approval",
+      "label": "Approval",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L10",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_approvaldetail",
+      "label": "ApprovalDetail()",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_approvaldetail_open",
+      "label": "open()",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_approvaldetail_sign",
+      "label": "sign()",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_approvaldetail_approvaldetail_value",
+      "label": "value()",
+      "file_type": "code",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_components_login_test",
       "label": "Login.test.tsx",
       "file_type": "code",
@@ -1646,7 +2336,7 @@
       "label": "Detail",
       "file_type": "code",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -1656,7 +2346,16 @@
       "label": "RecordDetail()",
       "file_type": "code",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_recorddetail_recorddetail_submitdraft",
+      "label": "submitDraft()",
+      "file_type": "code",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L22",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1705,7 +2404,7 @@
       "label": "Row",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -1715,7 +2414,7 @@
       "label": "Resource",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -1725,7 +2424,7 @@
       "label": "resources",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast"
     },
     {
@@ -1733,7 +2432,7 @@
       "label": "money",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L21",
+      "source_location": "L23",
       "_origin": "ast"
     },
     {
@@ -1741,7 +2440,7 @@
       "label": "display()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L23",
+      "source_location": "L25",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1750,7 +2449,7 @@
       "label": "ListResponse",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L29",
+      "source_location": "L31",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast"
@@ -1760,7 +2459,7 @@
       "label": "RecordList()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L32",
+      "source_location": "L34",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1769,7 +2468,7 @@
       "label": "update()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L44",
+      "source_location": "L48",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1778,7 +2477,52 @@
       "label": "reset()",
       "file_type": "code",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L45",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_requisitionform",
+      "label": "RequisitionForm.tsx",
+      "file_type": "code",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_requisitionform_line",
+      "label": "Line",
+      "file_type": "code",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_requisitionform_requisitionform",
+      "label": "RequisitionForm()",
+      "file_type": "code",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_requisitionform_requisitionform_update",
+      "label": "update()",
+      "file_type": "code",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_components_requisitionform_requisitionform_save",
+      "label": "save()",
+      "file_type": "code",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L26",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1814,6 +2558,32 @@
       "source_file": "frontend/components/Shell.tsx",
       "source_location": "L18",
       "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_approvals_spec",
+      "label": "approvals.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/approvals.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_approvals_spec_login",
+      "label": "login()",
+      "file_type": "code",
+      "source_file": "frontend/e2e/approvals.spec.ts",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "playwright_test",
+      "label": "@playwright/test",
+      "file_type": "code",
+      "source_file": "@playwright/test",
+      "confidence": "EXTRACTED",
+      "type": "module",
       "_origin": "ast"
     },
     {
@@ -2968,7 +3738,7 @@
     },
     {
       "source": "backend_app_main",
-      "target": "backend_app_schemas_auth",
+      "target": "backend_app_routers_approvals",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2979,11 +3749,22 @@
     },
     {
       "source": "backend_app_main",
+      "target": "backend_app_schemas_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_main",
       "target": "backend_app_main_create_app",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2994,7 +3775,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3005,7 +3786,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3015,7 +3796,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3025,7 +3806,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3035,7 +3816,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3047,7 +3828,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3059,7 +3840,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/app/main.py",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3074,12 +3855,12 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_app_main_rationale_17",
+      "source": "backend_app_main_rationale_18",
       "target": "backend_app_main_create_app",
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3141,6 +3922,358 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/__init__.py",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_routers_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_schemas_approvals",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_services_init",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_create_requisition",
+      "target": "backend_app_routers_approvals_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_routers_approvals_create_requisition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_create_requisition",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_create_requisition",
+      "target": "backend_app_routers_approvals_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_create_requisition",
+      "target": "backend_app_routers_approvals_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_submit_requisition",
+      "target": "backend_app_routers_approvals_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_routers_approvals_submit_requisition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_submit_requisition",
+      "target": "backend_app_routers_approvals_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_submit_requisition",
+      "target": "backend_app_routers_approvals_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_inbox",
+      "target": "backend_app_routers_approvals_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_routers_approvals_inbox",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_inbox",
+      "target": "backend_app_routers_approvals_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_inbox",
+      "target": "backend_app_routers_approvals_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_approval_detail",
+      "target": "backend_app_routers_approvals_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_routers_approvals_approval_detail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_approval_detail",
+      "target": "backend_app_routers_approvals_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_approval_detail",
+      "target": "backend_app_routers_approvals_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_signature",
+      "target": "backend_app_routers_approvals_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_routers_approvals_signature",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_signature",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_signature",
+      "target": "backend_app_routers_approvals_py_db",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_signature",
+      "target": "backend_app_routers_approvals_py_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_rationale_1",
+      "target": "backend_app_routers_approvals",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_rationale_16",
+      "target": "backend_app_routers_approvals_create_requisition",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_rationale_21",
+      "target": "backend_app_routers_approvals_submit_requisition",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_rationale_26",
+      "target": "backend_app_routers_approvals_inbox",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_rationale_31",
+      "target": "backend_app_routers_approvals_approval_detail",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_rationale_36",
+      "target": "backend_app_routers_approvals_signature",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3285,7 +4418,7 @@
     },
     {
       "source": "backend_app_routers_auth_login",
-      "target": "post",
+      "target": "backend_app_routers_auth_py_post",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/auth.py",
@@ -3426,7 +4559,7 @@
     },
     {
       "source": "backend_app_routers_auth_logout",
-      "target": "post",
+      "target": "backend_app_routers_auth_py_post",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/auth.py",
@@ -3693,7 +4826,7 @@
     },
     {
       "source": "backend_app_routers_records_dashboard",
-      "target": "user",
+      "target": "backend_app_routers_records_py_user",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
@@ -3736,7 +4869,7 @@
     },
     {
       "source": "backend_app_routers_records_list_records",
-      "target": "user",
+      "target": "backend_app_routers_records_py_user",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
@@ -3779,7 +4912,7 @@
     },
     {
       "source": "backend_app_routers_records_detail",
-      "target": "user",
+      "target": "backend_app_routers_records_py_user",
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
@@ -3839,6 +4972,106 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_schemas_approvals",
+      "target": "backend_app_schemas_approvals_lineinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals_lineinput",
+      "target": "backend_app_schemas_approvals_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals_requisitioninput",
+      "target": "backend_app_schemas_approvals_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals_signatureinput",
+      "target": "backend_app_schemas_approvals_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals_rationale_1",
+      "target": "backend_app_schemas_approvals",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals_rationale_10",
+      "target": "backend_app_schemas_approvals_lineinput",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals_rationale_17",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_approvals_rationale_25",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/approvals.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_schemas_auth",
       "target": "backend_app_schemas_auth_loginrequest",
       "relation": "contains",
@@ -3850,7 +5083,7 @@
     },
     {
       "source": "backend_app_schemas_auth_loginrequest",
-      "target": "basemodel",
+      "target": "backend_app_schemas_auth_py_basemodel",
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/schemas/auth.py",
@@ -3870,7 +5103,7 @@
     },
     {
       "source": "backend_app_schemas_auth_userresponse",
-      "target": "basemodel",
+      "target": "backend_app_schemas_auth_py_basemodel",
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/schemas/auth.py",
@@ -3890,7 +5123,7 @@
     },
     {
       "source": "backend_app_schemas_auth_adapterstatus",
-      "target": "basemodel",
+      "target": "backend_app_schemas_auth_py_basemodel",
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/schemas/auth.py",
@@ -3910,7 +5143,7 @@
     },
     {
       "source": "backend_app_schemas_auth_healthresponse",
-      "target": "basemodel",
+      "target": "backend_app_schemas_auth_py_basemodel",
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/schemas/auth.py",
@@ -3975,6 +5208,601 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/__init__.py",
       "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_core_security",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_schemas_approvals",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_now",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_audit",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_audit",
+      "target": "backend_app_services_approvals_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_notify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_notify",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_notify_role",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_create_draft",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_create_draft",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_create_draft",
+      "target": "backend_app_services_approvals_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_create_draft",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_submit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_submit",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_submit",
+      "target": "backend_app_services_approvals_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_list_approvals",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_list_approvals",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_detail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_detail",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_detail",
+      "target": "backend_app_services_approvals_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_apply_decision",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_apply_decision",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_apply_decision",
+      "target": "backend_app_services_approvals_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_services_approvals_sign",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_py_connection",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_py_row",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_audit",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_notify",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_notify_role",
+      "target": "backend_app_services_approvals_notify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_create_draft",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_create_draft",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_submit",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_submit",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_submit",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_now",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_apply_decision",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_notify",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_services_approvals_detail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_1",
+      "target": "backend_app_services_approvals",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_12",
+      "target": "backend_app_services_approvals_now",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_17",
+      "target": "backend_app_services_approvals_audit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_22",
+      "target": "backend_app_services_approvals_notify",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_27",
+      "target": "backend_app_services_approvals_notify_role",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_33",
+      "target": "backend_app_services_approvals_create_draft",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_54",
+      "target": "backend_app_services_approvals_submit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_85",
+      "target": "backend_app_services_approvals_list_approvals",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_95",
+      "target": "backend_app_services_approvals_detail",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_113",
+      "target": "backend_app_services_approvals_apply_decision",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_rationale_144",
+      "target": "backend_app_services_approvals_sign",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L144",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4375,6 +6203,429 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/records.py",
       "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_app_core_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_app_main",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_workspace",
+      "target": "backend_tests_test_approvals_py_fixture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_workspace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_draft",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_test_low_value_draft_submit_sign_and_persistence",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_test_threshold_and_rejection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_test_seeded_award_requires_two_and_applies_once",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_test_validation_and_authorization",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "target": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures_attempt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_test_high_requisition_approval_and_low_rejection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_tests_test_approvals_test_failed_application_rolls_back_signature",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_low_value_draft_submit_sign_and_persistence",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_low_value_draft_submit_sign_and_persistence",
+      "target": "backend_tests_test_approvals_draft",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_low_value_draft_submit_sign_and_persistence",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_threshold_and_rejection",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_threshold_and_rejection",
+      "target": "backend_tests_test_approvals_draft",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_threshold_and_rejection",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_seeded_award_requires_two_and_applies_once",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_seeded_award_requires_two_and_applies_once",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_validation_and_authorization",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "target": "backend_tests_test_approvals_draft",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "target": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures_attempt",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures_attempt",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_high_requisition_approval_and_low_rejection",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_high_requisition_approval_and_low_rejection",
+      "target": "backend_tests_test_approvals_draft",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_high_requisition_approval_and_low_rejection",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_failed_application_rolls_back_signature",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_failed_application_rolls_back_signature",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_rationale_1",
+      "target": "backend_tests_test_approvals",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_rationale_12",
+      "target": "backend_tests_test_approvals_workspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_rationale_19",
+      "target": "backend_tests_test_approvals_login",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_rationale_24",
+      "target": "backend_tests_test_approvals_signature",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_rationale_28",
+      "target": "backend_tests_test_approvals_draft",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4997,11 +7248,33 @@
     },
     {
       "source": "frontend_app_resource_id_page",
+      "target": "frontend_components_requisitionform",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/[resource]/[id]/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_resource_id_page",
+      "target": "frontend_components_approvaldetail",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/[resource]/[id]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_resource_id_page",
       "target": "frontend_app_resource_id_page_page",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/app/[resource]/[id]/page.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5217,6 +7490,284 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/app/page.tsx",
       "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "ref_vitest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "ref_testing_library_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "ref_testing_library_user_event",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "ref_testing_library_jest_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "frontend_components_approvaldetail",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "frontend_components_requisitionform",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "frontend_components_approvaldetail_test_router",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "frontend_components_approvaldetail_test_manager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "frontend_components_approvaldetail_test_approval",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_lib_api_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_lib_api_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_components_approvaldetail_signature",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_components_approvaldetail_approval",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_components_approvaldetail_approvaldetail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_approvaldetail",
+      "target": "frontend_components_approvaldetail_approvaldetail_open",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_approvaldetail",
+      "target": "frontend_components_approvaldetail_approvaldetail_sign",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_approvaldetail",
+      "target": "frontend_components_approvaldetail_approvaldetail_value",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_approvaldetail",
+      "target": "frontend_components_approvaldetail_approvaldetail_value",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5484,8 +8035,20 @@
     },
     {
       "source": "frontend_components_recorddetail",
-      "target": "frontend_components_shell",
+      "target": "frontend_lib_api",
       "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail",
+      "target": "frontend_lib_api_user",
+      "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
@@ -5495,30 +8058,8 @@
     },
     {
       "source": "frontend_components_recorddetail",
-      "target": "frontend_components_recordlist",
+      "target": "frontend_components_shell",
       "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "frontend_components_recorddetail",
-      "target": "frontend_components_recordlist_display",
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "frontend_components_recorddetail",
-      "target": "frontend_components_recordlist_resources",
-      "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
@@ -5534,6 +8075,39 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
       "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail",
+      "target": "frontend_components_recordlist_display",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail",
+      "target": "frontend_components_recordlist_resources",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail",
+      "target": "frontend_components_recordlist",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L9",
       "weight": 1.0,
       "type_only": true,
       "_origin": "ast"
@@ -5545,7 +8119,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5555,7 +8129,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5565,7 +8139,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail_recorddetail",
+      "target": "frontend_components_recorddetail_recorddetail_submitdraft",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5722,8 +8306,20 @@
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "ref_next",
+      "target": "frontend_lib_api",
       "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordList.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recordlist",
+      "target": "frontend_lib_api_user",
+      "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
@@ -5733,7 +8329,7 @@
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_shell",
+      "target": "ref_next",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -5744,17 +8340,18 @@
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_row",
-      "relation": "contains",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_resource",
+      "target": "frontend_components_recordlist_row",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
@@ -5764,7 +8361,7 @@
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_resources",
+      "target": "frontend_components_recordlist_resource",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
@@ -5774,17 +8371,17 @@
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_money",
+      "target": "frontend_components_recordlist_resources",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L21",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "frontend_components_recordlist",
-      "target": "frontend_components_recordlist_display",
+      "target": "frontend_components_recordlist_money",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
@@ -5794,11 +8391,21 @@
     },
     {
       "source": "frontend_components_recordlist",
+      "target": "frontend_components_recordlist_display",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RecordList.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recordlist",
       "target": "frontend_components_recordlist_listresponse",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5808,7 +8415,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5818,7 +8425,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L44",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5828,7 +8435,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L45",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5839,7 +8446,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L49",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5850,7 +8457,192 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L50",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_lib_api_api",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_lib_api_apierror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_lib_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_lib_api_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_components_shell",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_components_recordlist",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_components_recordlist_listresponse",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_components_requisitionform_line",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_components_requisitionform_requisitionform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform_requisitionform",
+      "target": "frontend_components_requisitionform_requisitionform_update",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform_requisitionform",
+      "target": "frontend_components_requisitionform_requisitionform_save",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform_requisitionform",
+      "target": "frontend_components_requisitionform_requisitionform_update",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform_requisitionform",
+      "target": "frontend_components_requisitionform_requisitionform_save",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5983,6 +8775,46 @@
       "source_file": "frontend/components/Shell.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_approvals_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/approvals.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_approvals_spec",
+      "target": "frontend_e2e_approvals_spec_login",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/approvals.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_approvals_spec",
+      "target": "frontend_e2e_approvals_spec_login",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/approvals.spec.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_approvals_spec",
+      "target": "playwright_test",
+      "relation": "dynamic_import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/approvals.spec.ts",
       "_origin": "ast"
     },
     {
@@ -6790,6 +9622,28 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_app_resource_id_page",
+      "target": "frontend_components_requisitionform_requisitionform",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/[resource]/[id]/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_resource_id_page",
+      "target": "frontend_components_approvaldetail_approvaldetail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/app/[resource]/[id]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_app_resource_page",
       "target": "frontend_components_recordlist_recordlist",
       "relation": "imports",
@@ -6823,6 +9677,39 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "frontend_components_approvaldetail_approvaldetail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail_test",
+      "target": "frontend_components_requisitionform_requisitionform",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.test.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_approvaldetail",
+      "target": "frontend_components_shell_shell",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_components_login_test",
       "target": "frontend_components_login_login",
       "relation": "imports",
@@ -6840,7 +9727,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6862,7 +9749,18 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform",
+      "target": "frontend_components_shell_shell",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6928,7 +9826,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6939,7 +9837,51 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L13",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_core_database_get_db",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_routers_auth_get_current_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6999,6 +9941,39 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_core_security_verify_password",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_services_auth",
       "target": "backend_app_core_security_hash_password",
       "relation": "imports",
@@ -7039,6 +10014,39 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_app_core_config_settings",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_app_core_database_connect",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals",
+      "target": "backend_app_main_create_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7153,6 +10161,17 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_approvals",
+      "target": "backend_app_services_approvals",
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_auth",
       "target": "backend_app_services_auth",
       "relation": "imports_from",
@@ -7186,6 +10205,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_approvaldetail_approvaldetail",
+      "target": "frontend_lib_api_api",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_components_login_login",
       "target": "frontend_lib_api_api",
       "relation": "calls",
@@ -7203,7 +10233,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L18",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7214,7 +10244,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L19",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7225,7 +10255,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L42",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform_requisitionform",
+      "target": "frontend_lib_api_api",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7258,7 +10299,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7269,7 +10310,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7280,7 +10321,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7291,7 +10332,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7302,7 +10343,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7313,7 +10354,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L42",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7325,6 +10366,17 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/auth.py",
       "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_core_security_verify_password",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L153",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7380,6 +10432,72 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/auth.py",
       "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_low_value_draft_submit_sign_and_persistence",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_threshold_and_rejection",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_seeded_award_requires_two_and_applies_once",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_requester_and_duplicate_concurrent_signatures",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_high_requisition_approval_and_low_rejection",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_test_failed_application_rolls_back_signature",
+      "target": "backend_app_core_database_connect",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L148",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7533,7 +10651,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -7544,7 +10662,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L36",
+      "source_location": "L38",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -7555,7 +10673,29 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "backend/app/main.py",
-      "source_location": "L41",
+      "source_location": "L43",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_create_requisition",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L15",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_approvals_signature",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/routers/approvals.py",
+      "source_location": "L35",
       "weight": 0.8,
       "_origin": "ast"
     },
@@ -7604,6 +10744,39 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_services_approvals_create_draft",
+      "target": "backend_app_schemas_approvals_requisitioninput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L32",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_approvals_sign",
+      "target": "backend_app_schemas_approvals_signatureinput",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/app/services/approvals.py",
+      "source_location": "L143",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_workspace",
+      "target": "backend_app_core_config_settings",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L15",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_auth_workspace",
       "target": "backend_app_core_config_settings",
       "relation": "uses",
@@ -7644,7 +10817,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7656,7 +10829,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7668,7 +10841,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7680,7 +10853,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7692,7 +10865,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7704,7 +10877,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L42",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_approvals_workspace",
+      "target": "backend_app_main_create_app",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/tests/test_approvals.py",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7734,13 +10919,37 @@
     },
     {
       "source": "frontend_app_resource_id_page_page",
+      "target": "frontend_components_requisitionform_requisitionform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/[resource]/[id]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_resource_id_page_page",
+      "target": "frontend_components_approvaldetail_approvaldetail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/app/[resource]/[id]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_app_resource_id_page_page",
       "target": "frontend_components_recorddetail_recorddetail",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/app/[resource]/[id]/page.tsx",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7781,6 +10990,18 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_components_approvaldetail_approvaldetail",
+      "target": "frontend_components_shell_shell",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/ApprovalDetail.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_components_recorddetail_recorddetail",
       "target": "frontend_components_shell_shell",
       "relation": "calls",
@@ -7788,7 +11009,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/components/RecordDetail.tsx",
-      "source_location": "L19",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_recorddetail_recorddetail_submitdraft",
+      "target": "frontend_lib_api_api",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/RecordDetail.tsx",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7800,7 +11033,31 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/components/RecordList.tsx",
-      "source_location": "L46",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform_requisitionform",
+      "target": "frontend_components_shell_shell",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_components_requisitionform_requisitionform_save",
+      "target": "frontend_lib_api_api",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/components/RequisitionForm.tsx",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7841,6 +11098,19 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_core_database_py_connection",
+      "target": "backend_app_core_database_get_db",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/core/database.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_core_database_get_db",
+      "_tgt": "backend_app_core_database_py_connection"
+    },
+    {
       "source": "backend_app_routers_auth_get_current_user",
       "target": "backend_app_routers_auth_logout",
       "relation": "references",
@@ -7851,8 +11121,8 @@
       "source_file": "backend/app/routers/auth.py",
       "source_location": "L42",
       "weight": 1.0,
-      "_src": "backend_app_routers_auth_logout",
-      "_tgt": "backend_app_routers_auth_get_current_user"
+      "_src": "backend_app_routers_auth_get_current_user",
+      "_tgt": "backend_app_routers_auth_logout"
     },
     {
       "source": "backend_app_routers_auth_get_current_user",
@@ -7865,15 +11135,327 @@
       "source_file": "backend/app/routers/auth.py",
       "source_location": "L37",
       "weight": 1.0,
+      "_src": "backend_app_routers_auth_get_current_user",
+      "_tgt": "backend_app_routers_auth_me"
+    },
+    {
+      "source": "backend_app_routers_auth_py_request",
+      "target": "backend_app_routers_auth_login",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_login",
+      "_tgt": "backend_app_routers_auth_py_request"
+    },
+    {
+      "source": "backend_app_routers_auth_py_request",
+      "target": "backend_app_routers_auth_logout",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_logout",
+      "_tgt": "backend_app_routers_auth_py_request"
+    },
+    {
+      "source": "backend_app_routers_auth_py_db",
+      "target": "backend_app_routers_auth_login",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_login",
+      "_tgt": "backend_app_routers_auth_py_db"
+    },
+    {
+      "source": "backend_app_routers_auth_py_db",
+      "target": "backend_app_routers_auth_logout",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_logout",
+      "_tgt": "backend_app_routers_auth_py_db"
+    },
+    {
+      "source": "backend_app_routers_auth_py_row",
+      "target": "backend_app_routers_auth_logout",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_logout",
+      "_tgt": "backend_app_routers_auth_py_row"
+    },
+    {
+      "source": "backend_app_routers_auth_py_row",
+      "target": "backend_app_routers_auth_me",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
       "_src": "backend_app_routers_auth_me",
-      "_tgt": "backend_app_routers_auth_get_current_user"
+      "_tgt": "backend_app_routers_auth_py_row"
+    },
+    {
+      "source": "backend_app_routers_auth_py_row",
+      "target": "backend_app_routers_auth_public_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_public_user",
+      "_tgt": "backend_app_routers_auth_py_row"
+    },
+    {
+      "source": "response",
+      "target": "backend_app_routers_auth_logout",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_logout",
+      "_tgt": "response"
+    },
+    {
+      "source": "backend_app_routers_auth_py_get",
+      "target": "backend_app_routers_auth_me",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_me",
+      "_tgt": "backend_app_routers_auth_py_get"
+    },
+    {
+      "source": "depends",
+      "target": "backend_app_routers_auth_logout",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/auth.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_auth_logout",
+      "_tgt": "depends"
+    },
+    {
+      "source": "backend_app_routers_records_py_get",
+      "target": "backend_app_routers_records_dashboard",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/records.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_records_dashboard",
+      "_tgt": "backend_app_routers_records_py_get"
+    },
+    {
+      "source": "backend_app_routers_records_py_get",
+      "target": "backend_app_routers_records_detail",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/records.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_records_detail",
+      "_tgt": "backend_app_routers_records_py_get"
+    },
+    {
+      "source": "backend_app_routers_records_py_get",
+      "target": "backend_app_routers_records_list_records",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/records.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_records_list_records",
+      "_tgt": "backend_app_routers_records_py_get"
+    },
+    {
+      "source": "backend_app_routers_records_py_db",
+      "target": "backend_app_routers_records_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/records.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_records_detail",
+      "_tgt": "backend_app_routers_records_py_db"
+    },
+    {
+      "source": "backend_app_routers_records_py_db",
+      "target": "backend_app_routers_records_list_records",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/records.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_records_list_records",
+      "_tgt": "backend_app_routers_records_py_db"
+    },
+    {
+      "source": "backend_app_services_auth_py_connection",
+      "target": "backend_app_services_auth_current_user",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/auth.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_auth_current_user",
+      "_tgt": "backend_app_services_auth_py_connection"
+    },
+    {
+      "source": "backend_app_services_auth_py_connection",
+      "target": "backend_app_services_auth_logout",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/auth.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_auth_logout",
+      "_tgt": "backend_app_services_auth_py_connection"
+    },
+    {
+      "source": "backend_app_services_auth_py_row",
+      "target": "backend_app_services_auth_current_user",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/auth.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_auth_current_user",
+      "_tgt": "backend_app_services_auth_py_row"
+    },
+    {
+      "source": "backend_app_services_records_py_connection",
+      "target": "backend_app_services_records_dashboard",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/records.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_records_dashboard",
+      "_tgt": "backend_app_services_records_py_connection"
+    },
+    {
+      "source": "backend_app_services_records_py_connection",
+      "target": "backend_app_services_records_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/records.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_records_detail",
+      "_tgt": "backend_app_services_records_py_connection"
+    },
+    {
+      "source": "backend_app_services_records_py_row",
+      "target": "backend_app_services_records_detail",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/records.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_records_detail",
+      "_tgt": "backend_app_services_records_py_row"
+    },
+    {
+      "source": "backend_tests_test_auth_py_fixture",
+      "target": "backend_tests_test_auth_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_auth.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_auth_workspace",
+      "_tgt": "backend_tests_test_auth_py_fixture"
+    },
+    {
+      "source": "backend_tests_test_records_py_fixture",
+      "target": "backend_tests_test_records_workspace",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_records.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_records_workspace",
+      "_tgt": "backend_tests_test_records_py_fixture"
+    },
+    {
+      "source": "parametrize",
+      "target": "backend_tests_test_records_test_all_directories_and_details",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_records.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_records_test_all_directories_and_details",
+      "_tgt": "parametrize"
     }
   ],
   "metadata": {
-    "built_at": "2026-11-18T12:07:51.484264+00:00",
+    "built_at": "2026-11-18T12:15:49.344095+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T011GSU2iRpR9000118112611214660\\developer",
     "force": true,
-    "files_scanned": 42
+    "files_scanned": 50
   }
 }

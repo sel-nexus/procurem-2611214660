@@ -118,7 +118,8 @@ def apply_decision(db: sqlite3.Connection, row: sqlite3.Row, approved: bool) -> 
     elif kind == 'sourcing_award' and table == 'sourcing_events':
         supplier = proposed.get('winning_supplier_id')
         if approved:
-            if not isinstance(supplier, int) or not db.execute('SELECT 1 FROM sourcing_bids WHERE event_id=? AND supplier_id=?', (subject,supplier)).fetchone():
+            bid_id = proposed.get('bid_id')
+            if not isinstance(supplier, int) or not db.execute('SELECT 1 FROM sourcing_bids WHERE event_id=? AND supplier_id=? AND (? IS NULL OR id=?)', (subject,supplier,bid_id,bid_id)).fetchone():
                 raise HTTPException(409, 'Winning bid is no longer available.')
             changed = db.execute("UPDATE sourcing_events SET status='awarded',winning_supplier_id=? WHERE id=? AND status='active'", (supplier,subject)).rowcount
         else:
@@ -131,7 +132,10 @@ def apply_decision(db: sqlite3.Connection, row: sqlite3.Row, approved: bool) -> 
             raise HTTPException(409, 'Invalid supplier proposal.')
         if approved:
             fields = sorted(proposed)
-            changed = db.execute('UPDATE suppliers SET ' + ','.join(f'{field}=?' for field in fields) + ' WHERE id=?', [*(proposed[field] for field in fields),subject]).rowcount
+            current = json.loads(row['current_json'])
+            if set(current) != set(fields):
+                raise HTTPException(409, 'Invalid supplier snapshot.')
+            changed = db.execute('UPDATE suppliers SET ' + ','.join(f'{field}=?' for field in fields) + ' WHERE id=? AND ' + ' AND '.join(f'{field} IS ?' for field in fields), [*(proposed[field] for field in fields),subject,*(current[field] for field in fields)]).rowcount
         else:
             changed = db.execute('SELECT count(*) FROM suppliers WHERE id=?', (subject,)).fetchone()[0]
     else:
